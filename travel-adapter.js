@@ -5,7 +5,7 @@ const coreExpressions=lessonDefinition.exchanges.map((e,i)=>{topic.coreAudioExam
 const grammar=lessonDefinition.grammar.map((g,i)=>({n:String(i+1).padStart(2,'0'),title:g[0],formula:g[1],body:g[2],examples:[[g[3],g[4]]],error:g[5]}));
 const contextChoices=lessonDefinition.choices.map(c=>({title:c[0],a:c[1],b:c[2],why:c[3],next:c[4]||'先判断自己想确认的是哪件事，再选择问法。'}));
 const wordId=text=>'w-'+text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const lexiconGroups=[{name:'这次先会用',note:'按需要收藏'},{name:'再认出两个',note:'扩展查阅'}];
+const lexiconGroups=[{name:'这次先会用',note:'按需要收藏'},{name:'按需扩展词库',note:'查阅与兴趣积累，不必一次背完'}];
 const words=lessonDefinition.words.map((w,i)=>({id:wordId(w[0]),text:w[0],meaning:w[1],ipa:w[2],example:w[3],note:w[4]||'',legacy:lessonDefinition.id+'-'+i,kind:'词语 / 词块',group:i<10?0:1,dictionary:w[0].replace(/ /g,'-')}));
 const essentialWords=words.slice(0,10),referenceWords=words.slice(10),essentialTerms=essentialWords.map(w=>w.text);
 const idioms=[[lessonDefinition.extra[0],'日常表达',lessonDefinition.extra[1],lessonDefinition.extra[2],'结合上下文理解，不必逐词翻译。']];

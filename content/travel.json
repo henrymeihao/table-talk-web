@@ -211,7 +211,8 @@
         "Could we pay separately?",
         "前一句指定袋子，后一句指定付款；包装分开不等于账单分开。"
       ]
-    ]
+    ],
+    "group": "吃喝"
   },
   {
     "id": "brunch",
@@ -425,7 +426,8 @@
         "With the yolks fully cooked, please.",
         "poached 指水波煮的做法；后一句指定蛋黄状态，不能仅靠做法名称推断熟度。"
       ]
-    ]
+    ],
+    "group": "吃喝"
   },
   {
     "id": "pub",
@@ -639,7 +641,8 @@
         "Could I open a tab?",
         "前一句想当场付款；后一句询问能否开累计账，两者流程不同。"
       ]
-    ]
+    ],
+    "group": "吃喝"
   },
   {
     "id": "cocktails",
@@ -853,7 +856,8 @@
         "On the rocks, please.",
         "在烈酒点单中，前者通常是不加冰等直接饮用，后者是加冰。"
       ]
-    ]
+    ],
+    "group": "吃喝"
   },
   {
     "id": "hotel",
@@ -1067,7 +1071,8 @@
         "We’re checking out on Friday.",
         "前一句说明时长，后一句说明退房日期，核对时可以一起说。"
       ]
-    ]
+    ],
+    "group": "住宿"
   },
   {
     "id": "luggage",
@@ -1281,7 +1286,8 @@
         "Can we leave our bags here?",
         "提前入住需要房间可供使用；寄存只请求临时存放物品，条件与收费可不同。"
       ]
-    ]
+    ],
+    "group": "住宿"
   },
   {
     "id": "metro",
@@ -1495,7 +1501,8 @@
         "I’ve missed my train.",
         "前者通常已在车上并坐过站，后者没赶上原计划的车，下一步处理不同。"
       ]
-    ]
+    ],
+    "group": "交通"
   },
   {
     "id": "rail",
@@ -1709,6 +1716,5959 @@
         "Does it include a reserved seat?",
         "车票适用范围与座位预订是两个问题，不能互相代替。"
       ]
-    ]
+    ],
+    "group": "交通"
+  },
+  {
+    "id": "specialty-coffee",
+    "title": "精品咖啡：选豆与风味",
+    "en": "Choosing your coffee",
+    "group": "吃喝",
+    "intro": "看不懂豆单也能表达偏好，询问酸度、做法与推荐。",
+    "context": "豆单列 Ethiopian filter coffee、Colombian espresso 和 house blend。你喜欢坚果、巧克力风味，不想要明显酸味，但愿意听店员解释选项。",
+    "exchanges": [
+      [
+        "说明风味",
+        "What flavours do you usually enjoy?",
+        "平时喜欢什么风味？",
+        "I like nutty, chocolatey coffee.",
+        "我喜欢坚果和巧克力风味的咖啡。",
+        "描述品尝感受，不表示一定含坚果或巧克力原料。",
+        "换一家店，说明自己喜欢果香。",
+        "I like fruity coffee."
+      ],
+      [
+        "询问酸度",
+        "This one is quite bright.",
+        "这款酸香比较明亮。",
+        "Is it very acidic? I’d prefer something less acidic.",
+        "它酸感明显吗？我想要酸感弱一点的。",
+        "bright 在咖啡描述中可能指活泼酸感，不是颜色亮。",
+        "换一家店，请推荐酸感弱的。",
+        "Could you recommend something less acidic?"
+      ],
+      [
+        "区分做法",
+        "Would you like filter or espresso?",
+        "要滤泡还是浓缩？",
+        "What’s the difference between the two?",
+        "这两种有什么区别？",
+        "不理解分类时先问区别，避免根据字面猜容量。",
+        "换茶店，问两种做法区别。",
+        "What’s the difference between the two?"
+      ],
+      [
+        "请求推荐",
+        "We have three beans today.",
+        "今天有三款豆子。",
+        "Which one would you recommend for a flat white?",
+        "做馥芮白你推荐哪款？",
+        "for 后说明用途，有助于店员结合奶咖推荐。",
+        "换咖啡馆，问哪款适合做拿铁。",
+        "Which one would you recommend for a latte?"
+      ],
+      [
+        "核对价格",
+        "The single-origin costs extra.",
+        "单一产地豆要另加钱。",
+        "How much extra is it?",
+        "要多付多少钱？",
+        "extra 在此问差额，不是重新问整单价格。",
+        "换甜品店，问加料差价。",
+        "How much extra is it?"
+      ],
+      [
+        "无法提供时",
+        "We’ve run out of that bean.",
+        "那款豆子用完了。",
+        "What would be the closest alternative?",
+        "哪一款最接近它？",
+        "closest 在这里是风味接近，不是物理距离。",
+        "换茶店，询问类似替代。",
+        "What would be the closest alternative?"
+      ]
+    ],
+    "grammar": [
+      [
+        "风味与配料分开问",
+        "taste like / contain",
+        "tastes nutty 描述风味；contains nuts 才是在说成分。菜单风味词不能直接当作配料表。若想确认添加物，用 Does it contain…?。",
+        "Does it contain chocolate, or is that a tasting note?",
+        "里面有巧克力，还是只是风味描述？",
+        "不要从 chocolatey 推断店员加了巧克力糖浆。"
+      ],
+      [
+        "程度和比较",
+        "quite / very / less + 形容词",
+        "quite acidic 表示相当酸，less acidic 表示相对更低的酸感。说自己的偏好后，可以让店员选接近的产品，而不必要求绝对无酸。",
+        "I’d prefer something less acidic.",
+        "我更想要酸感弱一些的。",
+        "less acidic 不等同于制作时少加一种酸。"
+      ],
+      [
+        "推荐需要有用途",
+        "recommend A for B",
+        "for a latte 指推荐用于拿铁的豆子。也可以用 Which would you recommend if I like…? 给出条件，让建议更具体。",
+        "Which would you recommend if I like nutty flavours?",
+        "如果喜欢坚果风味，你推荐哪款？",
+        "不要只背一个豆名，换菜单后仍要能描述偏好。"
+      ]
+    ],
+    "words": [
+      [
+        "bean",
+        "咖啡豆",
+        "biːn",
+        "Which beans are you using?"
+      ],
+      [
+        "blend",
+        "拼配豆",
+        "blend",
+        "What is the house blend like?"
+      ],
+      [
+        "single-origin",
+        "单一产地的",
+        "ˌsɪŋɡəl ˈɔːrɪdʒɪn",
+        "Do you have a single-origin coffee?"
+      ],
+      [
+        "filter coffee",
+        "滤泡咖啡",
+        "ˈfɪltər ˈkɔːfi",
+        "A filter coffee, please."
+      ],
+      [
+        "espresso",
+        "浓缩咖啡",
+        "eˈspresoʊ",
+        "Is that an espresso?"
+      ],
+      [
+        "acidic",
+        "有酸感的",
+        "əˈsɪdɪk",
+        "Is this very acidic?"
+      ],
+      [
+        "nutty",
+        "坚果风味的",
+        "ˈnʌti",
+        "I like nutty flavours."
+      ],
+      [
+        "fruity",
+        "果香的",
+        "ˈfruːti",
+        "Is this coffee fruity?"
+      ],
+      [
+        "roast",
+        "烘焙；烘焙程度",
+        "roʊst",
+        "What roast is this?"
+      ],
+      [
+        "alternative",
+        "替代选项",
+        "ɔːlˈtɜːrnətɪv",
+        "What is the closest alternative?"
+      ],
+      [
+        "light roast",
+        "浅烘焙",
+        "laɪt roʊst",
+        "Do you have a light roast?"
+      ],
+      [
+        "dark roast",
+        "深烘焙",
+        "dɑːrk roʊst",
+        "I usually choose a dark roast."
+      ],
+      [
+        "body",
+        "口感厚重程度",
+        "ˈbɑːdi",
+        "Does it have a light body?"
+      ],
+      [
+        "tasting notes",
+        "风味描述",
+        "ˈteɪstɪŋ noʊts",
+        "What are the tasting notes?"
+      ],
+      [
+        "grind",
+        "研磨；研磨粗细",
+        "ɡraɪnd",
+        "Could you grind these beans?"
+      ],
+      [
+        "whole bean",
+        "未研磨的整豆",
+        "hoʊl biːn",
+        "I’d like whole bean coffee."
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "我喜欢坚果和巧克力风味的咖啡。；它酸感明显吗？我想要酸感弱一点的。。请按现场情况自己组织英语。",
+        "I like nutty, chocolatey coffee.\nIs it very acidic? I’d prefer something less acidic.",
+        "说明风味；询问酸度"
+      ],
+      [
+        "确认条件与选择",
+        "这两种有什么区别？；做馥芮白你推荐哪款？。请按现场情况自己组织英语。",
+        "What’s the difference between the two?\nWhich one would you recommend for a flat white?",
+        "区分做法；请求推荐"
+      ],
+      [
+        "处理变化与收尾",
+        "要多付多少钱？；哪一款最接近它？。请按现场情况自己组织英语。",
+        "How much extra is it?\nWhat would be the closest alternative?",
+        "核对价格；无法提供时"
+      ]
+    ],
+    "transfer": [
+      "换到买豆柜台",
+      "豆单写 Blend A: chocolate/nuts；Bean B: citrus。你想买适合加奶、酸感弱的豆子，问是否能研磨以及价差。",
+      "Which beans would you recommend for coffee with milk? I’d prefer something less acidic. Can you grind them for me, and is there an extra charge?",
+      "用途；酸感；研磨；费用"
+    ],
+    "extra": [
+      "House blend",
+      "本店常用拼配，并不自动表示价格最低。",
+      "What’s your house blend like?"
+    ],
+    "choices": [
+      [
+        "风味还是成分",
+        "It tastes nutty.",
+        "Does it contain nuts?",
+        "前句描述味道联想，后句确认真实成分。"
+      ],
+      [
+        "单杯还是用于买豆",
+        "A filter coffee, please.",
+        "Which beans would you recommend for filter coffee?",
+        "前句点饮品，后句选用于滤泡的豆子。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "fast-food",
+    "title": "快餐与外带店",
+    "en": "A quick takeaway",
+    "group": "吃喝",
+    "intro": "选套餐、配料与酱料，核对取餐号和漏餐。",
+    "context": "你在柜台点汉堡套餐，要中杯饮料、不放洋葱，带走；拿到袋子后发现薯条少了一份。",
+    "exchanges": [
+      [
+        "单点还是套餐",
+        "Just the burger or a meal?",
+        "只要汉堡还是套餐？",
+        "A meal, please. What does it come with?",
+        "要套餐。里面配什么？",
+        "meal 在快餐中常指组合套餐，具体内容仍要问。",
+        "换披萨店问套餐包含什么。",
+        "What does the meal come with?"
+      ],
+      [
+        "选择大小",
+        "Would you like to make that large?",
+        "要升级大份吗？",
+        "No, the regular size is fine.",
+        "不用，普通份就好。",
+        "make that large 是升级请求，不是再买一份。",
+        "换饮品店，保留小杯。",
+        "No, the small size is fine."
+      ],
+      [
+        "调整配料",
+        "Any changes to the burger?",
+        "汉堡需要调整吗？",
+        "No onions, please, and sauce on the side.",
+        "不要洋葱，酱料另放。",
+        "no onions 与 onions on the side 不同，分别说配料和酱。",
+        "换三明治店，不要番茄。",
+        "No tomatoes, please."
+      ],
+      [
+        "选择取餐方式",
+        "For here or to go?",
+        "堂食还是外带？",
+        "To go, please. Do I collect it here?",
+        "外带。是在这里取吗？",
+        "collect 在这里是取餐；不是收集。",
+        "换咖啡店问取餐点。",
+        "Do I collect my order here?"
+      ],
+      [
+        "核对号码",
+        "Order forty-two!",
+        "42号取餐！",
+        "Is this order forty-two?",
+        "这是42号的餐吗？",
+        "用订单号确认，不只根据袋子外观判断。",
+        "换快餐店，核对18号。",
+        "Is this order eighteen?"
+      ],
+      [
+        "发现漏餐",
+        "Is everything there?",
+        "东西齐了吗？",
+        "There’s a portion of fries missing.",
+        "少了一份薯条。",
+        "missing 表示未出现，不一定说明是谁弄丢的。",
+        "换外带店，说明少一杯饮品。",
+        "There’s a drink missing."
+      ]
+    ],
+    "grammar": [
+      [
+        "套餐与额外添加",
+        "come with / add",
+        "come with 问原有套餐内容；add 是额外添加。听到升级或加购选项时，可以问 How much extra is that?，再决定是否需要。",
+        "Does the meal come with a drink?",
+        "套餐含一杯饮料吗？",
+        "不要把任何加购推荐都当成已含在标价内。"
+      ],
+      [
+        "省去与分开提供",
+        "no + 配料 / on the side",
+        "No onions 是不放洋葱；sauce on the side 是仍提供酱料但另放。若汉堡已预制，店员可能说明无法调整，接着找替代。",
+        "Could I have it without onions?",
+        "能不放洋葱吗？",
+        "on the side 不是不要该配料。"
+      ],
+      [
+        "说明缺了什么",
+        "There is/are + 名词 + missing",
+        "There’s a drink missing 指少一杯饮品；two drinks 用 There are。说明订单号和缺少项，比笼统说订单不对更容易处理。",
+        "There are two sauces missing from my order.",
+        "我的订单少了两份酱。",
+        "missing 不能直接替代 miss 用作“我想念”。"
+      ]
+    ],
+    "words": [
+      [
+        "meal",
+        "套餐；一餐",
+        "miːl",
+        "What comes with the meal?"
+      ],
+      [
+        "regular",
+        "普通份的",
+        "ˈreɡjələr",
+        "The regular size is fine."
+      ],
+      [
+        "upgrade",
+        "升级",
+        "ˈʌpɡreɪd",
+        "How much is the upgrade?"
+      ],
+      [
+        "topping",
+        "表面配料",
+        "ˈtɑːpɪŋ",
+        "Can I change the toppings?"
+      ],
+      [
+        "onion",
+        "洋葱",
+        "ˈʌnjən",
+        "No onions, please."
+      ],
+      [
+        "sauce",
+        "酱料",
+        "sɔːs",
+        "Sauce on the side, please."
+      ],
+      [
+        "order number",
+        "订单号",
+        "ˈɔːrdər ˈnʌmbər",
+        "What’s my order number?"
+      ],
+      [
+        "collect",
+        "取餐",
+        "kəˈlekt",
+        "Where do I collect it?"
+      ],
+      [
+        "missing",
+        "缺少的",
+        "ˈmɪsɪŋ",
+        "There’s a drink missing."
+      ],
+      [
+        "receipt",
+        "小票",
+        "rɪˈsiːt",
+        "Here is my receipt."
+      ],
+      [
+        "combo",
+        "组合套餐",
+        "ˈkɑːmboʊ",
+        "Does the combo include fries?"
+      ],
+      [
+        "refill",
+        "续杯",
+        "ˈriːfɪl",
+        "Are refills included?"
+      ],
+      [
+        "ketchup",
+        "番茄酱",
+        "ˈketʃəp",
+        "Could I have some ketchup?"
+      ],
+      [
+        "mustard",
+        "芥末酱",
+        "ˈmʌstərd",
+        "Does it contain mustard?"
+      ],
+      [
+        "napkin",
+        "餐巾纸",
+        "ˈnæpkɪn",
+        "Could I have a napkin?"
+      ],
+      [
+        "cutlery",
+        "餐具",
+        "ˈkʌtləri",
+        "Could you include cutlery?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "要套餐。里面配什么？；不用，普通份就好。。请按现场情况自己组织英语。",
+        "A meal, please. What does it come with?\nNo, the regular size is fine.",
+        "单点还是套餐；选择大小"
+      ],
+      [
+        "确认条件与选择",
+        "不要洋葱，酱料另放。；外带。是在这里取吗？。请按现场情况自己组织英语。",
+        "No onions, please, and sauce on the side.\nTo go, please. Do I collect it here?",
+        "调整配料；选择取餐方式"
+      ],
+      [
+        "处理变化与收尾",
+        "这是42号的餐吗？；少了一份薯条。。请按现场情况自己组织英语。",
+        "Is this order forty-two?\nThere’s a portion of fries missing.",
+        "核对号码；发现漏餐"
+      ]
+    ],
+    "transfer": [
+      "换到披萨外带店",
+      "菜单有 Personal pizza combo，含饮料。你要不要蘑菇的披萨、酱另放，问取餐地点，取餐后发现少饮料。",
+      "Could I have the pizza combo without mushrooms, with the sauce on the side? Where do I collect it? There’s a drink missing from my order.",
+      "套餐；调整；取餐；漏餐"
+    ],
+    "extra": [
+      "Make that a meal",
+      "把刚才单点的改成套餐。",
+      "Actually, make that a meal, please."
+    ],
+    "choices": [
+      [
+        "原来配的还是额外加的",
+        "Does it come with fries?",
+        "Could I add fries?",
+        "前句问套餐内容，后句提出加购。"
+      ],
+      [
+        "数量变大还是再买一个",
+        "Could I make that large?",
+        "Could I have another one?",
+        "前句升级份量，后句增加一份。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "market",
+    "title": "市集与街头小吃",
+    "en": "At the food market",
+    "group": "吃喝",
+    "intro": "指认陌生食物，问份量、称重、价格和吃法。",
+    "context": "市集出售按串、按份和按重量计价的食物。你想少买一点试试，并确认酱料、价格和吃法。",
+    "exchanges": [
+      [
+        "不知道是什么",
+        "Would you like to try some?",
+        "想试一点吗？",
+        "What is it made with?",
+        "这是用什么做的？",
+        "made with 问制作原料，不是 made of 的机械套用。",
+        "换甜品摊问原料。",
+        "What is this dessert made with?"
+      ],
+      [
+        "看不懂单位",
+        "It’s six for a portion.",
+        "每份六元。",
+        "How much food is in one portion?",
+        "一份有多少？",
+        "价格没说明份量时，先问一份的数量。",
+        "换小吃店问一份有几个。",
+        "How many pieces are in one portion?"
+      ],
+      [
+        "按重量买",
+        "How much would you like?",
+        "想要多少？",
+        "About two hundred grams, please.",
+        "大约200克，谢谢。",
+        "about 允许少量差异；克和当地标价单位要确认。",
+        "换水果摊，买500克。",
+        "About five hundred grams, please."
+      ],
+      [
+        "只想试一点",
+        "A full portion?",
+        "要一整份吗？",
+        "Do you sell smaller portions?",
+        "有小份吗？",
+        "询问供应方式，不默认一定允许减量减价。",
+        "换甜点店问是否有小份。",
+        "Do you sell smaller portions?"
+      ],
+      [
+        "询问吃法",
+        "Here you go.",
+        "给你。",
+        "How do you usually eat this?",
+        "这个一般怎么吃？",
+        "usually 问常见吃法，不是要求对方保证唯一正确做法。",
+        "换到另一摊，问酱如何搭配。",
+        "Do I dip it in the sauce?"
+      ],
+      [
+        "确认价格",
+        "Anything else?",
+        "还要别的吗？",
+        "Is that price per piece or per portion?",
+        "这是单个价还是每份价？",
+        "per 表示按单位计价；不要根据摆放数量猜。",
+        "换水果摊问每个还是每公斤。",
+        "Is that price per item or per kilo?"
+      ]
+    ],
+    "grammar": [
+      [
+        "多少个和多少量",
+        "How many + 可数复数 / How much + 不可数",
+        "pieces 是可数数量，用 how many；food 在这里是总体份量，用 how much。摊主问 How much would you like? 可能是在问重量，不是问你预算。",
+        "How many pieces come in a portion?",
+        "一份有几块？",
+        "How much pieces 不正确，pieces 是复数可数名词。"
+      ],
+      [
+        "按什么单位收费",
+        "per piece / per portion / per kilo",
+        "per 表示每一单位。价格、数量和重量要连起来核对；同一摊的不同商品未必用相同单位。",
+        "Is that five per skewer or for the whole plate?",
+        "五元是一串，还是整盘？",
+        "不要把标价牌旁边摆了几串理解成一份必然有几串。"
+      ],
+      [
+        "约数与少量尝试",
+        "about + 数量 / a small portion",
+        "about two hundred grams 指大致重量；a small portion 问一个小份规格。对方不提供小份时，可以与同行者分一份，再问是否能多给餐具。",
+        "Could we share one portion and have two forks?",
+        "我们能分一份，再要两把叉子吗？",
+        "a little 与 a few 的搭配不同：a little sauce，a few pieces。"
+      ]
+    ],
+    "words": [
+      [
+        "portion",
+        "一份",
+        "ˈpɔːrʃən",
+        "How big is one portion?"
+      ],
+      [
+        "piece",
+        "一块；一个",
+        "piːs",
+        "How much per piece?"
+      ],
+      [
+        "skewer",
+        "一串；串签",
+        "ˈskjuːər",
+        "Two skewers, please."
+      ],
+      [
+        "gram",
+        "克",
+        "ɡræm",
+        "Two hundred grams, please."
+      ],
+      [
+        "kilo",
+        "公斤",
+        "ˈkiːloʊ",
+        "Is that price per kilo?"
+      ],
+      [
+        "weigh",
+        "称重",
+        "weɪ",
+        "Could you weigh this?"
+      ],
+      [
+        "sample",
+        "试吃小份",
+        "ˈsæmpəl",
+        "Could I try a sample?"
+      ],
+      [
+        "dip",
+        "蘸",
+        "dɪp",
+        "Do I dip it in the sauce?"
+      ],
+      [
+        "spicy",
+        "辣的",
+        "ˈspaɪsi",
+        "Is it very spicy?"
+      ],
+      [
+        "share",
+        "分享；分着吃",
+        "ʃer",
+        "Could we share one portion?"
+      ],
+      [
+        "stall",
+        "摊位",
+        "stɔːl",
+        "Which stall sells bread?"
+      ],
+      [
+        "vendor",
+        "摊主；商贩",
+        "ˈvendər",
+        "I’ll ask the vendor."
+      ],
+      [
+        "steamed",
+        "蒸制的",
+        "stiːmd",
+        "Is this steamed?"
+      ],
+      [
+        "grilled",
+        "烤制的",
+        "ɡrɪld",
+        "Is the fish grilled?"
+      ],
+      [
+        "per item",
+        "按单个",
+        "pər ˈaɪtəm",
+        "Is that price per item?"
+      ],
+      [
+        "takeaway container",
+        "外带盒",
+        "ˈteɪkəweɪ kənˈteɪnər",
+        "Could I have a takeaway container?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "这是用什么做的？；一份有多少？。请按现场情况自己组织英语。",
+        "What is it made with?\nHow much food is in one portion?",
+        "不知道是什么；看不懂单位"
+      ],
+      [
+        "确认条件与选择",
+        "大约200克，谢谢。；有小份吗？。请按现场情况自己组织英语。",
+        "About two hundred grams, please.\nDo you sell smaller portions?",
+        "按重量买；只想试一点"
+      ],
+      [
+        "处理变化与收尾",
+        "这个一般怎么吃？；这是单个价还是每份价？。请按现场情况自己组织英语。",
+        "How do you usually eat this?\nIs that price per piece or per portion?",
+        "询问吃法；确认价格"
+      ]
+    ],
+    "transfer": [
+      "换到海鲜市集",
+      "价牌写 Grilled prawns: per skewer。你想买两串，先问一串几只、是否辣，最后问能否分两盒。",
+      "How many prawns are on each skewer? Is it spicy? I’ll have two skewers, please. Could you put them in separate boxes?",
+      "单位；数量；辣度；分装"
+    ],
+    "extra": [
+      "Just a taste",
+      "只想尝一小口，是否提供仍要询问。",
+      "Could I have just a taste?"
+    ],
+    "choices": [
+      [
+        "每份还是单个",
+        "How much is a portion?",
+        "How much is each piece?",
+        "问价格时明确单位，否则同一个数字可能含义不同。"
+      ],
+      [
+        "少量酱还是少几块",
+        "A little sauce, please.",
+        "Just a few pieces, please.",
+        "sauce 通常不可数，pieces 是可数复数。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "taproom",
+    "title": "精酿啤酒吧",
+    "en": "At the taproom",
+    "group": "吃喝",
+    "intro": "描述苦味和风格，询问试饮、小杯组合与容量。",
+    "context": "酒头单列 lager、pale ale、IPA 和 stout。你不喜欢太苦，想先问推荐，再看能否买一组小杯比较。",
+    "exchanges": [
+      [
+        "描述偏好",
+        "What styles do you like?",
+        "喜欢什么风格？",
+        "I’d like something not too bitter.",
+        "我想要不太苦的。",
+        "风格名称不必直接等于你的口味，先说偏好。",
+        "换咖啡店，说明不想要太苦。",
+        "I’d like something not too bitter."
+      ],
+      [
+        "询问试饮",
+        "Would you like a taste?",
+        "想尝一点吗？",
+        "Could I try a small sample of that one?",
+        "能试一小口那款吗？",
+        "sample 指少量试饮，是否提供由店家决定。",
+        "换冰淇淋店，问能否试这个口味。",
+        "Could I try a small sample of this flavour?"
+      ],
+      [
+        "小杯组合",
+        "We also do tasting flights.",
+        "也有组合试饮。",
+        "How many beers are in a flight?",
+        "一组包含几款？",
+        "flight 在这里是多款小杯组合，不是航班。",
+        "换咖啡品鉴，问组合包含几款。",
+        "How many coffees are in a flight?"
+      ],
+      [
+        "问清酒精度",
+        "This one is stronger.",
+        "这款更烈。",
+        "What’s the alcohol content?",
+        "酒精度是多少？",
+        "stronger 可能有多种感受，关心酒精度就直接问数值。",
+        "换餐厅问饮品酒精度。",
+        "What’s the alcohol content?"
+      ],
+      [
+        "问口味",
+        "It’s our seasonal sour.",
+        "这是季节限定酸啤。",
+        "Is it fruity or quite tart?",
+        "偏果香，还是酸感明显？",
+        "fruity 描述风味，tart 描述酸感，两者可能同时存在。",
+        "换果汁店，问是否酸感明显。",
+        "Is it quite tart?"
+      ],
+      [
+        "决定杯量",
+        "Which size would you like?",
+        "想要多大杯？",
+        "The smallest serving, please.",
+        "请给最小杯。",
+        "不熟悉本店容量名称时，先问实际可选容量。",
+        "换另一家酒吧，选择最小份。",
+        "The smallest serving, please."
+      ]
+    ],
+    "grammar": [
+      [
+        "按偏好请人推荐",
+        "something + not too + 形容词",
+        "not too bitter 说明可接受一定苦味，但不希望过强；not bitter at all 是更强的限制。把口味与酒精度分别问，不要用 smooth 推断度数。",
+        "Could you recommend something light and not too bitter?",
+        "推荐清爽、不太苦的一款。",
+        "light 可能指口感或酒体；关心酒精度应另问。"
+      ],
+      [
+        "一款与一组",
+        "a sample / a flight / a serving",
+        "sample 是少量试尝，flight 是几款小杯组合，serving 是一次供应的份量。先问组合数量和每杯容量，再选是否合适。",
+        "How large is each sample in the flight?",
+        "组合里每小杯多大？",
+        "flight 在此不是交通工具，不能按机场语境理解。"
+      ],
+      [
+        "比较两款",
+        "Which is less bitter? / stronger than",
+        "比较时说 less bitter 更少苦、stronger than 比某款更强。若想知道 stronger 指什么，可以直接问 Do you mean the flavour or the alcohol content?。",
+        "Which one is less bitter?",
+        "哪款没那么苦？",
+        "less bitter 与 lower in alcohol 不是同一个维度。"
+      ]
+    ],
+    "words": [
+      [
+        "taproom",
+        "酒厂品饮空间；精酿酒吧",
+        "ˈtæpruːm",
+        "Is there a taproom here?"
+      ],
+      [
+        "on tap",
+        "在酒头供应的",
+        "ɑːn tæp",
+        "What’s on tap?"
+      ],
+      [
+        "IPA",
+        "印度淡色艾尔",
+        "ˌaɪ piː ˈeɪ",
+        "Is the IPA very bitter?"
+      ],
+      [
+        "stout",
+        "世涛；深色艾尔的一类",
+        "staʊt",
+        "What is the stout like?"
+      ],
+      [
+        "pale ale",
+        "淡色艾尔",
+        "peɪl eɪl",
+        "I’ll try the pale ale."
+      ],
+      [
+        "bitter",
+        "苦的",
+        "ˈbɪtər",
+        "Something less bitter, please."
+      ],
+      [
+        "tart",
+        "酸感明显的",
+        "tɑːrt",
+        "Is this very tart?"
+      ],
+      [
+        "sample",
+        "试饮小份",
+        "ˈsæmpəl",
+        "May I try a sample?"
+      ],
+      [
+        "flight",
+        "多款小杯试饮组合",
+        "flaɪt",
+        "What’s included in the flight?"
+      ],
+      [
+        "alcohol content",
+        "酒精含量；酒精度",
+        "ˈælkəhɔːl ˈkɑːntent",
+        "What’s the alcohol content?"
+      ],
+      [
+        "ABV",
+        "酒精体积百分比标记",
+        "ˌeɪ biː ˈviː",
+        "What does this ABV figure mean?"
+      ],
+      [
+        "hoppy",
+        "酒花风味明显的",
+        "ˈhɑːpi",
+        "Is it very hoppy?"
+      ],
+      [
+        "malty",
+        "麦芽风味明显的",
+        "ˈmɔːlti",
+        "I like malty flavours."
+      ],
+      [
+        "seasonal",
+        "季节供应的",
+        "ˈsiːzənəl",
+        "Which beers are seasonal?"
+      ],
+      [
+        "brewery",
+        "啤酒酿造厂",
+        "ˈbruːəri",
+        "Is this brewed at your brewery?"
+      ],
+      [
+        "serving",
+        "一份的供应量",
+        "ˈsɜːrvɪŋ",
+        "What serving sizes do you have?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "我想要不太苦的。；能试一小口那款吗？。请按现场情况自己组织英语。",
+        "I’d like something not too bitter.\nCould I try a small sample of that one?",
+        "描述偏好；询问试饮"
+      ],
+      [
+        "确认条件与选择",
+        "一组包含几款？；酒精度是多少？。请按现场情况自己组织英语。",
+        "How many beers are in a flight?\nWhat’s the alcohol content?",
+        "小杯组合；问清酒精度"
+      ],
+      [
+        "处理变化与收尾",
+        "偏果香，还是酸感明显？；请给最小杯。。请按现场情况自己组织英语。",
+        "Is it fruity or quite tart?\nThe smallest serving, please.",
+        "问口味；决定杯量"
+      ]
+    ],
+    "transfer": [
+      "换到小型酒厂",
+      "试饮单写 Flight: four small beers。你不想太苦，想先问组合能否换款、每小杯容量和酒精度。",
+      "Could I choose less bitter beers for the flight? How large is each serving? What’s the alcohol content of these beers?",
+      "组合选择；口味；容量；度数"
+    ],
+    "extra": [
+      "What’s on tap?",
+      "询问酒头上供应哪些饮品。",
+      "What’s on tap today?"
+    ],
+    "choices": [
+      [
+        "苦味还是酒精度",
+        "Is it very bitter?",
+        "Is it high in alcohol?",
+        "两者分别确认，不能由风格或颜色直接推断。"
+      ],
+      [
+        "一口还是一组",
+        "Could I try a sample?",
+        "Could I have a tasting flight?",
+        "前句询问试尝，后句点组合，费用与份量应确认。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "room-problems",
+    "title": "房间问题与换房",
+    "en": "A problem with the room",
+    "group": "住宿",
+    "intro": "具体描述噪音、设备与清洁问题，约处理时间并跟进。",
+    "context": "入住后发现空调不工作，走廊也很吵。你先请前台安排检查，若暂时修不好，希望询问安静一些的房间。",
+    "exchanges": [
+      [
+        "说明问题",
+        "What seems to be the problem?",
+        "哪里有问题？",
+        "The air conditioning isn’t working.",
+        "空调不工作。",
+        "具体说明哪件设备，不只说房间不行。",
+        "换到另一家酒店，说明热水不热。",
+        "The shower water isn’t getting hot."
+      ],
+      [
+        "约处理时间",
+        "We can send someone up.",
+        "可以派人到房间。",
+        "When could someone come and check it?",
+        "什么时候能来检查？",
+        "when 问时间，come up 常指到楼上房间。",
+        "换民宿，问何时能检查门锁。",
+        "When could someone check the lock?"
+      ],
+      [
+        "描述噪音",
+        "Is the noise from outside?",
+        "噪音来自外面吗？",
+        "It’s coming from the room next door.",
+        "是隔壁房间传来的。",
+        "说明来源有助于对方判断处理方式，不必自己下结论。",
+        "换酒店说明走廊很吵。",
+        "There’s a lot of noise in the corridor."
+      ],
+      [
+        "跟进未解决",
+        "Has anyone been to the room?",
+        "有人去过房间了吗？",
+        "Yes, but the problem is still there.",
+        "去过，但问题还在。",
+        "still 强调处理后仍未解决。",
+        "换租赁店，说明更换后故障仍在。",
+        "The problem is still there."
+      ],
+      [
+        "询问换房",
+        "We can’t fix it tonight.",
+        "今晚无法修好。",
+        "Would it be possible to move to another room?",
+        "可以换一间房吗？",
+        "提出替代方案；是否有空房需由前台确认。",
+        "换酒店，请求更安静的房间。",
+        "Could we move to a quieter room?"
+      ],
+      [
+        "约定下一步",
+        "Another room will be ready in an hour.",
+        "另一间一小时后准备好。",
+        "Could you let us know when it’s ready?",
+        "准备好时能通知我们吗？",
+        "when 引出要通知的时间节点。",
+        "换民宿，清理好时通知。",
+        "Could you let us know when it’s ready?"
+      ]
+    ],
+    "grammar": [
+      [
+        "设备当前不好用",
+        "isn’t working / isn’t getting hot",
+        "isn’t working 概括设备不正常；isn’t getting hot 更具体地描述热水未变热。不需要先猜技术原因，用观察到的现象沟通。",
+        "The light keeps flickering.",
+        "灯一直闪。",
+        "不要把 broken 当作所有问题的唯一描述，不确定损坏原因时说明现象。"
+      ],
+      [
+        "处理后仍有问题",
+        "still / already / yet",
+        "still there 表示问题仍在；already came 表示已经有人来过；not yet 表示尚未发生。三个词能帮助区分“没来”和“来了没修好”。",
+        "Someone has already checked it, but it still isn’t working.",
+        "已经有人检查，但仍不好用。",
+        "already 不表示已经修好，需要说明结果。"
+      ],
+      [
+        "提出可行替代",
+        "Would it be possible to…?",
+        "这一结构适合请求换房或调整安排；to 后接动词原形。若不能立刻换，可继续问等待多久、是否能先寄存东西。",
+        "Would it be possible to change rooms?",
+        "能换房间吗？",
+        "不要说 possible to changing；这里是 to change。"
+      ]
+    ],
+    "words": [
+      [
+        "air conditioning",
+        "空调",
+        "er kənˈdɪʃənɪŋ",
+        "The air conditioning isn’t working."
+      ],
+      [
+        "heating",
+        "暖气",
+        "ˈhiːtɪŋ",
+        "The heating isn’t working."
+      ],
+      [
+        "shower",
+        "淋浴",
+        "ˈʃaʊər",
+        "There’s a problem with the shower."
+      ],
+      [
+        "lock",
+        "门锁",
+        "lɑːk",
+        "Could you check the lock?"
+      ],
+      [
+        "noise",
+        "噪音",
+        "nɔɪz",
+        "There’s a lot of noise."
+      ],
+      [
+        "next door",
+        "隔壁",
+        "nekst dɔːr",
+        "It’s coming from next door."
+      ],
+      [
+        "corridor",
+        "走廊",
+        "ˈkɔːrɪdər",
+        "It’s noisy in the corridor."
+      ],
+      [
+        "maintenance",
+        "维修；维护人员",
+        "ˈmeɪntənəns",
+        "Could you send maintenance?"
+      ],
+      [
+        "change rooms",
+        "换房",
+        "tʃeɪndʒ ruːmz",
+        "Could we change rooms?"
+      ],
+      [
+        "ready",
+        "准备好的",
+        "ˈredi",
+        "When will it be ready?"
+      ],
+      [
+        "leak",
+        "漏水；泄漏",
+        "liːk",
+        "There’s a leak under the sink."
+      ],
+      [
+        "stain",
+        "污渍",
+        "steɪn",
+        "There’s a stain on the sheet."
+      ],
+      [
+        "towel",
+        "毛巾",
+        "ˈtaʊəl",
+        "Could we have clean towels?"
+      ],
+      [
+        "socket",
+        "插座",
+        "ˈsɑːkɪt",
+        "This socket isn’t working."
+      ],
+      [
+        "housekeeping",
+        "客房服务；保洁",
+        "ˈhaʊskiːpɪŋ",
+        "Could you contact housekeeping?"
+      ],
+      [
+        "flicker",
+        "闪烁",
+        "ˈflɪkər",
+        "The light keeps flickering."
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "空调不工作。；什么时候能来检查？。请按现场情况自己组织英语。",
+        "The air conditioning isn’t working.\nWhen could someone come and check it?",
+        "说明问题；约处理时间"
+      ],
+      [
+        "确认条件与选择",
+        "是隔壁房间传来的。；去过，但问题还在。。请按现场情况自己组织英语。",
+        "It’s coming from the room next door.\nYes, but the problem is still there.",
+        "描述噪音；跟进未解决"
+      ],
+      [
+        "处理变化与收尾",
+        "可以换一间房吗？；准备好时能通知我们吗？。请按现场情况自己组织英语。",
+        "Would it be possible to move to another room?\nCould you let us know when it’s ready?",
+        "询问换房；约定下一步"
+      ]
+    ],
+    "transfer": [
+      "换到民宿",
+      "入住后发现门锁难以锁上，房东说今晚无法更换。你请他检查，并询问是否有另一间可住，准备好后通知你。",
+      "The door is difficult to lock. Could you check it? If it can’t be fixed tonight, is there another room available? Please let me know when it’s ready.",
+      "现象；检查；替代；通知"
+    ],
+    "extra": [
+      "Still not working",
+      "仍然不工作，强调问题持续。",
+      "It’s still not working."
+    ],
+    "choices": [
+      [
+        "没处理还是处理后未解决",
+        "Nobody has checked it yet.",
+        "Someone checked it, but it still isn’t working.",
+        "前句尚未处理，后句已经处理但问题持续。"
+      ],
+      [
+        "观察还是判断原因",
+        "The floor is wet.",
+        "There may be a leak.",
+        "前句是观察，后句是推测，不确定时可先描述现象。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "checkout",
+    "title": "退房、核账与遗失物品",
+    "en": "Checking out",
+    "group": "住宿",
+    "intro": "核对收费、要明细和收据，离店后也能说明遗失物品。",
+    "context": "你准备退房，账单出现一项不认识的额外费用。离开后发现充电器可能落在房间，需要联系前台核对。",
+    "exchanges": [
+      [
+        "办理退房",
+        "Are you checking out?",
+        "要退房吗？",
+        "Yes. Could I see the final bill, please?",
+        "是的，能看一下最终账单吗？",
+        "final bill 问整段住宿结算，不是续订确认。",
+        "换另一家酒店，请查看账单。",
+        "Could I see the final bill, please?"
+      ],
+      [
+        "不认识的收费",
+        "There’s an extra charge here.",
+        "这里有额外收费。",
+        "Could you explain what this charge is for?",
+        "能解释这笔钱收的是什么吗？",
+        "先问费用用途，再核对实际消费。",
+        "换餐厅，问这笔费用用途。",
+        "What is this charge for?"
+      ],
+      [
+        "需要费用明细",
+        "Would you like a receipt?",
+        "需要收据吗？",
+        "Could I have an itemised bill as well?",
+        "也能给一份逐项明细吗？",
+        "receipt 证明付款，itemised bill 展示逐项收费。",
+        "换活动中心，要明细。",
+        "Could I have an itemised bill?"
+      ],
+      [
+        "退还押金安排",
+        "The deposit will be released later.",
+        "押金稍后解除占用。",
+        "When should I expect it to be released?",
+        "大概什么时候能解除？",
+        "询问该笔实际处理，不能自行把授权占用等同扣款。",
+        "换租车处，问何时解除押金占用。",
+        "When should I expect the deposit to be released?"
+      ],
+      [
+        "寻找物品",
+        "What did you leave behind?",
+        "落下什么了？",
+        "I think I left a phone charger in the room.",
+        "我可能把手机充电器落房间了。",
+        "I think 表示不完全确定；补充房号和离店时间。",
+        "换咖啡店，说明可能落下围巾。",
+        "I think I left a scarf here."
+      ],
+      [
+        "核对取回方式",
+        "We’ve found it.",
+        "我们找到了。",
+        "Can I collect it later today?",
+        "今天晚点可以来取吗？",
+        "collect 在此是取回；邮寄等安排应再问费用。",
+        "换景点失物处，询问明天取回。",
+        "Can I collect it tomorrow?"
+      ]
+    ],
+    "grammar": [
+      [
+        "问收费的用途",
+        "What is this charge for?",
+        "for 在这里问用途或对应服务。先用 explain 或 check 请求说明，再用 I didn’t use… 描述自己确认的情况，避免直接指责。",
+        "Could you check this minibar charge?",
+        "可以核对这笔迷你吧收费吗？",
+        "不要把所有 unfamiliar charges 直接称为错误，先确认项目。"
+      ],
+      [
+        "收据与明细",
+        "receipt / itemised bill",
+        "receipt 主要证明支付，itemised bill 列出项目。是否需要公司抬头、地址等信息，可根据自己的需要询问；不必把真实隐私写进课程练习。",
+        "Could I have a receipt and a breakdown of the charges?",
+        "请给我收据和收费明细。",
+        "账单和已付款凭证的功能不同，要说明自己的需求。"
+      ],
+      [
+        "可能落下与确定遗失",
+        "I think I left… / I’ve lost…",
+        "left 表示把物品留在某地点；lost 是找不到，地点未必确定。说 I think I left it in room… 能帮助工作人员缩小查找范围。",
+        "I think I left my charger in the room this morning.",
+        "我可能今早把充电器落房间了。",
+        "不要为了套句型编造确定信息，用 I think 保留不确定性。"
+      ]
+    ],
+    "words": [
+      [
+        "check-out",
+        "退房",
+        "ˈtʃekaʊt",
+        "What time is check-out?"
+      ],
+      [
+        "bill",
+        "账单",
+        "bɪl",
+        "Could I see the bill?"
+      ],
+      [
+        "charge",
+        "收费项目",
+        "tʃɑːrdʒ",
+        "What is this charge for?"
+      ],
+      [
+        "itemised",
+        "逐项列明的",
+        "ˈaɪtəmaɪzd",
+        "Could I have an itemised bill?"
+      ],
+      [
+        "receipt",
+        "收据",
+        "rɪˈsiːt",
+        "Could I have a receipt?"
+      ],
+      [
+        "deposit",
+        "押金；保证金",
+        "dɪˈpɑːzɪt",
+        "When is the deposit released?"
+      ],
+      [
+        "minibar",
+        "客房迷你吧",
+        "ˈmɪnibɑːr",
+        "I didn’t use the minibar."
+      ],
+      [
+        "left behind",
+        "落下；遗留",
+        "left bɪˈhaɪnd",
+        "I left something behind."
+      ],
+      [
+        "charger",
+        "充电器",
+        "ˈtʃɑːrdʒər",
+        "I left my charger in the room."
+      ],
+      [
+        "collect",
+        "取回",
+        "kəˈlekt",
+        "Can I collect it today?"
+      ],
+      [
+        "breakdown",
+        "逐项明细",
+        "ˈbreɪkdaʊn",
+        "Could I see a breakdown?"
+      ],
+      [
+        "pending",
+        "处理中；待处理的",
+        "ˈpendɪŋ",
+        "The payment is still pending."
+      ],
+      [
+        "release",
+        "解除；释放",
+        "rɪˈliːs",
+        "When will it be released?"
+      ],
+      [
+        "lost property",
+        "失物",
+        "lɔːst ˈprɑːpərti",
+        "Is there a lost property desk?"
+      ],
+      [
+        "postage",
+        "邮寄费",
+        "ˈpoʊstɪdʒ",
+        "How much would postage cost?"
+      ],
+      [
+        "confirmation",
+        "确认信息",
+        "ˌkɑːnfərˈmeɪʃən",
+        "Could you send confirmation?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "是的，能看一下最终账单吗？；能解释这笔钱收的是什么吗？。请按现场情况自己组织英语。",
+        "Yes. Could I see the final bill, please?\nCould you explain what this charge is for?",
+        "办理退房；不认识的收费"
+      ],
+      [
+        "确认条件与选择",
+        "也能给一份逐项明细吗？；大概什么时候能解除？。请按现场情况自己组织英语。",
+        "Could I have an itemised bill as well?\nWhen should I expect it to be released?",
+        "需要费用明细；退还押金安排"
+      ],
+      [
+        "处理变化与收尾",
+        "我可能把手机充电器落房间了。；今天晚点可以来取吗？。请按现场情况自己组织英语。",
+        "I think I left a phone charger in the room.\nCan I collect it later today?",
+        "寻找物品；核对取回方式"
+      ]
+    ],
+    "transfer": [
+      "换到公寓接待处",
+      "退房账单含 cleaning fee。你问费用对应什么并要明细；之后发现可能落下相机充电器，询问能否次日取回。",
+      "What is the cleaning fee for? Could I have an itemised bill? I think I left my camera charger in the apartment. Can I collect it tomorrow?",
+      "费用用途；明细；物品；取回时间"
+    ],
+    "extra": [
+      "A breakdown of the charges",
+      "收费的逐项明细，不是在说设备坏了。",
+      "Could I have a breakdown of the charges?"
+    ],
+    "choices": [
+      [
+        "付款证明还是收费明细",
+        "Could I have a receipt?",
+        "Could I have an itemised bill?",
+        "前者证明付款，后者看逐项收费。"
+      ],
+      [
+        "落下还是确定丢失",
+        "I think I left it in the room.",
+        "I’ve lost it.",
+        "知道可能地点时说明地点，查找更具体。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "airport-departure",
+    "title": "机场出发与登机",
+    "en": "Flying out",
+    "group": "交通",
+    "intro": "值机、托运行李、选座，听懂登机口与时间变化。",
+    "context": "你准备搭乘国际航班，需托运一个箱子，想选靠过道的位置。安检后登机口改变，需要核对新的位置和登机时间。",
+    "exchanges": [
+      [
+        "办理值机",
+        "Where are you flying to today?",
+        "今天飞哪里？",
+        "I’m flying to Harbour City. Here’s my booking.",
+        "我去 Harbour City，这是预订信息。",
+        "目的地、姓名和证件按真实情况回答，示例只是练习。",
+        "换一个目的地，说明去 Lakeside。",
+        "I’m flying to Lakeside."
+      ],
+      [
+        "托运行李",
+        "Are you checking any bags?",
+        "有行李托运吗？",
+        "Yes, one suitcase. Is it within the allowance?",
+        "有，一个箱子，在额度内吗？",
+        "check a bag 是托运，不是仅检查箱子。",
+        "换航空公司，问两件是否在额度内。",
+        "Are these two bags within the allowance?"
+      ],
+      [
+        "选择座位",
+        "Window or aisle?",
+        "靠窗还是过道？",
+        "An aisle seat, if one is available, please.",
+        "有的话请给过道座位。",
+        "if available 表示有空位时的偏好，不默认能免费换。",
+        "换长途巴士，请选靠窗。",
+        "A window seat, if available, please."
+      ],
+      [
+        "登机信息",
+        "Boarding starts at six.",
+        "六点开始登机。",
+        "Which gate should I go to?",
+        "去哪个登机口？",
+        "登机时间和起飞时间不同，分别核对。",
+        "换班机，问登机口。",
+        "Which gate should I go to?"
+      ],
+      [
+        "登机口变更",
+        "The gate has changed.",
+        "登机口变了。",
+        "Could you confirm the new gate number?",
+        "能确认新的登机口号吗？",
+        "new 明确要更新后的信息。",
+        "换列车，问新站台。",
+        "Could you confirm the new platform number?"
+      ],
+      [
+        "时间推迟",
+        "The flight is delayed.",
+        "航班延误了。",
+        "When should I come back for boarding?",
+        "应该什么时候回来登机？",
+        "问下一步行动时间，不把延误直接理解成取消。",
+        "换航班，问现在何时开始登机。",
+        "What time will boarding start now?"
+      ]
+    ],
+    "grammar": [
+      [
+        "托运还是随身携带",
+        "check a bag / carry-on baggage",
+        "checked baggage 交给航空公司托运；carry-on 带上客舱。具体额度以你的票和航空公司说明为准，问 allowance 可核对当前订单。",
+        "Is this included in my baggage allowance?",
+        "这个包含在行李额度内吗？",
+        "不要用 check in my bag 表示单纯查看里面物品。"
+      ],
+      [
+        "登机与起飞",
+        "boarding / departure",
+        "boarding 是上机过程，departure 是离开或起飞。登机口关闭也可能早于起飞；听到时间时，应确认它对应哪个环节。",
+        "Is that the boarding time or the departure time?",
+        "这是登机时间还是起飞时间？",
+        "不要只记一个数字而忽略对应事件。"
+      ],
+      [
+        "礼貌表达座位偏好",
+        "if one is available",
+        "one 指一个座位，if 表示有条件满足。也可问 Is there an extra charge?，确认更换是否收费。",
+        "Could I have an aisle seat if one is available?",
+        "如果有空位，能选过道座位吗？",
+        "偏好请求不代表座位安排已经确认。"
+      ]
+    ],
+    "words": [
+      [
+        "check-in",
+        "值机",
+        "ˈtʃekɪn",
+        "Where is check-in?"
+      ],
+      [
+        "baggage",
+        "行李",
+        "ˈbæɡɪdʒ",
+        "Is baggage included?"
+      ],
+      [
+        "allowance",
+        "允许额度",
+        "əˈlaʊəns",
+        "What is my baggage allowance?"
+      ],
+      [
+        "carry-on",
+        "随身行李",
+        "ˈkæri ɑːn",
+        "Can I take this as carry-on?"
+      ],
+      [
+        "aisle",
+        "过道",
+        "aɪl",
+        "An aisle seat, please."
+      ],
+      [
+        "window seat",
+        "靠窗座位",
+        "ˈwɪndoʊ siːt",
+        "Is a window seat available?"
+      ],
+      [
+        "boarding pass",
+        "登机牌",
+        "ˈbɔːrdɪŋ pæs",
+        "Here is my boarding pass."
+      ],
+      [
+        "gate",
+        "登机口",
+        "ɡeɪt",
+        "Which gate do I need?"
+      ],
+      [
+        "boarding",
+        "登机",
+        "ˈbɔːrdɪŋ",
+        "When does boarding start?"
+      ],
+      [
+        "delayed",
+        "延误的",
+        "dɪˈleɪd",
+        "Is the flight delayed?"
+      ],
+      [
+        "departure",
+        "出发；起飞",
+        "dɪˈpɑːrtʃər",
+        "What’s the departure time?"
+      ],
+      [
+        "connection",
+        "中转衔接",
+        "kəˈnekʃən",
+        "Will I miss my connection?"
+      ],
+      [
+        "overweight",
+        "超重的",
+        "ˌoʊvərˈweɪt",
+        "Is the suitcase overweight?"
+      ],
+      [
+        "baggage drop",
+        "行李托运交付处",
+        "ˈbæɡɪdʒ drɑːp",
+        "Where is the baggage drop?"
+      ],
+      [
+        "tray",
+        "安检托盘",
+        "treɪ",
+        "Do I need another tray?"
+      ],
+      [
+        "announcement",
+        "广播通知",
+        "əˈnaʊnsmənt",
+        "Could you repeat the announcement?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "我去 Harbour City，这是预订信息。；有，一个箱子，在额度内吗？。请按现场情况自己组织英语。",
+        "I’m flying to Harbour City. Here’s my booking.\nYes, one suitcase. Is it within the allowance?",
+        "办理值机；托运行李"
+      ],
+      [
+        "确认条件与选择",
+        "有的话请给过道座位。；去哪个登机口？。请按现场情况自己组织英语。",
+        "An aisle seat, if one is available, please.\nWhich gate should I go to?",
+        "选择座位；登机信息"
+      ],
+      [
+        "处理变化与收尾",
+        "能确认新的登机口号吗？；应该什么时候回来登机？。请按现场情况自己组织英语。",
+        "Could you confirm the new gate number?\nWhen should I come back for boarding?",
+        "登机口变更；时间推迟"
+      ]
+    ],
+    "transfer": [
+      "换到转机机场",
+      "屏幕写 Flight 208: delayed; new gate pending。你要核对新登机口、何时返回，并问下一程衔接该如何处理。",
+      "Has the new gate been announced? When should I come back for boarding? I have a connecting flight. Who should I speak to about it?",
+      "登机口；时间；转机；求助人员"
+    ],
+    "extra": [
+      "Final call",
+      "最后登机通知，注意对应航班和登机口。",
+      "Is that the final call for flight 208?"
+    ],
+    "choices": [
+      [
+        "上机还是起飞",
+        "When does boarding start?",
+        "When does the flight depart?",
+        "询问的是两个环节，时间可能不同。"
+      ],
+      [
+        "托运还是带进客舱",
+        "I’d like to check this bag.",
+        "Can I take this as carry-on?",
+        "说明你希望的行李处理方式。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "airport-arrival",
+    "title": "抵达机场与行李问题",
+    "en": "After landing",
+    "group": "交通",
+    "intro": "真实回答抵达询问，找行李、描述未到的箱子，再离开机场。",
+    "context": "抵达后你要确认行李转盘。箱子没有出现，需要说明航班、外观和行李牌信息，再找机场接驳车。",
+    "exchanges": [
+      [
+        "说明行程",
+        "What is the purpose of your visit?",
+        "此行目的是什么？",
+        "I’m here for a short holiday.",
+        "我来短期旅游。",
+        "仅在符合实际情况时使用；回答真实行程，不背与自己不符的信息。",
+        "真实行程是探亲时如何说？",
+        "I’m here to visit family."
+      ],
+      [
+        "入住信息",
+        "Where will you be staying?",
+        "住在哪里？",
+        "I’m staying at the Riverside Hotel.",
+        "我住 Riverside Hotel。",
+        "给出自己实际预订的信息，必要时出示确认。",
+        "换一个预订，说明住 Central Hotel。",
+        "I’m staying at the Central Hotel."
+      ],
+      [
+        "找行李转盘",
+        "Which flight were you on?",
+        "哪趟航班？",
+        "Flight 208. Which carousel should I go to?",
+        "208航班，去哪个转盘？",
+        "carousel 在机场行李区指转盘。",
+        "换航班，问哪条转盘。",
+        "Which carousel is for flight 315?"
+      ],
+      [
+        "行李没到",
+        "Has your bag arrived?",
+        "箱子到了吗？",
+        "No. My suitcase hasn’t arrived.",
+        "没有，箱子还没到。",
+        "hasn’t arrived 描述尚未到，不先断言永久丢失。",
+        "换接驳车，说明行李未到。",
+        "My suitcase hasn’t arrived."
+      ],
+      [
+        "描述箱子",
+        "Can you describe it?",
+        "能描述一下吗？",
+        "It’s a blue suitcase with a red strap.",
+        "蓝色箱子，带红色绑带。",
+        "颜色、形状和明显特征有助于核对。",
+        "换失物处，描述黑色背包。",
+        "It’s a black backpack with a yellow tag."
+      ],
+      [
+        "离开机场",
+        "Where are you heading?",
+        "准备去哪里？",
+        "Where can I catch the airport shuttle?",
+        "哪里能坐机场接驳车？",
+        "catch 在这里表示乘车，不是抓住车。",
+        "换酒店，问接驳车在哪上。",
+        "Where can I catch the hotel shuttle?"
+      ]
+    ],
+    "grammar": [
+      [
+        "诚实描述自己的行程",
+        "I’m here for… / I’m staying at…",
+        "for 后说明目的或时长，at 后给具体住宿地点。先确认问的是哪一个问题，再用真实信息简短回答；这些是表达练习，不是入境资格说明。",
+        "I’m here for five days.",
+        "我在这里待五天。",
+        "purpose 问目的，how long 问时长，两者不要混答。"
+      ],
+      [
+        "未到与丢失",
+        "hasn’t arrived / is missing",
+        "hasn’t arrived 说明截至现在尚未收到；missing 指找不到。先报航班与行李牌，再描述物品。处理方式需与航空公司确认。",
+        "Here is my baggage tag. My suitcase hasn’t arrived.",
+        "这是行李牌，我的箱子还没到。",
+        "不要只说 I lost it 而省略是托运行李未到这一情境。"
+      ],
+      [
+        "描述明显特征",
+        "a blue suitcase with…",
+        "with 在这里表示带有某特征。颜色和绑带比“普通箱子”更具体；也可以用照片帮助核对。",
+        "It has four wheels and a red strap.",
+        "它有四个轮子和红色绑带。",
+        "with 表示特征，不等于箱子里面装着该物品。"
+      ]
+    ],
+    "words": [
+      [
+        "arrival",
+        "抵达",
+        "əˈraɪvəl",
+        "Where is the arrivals hall?"
+      ],
+      [
+        "purpose",
+        "目的",
+        "ˈpɜːrpəs",
+        "The purpose is tourism."
+      ],
+      [
+        "stay",
+        "停留；住宿",
+        "steɪ",
+        "I’m staying for five days."
+      ],
+      [
+        "carousel",
+        "行李转盘",
+        "ˌkærəˈsel",
+        "Which carousel is for this flight?"
+      ],
+      [
+        "baggage claim",
+        "行李领取区",
+        "ˈbæɡɪdʒ kleɪm",
+        "Where is baggage claim?"
+      ],
+      [
+        "suitcase",
+        "行李箱",
+        "ˈsuːtkeɪs",
+        "My suitcase hasn’t arrived."
+      ],
+      [
+        "strap",
+        "绑带",
+        "stræp",
+        "It has a red strap."
+      ],
+      [
+        "baggage tag",
+        "行李托运牌",
+        "ˈbæɡɪdʒ tæɡ",
+        "Here is my baggage tag."
+      ],
+      [
+        "missing",
+        "找不到的",
+        "ˈmɪsɪŋ",
+        "My bag is missing."
+      ],
+      [
+        "shuttle",
+        "接驳车",
+        "ˈʃʌtəl",
+        "Where is the shuttle stop?"
+      ],
+      [
+        "terminal",
+        "航站楼",
+        "ˈtɜːrmɪnəl",
+        "Which terminal do I need?"
+      ],
+      [
+        "transfer",
+        "换乘；接送",
+        "ˈtrænsfɜːr",
+        "Where is the transfer desk?"
+      ],
+      [
+        "customs",
+        "海关",
+        "ˈkʌstəmz",
+        "Where is the customs desk?"
+      ],
+      [
+        "declare",
+        "申报",
+        "dɪˈkler",
+        "Where can I ask what to declare?"
+      ],
+      [
+        "delivery",
+        "递送",
+        "dɪˈlɪvəri",
+        "How is delivery arranged?"
+      ],
+      [
+        "reference number",
+        "查询编号",
+        "ˈrefərəns ˈnʌmbər",
+        "Could I have a reference number?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "我来短期旅游。；我住 Riverside Hotel。。请按现场情况自己组织英语。",
+        "I’m here for a short holiday.\nI’m staying at the Riverside Hotel.",
+        "说明行程；入住信息"
+      ],
+      [
+        "确认条件与选择",
+        "208航班，去哪个转盘？；没有，箱子还没到。。请按现场情况自己组织英语。",
+        "Flight 208. Which carousel should I go to?\nNo. My suitcase hasn’t arrived.",
+        "找行李转盘；行李没到"
+      ],
+      [
+        "处理变化与收尾",
+        "蓝色箱子，带红色绑带。；哪里能坐机场接驳车？。请按现场情况自己组织英语。",
+        "It’s a blue suitcase with a red strap.\nWhere can I catch the airport shuttle?",
+        "描述箱子；离开机场"
+      ]
+    ],
+    "transfer": [
+      "换到行李服务台",
+      "你的黑色硬壳箱未到，带黄色行李牌；工作人员需要航班信息。请描述并询问后续查询方式。",
+      "I was on flight 315. My black hard-shell suitcase with a yellow tag hasn’t arrived. Here is the baggage tag. How can I check for updates?",
+      "航班；外观；凭证；后续查询"
+    ],
+    "extra": [
+      "Heading to…",
+      "准备去某地，不是只问头朝哪里。",
+      "I’m heading to the city centre."
+    ],
+    "choices": [
+      [
+        "目的还是时长",
+        "I’m here for a holiday.",
+        "I’m here for five days.",
+        "同样用 for，但后接内容不同，回答的问题不同。"
+      ],
+      [
+        "行李未到还是自行落下",
+        "My checked bag hasn’t arrived.",
+        "I left my bag in the café.",
+        "前者找航空行李服务，后者先联系物品所在地。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "taxi",
+    "title": "出租车与网约车",
+    "en": "Finding your ride",
+    "group": "交通",
+    "intro": "确认司机和车辆，找到上车点，说明目的地与下车位置。",
+    "context": "你在机场叫了网约车，定位把你带到不同出口。你要联系司机、确认车牌，说明自己有两个箱子，并在酒店门口下车。",
+    "exchanges": [
+      [
+        "确认订单",
+        "Are you waiting for a ride?",
+        "在等车吗？",
+        "Is this the booking for Alex?",
+        "这是 Alex 的订单吗？",
+        "用自己的实际订单和应用信息核对，不凭一个名字就确定车辆。",
+        "换预订，核对 Jordan 的订单。",
+        "Is this the booking for Jordan?"
+      ],
+      [
+        "找到上车点",
+        "I’m at the pick-up area.",
+        "我在上车区。",
+        "Which exit are you near?",
+        "你靠近哪个出口？",
+        "near 给相对位置；出口号和明显标志能减少误会。",
+        "换酒店，问在哪个门附近。",
+        "Which entrance are you near?"
+      ],
+      [
+        "说明行李",
+        "How much luggage do you have?",
+        "有多少行李？",
+        "Two suitcases. Is there room in the boot?",
+        "两个箱子，后备箱放得下吗？",
+        "boot 常见英式；美式常用 trunk。",
+        "换车辆，说明一个大箱子。",
+        "Is there room for one large suitcase?"
+      ],
+      [
+        "确认目的地",
+        "Where would you like to go?",
+        "去哪里？",
+        "The Riverside Hotel, at this address.",
+        "去 Riverside Hotel，地址在这里。",
+        "同名地点可能多个，结合地址核对。",
+        "换地点，说明去博物馆这个地址。",
+        "The museum at this address, please."
+      ],
+      [
+        "沟通停车位置",
+        "Is this the right entrance?",
+        "是这个入口吗？",
+        "Could you drop me off by the main entrance?",
+        "能在主入口附近让我下吗？",
+        "by 是附近；实际停车位置仍要由司机确认可行。",
+        "换景点，在售票处附近下。",
+        "Could you drop me off near the ticket office?"
+      ],
+      [
+        "车费与收据",
+        "Would you like a receipt?",
+        "要收据吗？",
+        "Yes, please. Is the fare already paid through the app?",
+        "要，车费已经通过应用付了吗？",
+        "先核对是否已支付，避免重复付款。",
+        "换预订，核对是否预付。",
+        "Has the fare already been paid?"
+      ]
+    ],
+    "grammar": [
+      [
+        "接人和送达",
+        "pick me up / drop me off",
+        "pick up 接上乘客，drop off 送达下车。代词 me 放在中间。先说清是哪一个环节，再给具体地点。",
+        "Could you pick me up at exit three?",
+        "能在3号出口接我吗？",
+        "说 pick me up，不说 pick up me。"
+      ],
+      [
+        "相对位置",
+        "by / near / opposite",
+        "by 和 near 表示附近，opposite 表示对面。地标、出口和门牌可以组合说明；不确定时请对方描述看到的标志。",
+        "I’m opposite the main entrance.",
+        "我在主入口对面。",
+        "只说 outside 往往范围太大，最好加出口或地标。"
+      ],
+      [
+        "已经付款还是应付金额",
+        "Has it been paid? / How much is the fare?",
+        "前句问支付状态，后句问金额。应用订单、预付款与现金付款可能不同，先核对当前订单再行动。",
+        "Is payment handled through the app?",
+        "付款是在应用内完成吗？",
+        "有价格显示不一定表示已完成支付。"
+      ]
+    ],
+    "words": [
+      [
+        "booking",
+        "订单",
+        "ˈbʊkɪŋ",
+        "Is this my booking?"
+      ],
+      [
+        "pick-up",
+        "接人；上车",
+        "ˈpɪkʌp",
+        "Where is the pick-up point?"
+      ],
+      [
+        "drop-off",
+        "送达；下车",
+        "ˈdrɑːpɔːf",
+        "Where is the drop-off point?"
+      ],
+      [
+        "exit",
+        "出口",
+        "ˈeɡzɪt",
+        "I’m at exit three."
+      ],
+      [
+        "entrance",
+        "入口",
+        "ˈentrəns",
+        "Please use the main entrance."
+      ],
+      [
+        "boot",
+        "后备箱（英式）",
+        "buːt",
+        "Can I put this in the boot?"
+      ],
+      [
+        "trunk",
+        "后备箱（美式）",
+        "trʌŋk",
+        "Is there room in the trunk?"
+      ],
+      [
+        "fare",
+        "车费",
+        "fer",
+        "Is the fare already paid?"
+      ],
+      [
+        "number plate",
+        "车牌（英式）",
+        "ˈnʌmbər pleɪt",
+        "Could you confirm the number plate?"
+      ],
+      [
+        "receipt",
+        "收据",
+        "rɪˈsiːt",
+        "Could I have a receipt?"
+      ],
+      [
+        "landmark",
+        "地标",
+        "ˈlændmɑːrk",
+        "What landmark are you near?"
+      ],
+      [
+        "opposite",
+        "在对面",
+        "ˈɑːpəzɪt",
+        "I’m opposite the café."
+      ],
+      [
+        "detour",
+        "绕行",
+        "ˈdiːtʊr",
+        "Is there a detour?"
+      ],
+      [
+        "toll",
+        "通行费",
+        "toʊl",
+        "Are tolls included?"
+      ],
+      [
+        "waiting time",
+        "等候时间",
+        "ˈweɪtɪŋ taɪm",
+        "Is waiting time charged?"
+      ],
+      [
+        "destination",
+        "目的地",
+        "ˌdestɪˈneɪʃən",
+        "Could you check the destination?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "这是 Alex 的订单吗？；你靠近哪个出口？。请按现场情况自己组织英语。",
+        "Is this the booking for Alex?\nWhich exit are you near?",
+        "确认订单；找到上车点"
+      ],
+      [
+        "确认条件与选择",
+        "两个箱子，后备箱放得下吗？；去 Riverside Hotel，地址在这里。。请按现场情况自己组织英语。",
+        "Two suitcases. Is there room in the boot?\nThe Riverside Hotel, at this address.",
+        "说明行李；确认目的地"
+      ],
+      [
+        "处理变化与收尾",
+        "能在主入口附近让我下吗？；要，车费已经通过应用付了吗？。请按现场情况自己组织英语。",
+        "Could you drop me off by the main entrance?\nYes, please. Is the fare already paid through the app?",
+        "沟通停车位置；车费与收据"
+      ]
+    ],
+    "transfer": [
+      "换到车站接客区",
+      "司机说在北出口，你在南出口，带一个大箱子。请核对车辆，并说明希望去的酒店地址。",
+      "I’m at the south exit. Could you confirm the car and number plate? I have one large suitcase. I’m going to the hotel at this address.",
+      "出口；车辆；行李；地址"
+    ],
+    "extra": [
+      "Right here is fine",
+      "在这里下就可以；仍需由司机确认可停车。",
+      "Right here is fine, thank you."
+    ],
+    "choices": [
+      [
+        "接我还是送我下车",
+        "Could you pick me up here?",
+        "Could you drop me off here?",
+        "方向相反，代词放短语中间。"
+      ],
+      [
+        "金额还是支付状态",
+        "How much is the fare?",
+        "Has the fare been paid?",
+        "问费用和问是否已付是两个问题。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "coach",
+    "title": "长途巴士",
+    "en": "Taking a coach",
+    "group": "交通",
+    "intro": "买票、找发车口、托放行李，确认途中停靠与返回安排。",
+    "context": "你乘长途巴士去海边，需要找正确发车位和行李舱。途中有休息停靠，你要确认多久后回来。",
+    "exchanges": [
+      [
+        "买票",
+        "Single or return?",
+        "单程还是往返？",
+        "A return to Harbour Town, please.",
+        "去 Harbour Town 的往返票。",
+        "英式 coach 通常指长途巴士；当地名称以运营方为准。",
+        "换目的地，买去 Lakeside 的单程。",
+        "A single to Lakeside, please."
+      ],
+      [
+        "找发车位",
+        "It leaves from bay six.",
+        "从6号发车位发车。",
+        "Where is bay six?",
+        "6号发车位在哪里？",
+        "bay 在客运站常指停靠发车位，不是海湾。",
+        "换站点，问4号位。",
+        "Where is bay four?"
+      ],
+      [
+        "放行李",
+        "Large bags go underneath.",
+        "大件行李放下面。",
+        "Should I put this suitcase in the luggage hold?",
+        "箱子放行李舱吗？",
+        "should I 在这里向工作人员确认操作安排。",
+        "换车辆，确认背包能否随身。",
+        "Can I keep this backpack with me?"
+      ],
+      [
+        "核对停靠",
+        "There’s a stop on the way.",
+        "途中会停一次。",
+        "How long is the stop, and when should we be back?",
+        "停多久，何时回来？",
+        "停靠时长与返回时刻都要问清楚。",
+        "换旅游巴士，问返回时间。",
+        "What time should we be back?"
+      ],
+      [
+        "座位问题",
+        "Do you have a seat number?",
+        "有座位号吗？",
+        "I do, but someone is sitting in my seat.",
+        "有，但有人坐在我的座位上。",
+        "先向工作人员说明，再核对票，不必直接争执。",
+        "换火车，说明座位被占。",
+        "Someone is sitting in my reserved seat."
+      ],
+      [
+        "改乘安排",
+        "This departure has been cancelled.",
+        "这班取消了。",
+        "Can I use my ticket on the next coach?",
+        "原票能坐下一班吗？",
+        "需要确认该票和替代班次的安排。",
+        "换轮渡，问是否能乘下一班。",
+        "Can I use my ticket on the next ferry?"
+      ]
+    ],
+    "grammar": [
+      [
+        "发车位与站台",
+        "bay / platform",
+        "巴士站常见 bay，火车常见 platform。都是现场位置标签，优先复述工作人员给的编号，不必强行用自己的熟悉词替换。",
+        "Which bay does the coach leave from?",
+        "巴士从哪个发车位出发？",
+        "bus stop 可能是街边站牌，不一定指长途客运站。"
+      ],
+      [
+        "随身还是行李舱",
+        "with me / in the luggage hold",
+        "with me 表示自己保管随身带着；in the luggage hold 表示放到车的行李舱。能否随身及数量限制需要向运营方确认。",
+        "Can I keep this small bag with me?",
+        "这个小包可以随身带吗？",
+        "underneath 需要结合车辆和工作人员指示，不自行猜位置。"
+      ],
+      [
+        "停多久与何时返回",
+        "How long…? / What time…?",
+        "how long 问持续时长，what time 问时刻。休息停车时，两者结合能避免只听到“十五分钟”却不确定从何时算。",
+        "What time do we need to be back on board?",
+        "几点前需要回到车上？",
+        "停靠时间不一定是离开车站后的自由活动时长。"
+      ]
+    ],
+    "words": [
+      [
+        "coach",
+        "长途巴士",
+        "koʊtʃ",
+        "Which coach goes to Harbour Town?"
+      ],
+      [
+        "bay",
+        "发车位",
+        "beɪ",
+        "Where is bay six?"
+      ],
+      [
+        "departure",
+        "发车班次",
+        "dɪˈpɑːrtʃər",
+        "Has this departure been cancelled?"
+      ],
+      [
+        "return",
+        "往返票",
+        "rɪˈtɜːrn",
+        "A return ticket, please."
+      ],
+      [
+        "luggage hold",
+        "行李舱",
+        "ˈlʌɡɪdʒ hoʊld",
+        "Does this go in the luggage hold?"
+      ],
+      [
+        "seat number",
+        "座位号",
+        "siːt ˈnʌmbər",
+        "What’s my seat number?"
+      ],
+      [
+        "on board",
+        "在车上",
+        "ɑːn bɔːrd",
+        "When should we be back on board?"
+      ],
+      [
+        "rest stop",
+        "休息停靠",
+        "rest stɑːp",
+        "How long is the rest stop?"
+      ],
+      [
+        "cancelled",
+        "已取消的",
+        "ˈkænsəld",
+        "My coach has been cancelled."
+      ],
+      [
+        "valid",
+        "有效；适用的",
+        "ˈvælɪd",
+        "Is this ticket still valid?"
+      ],
+      [
+        "terminal",
+        "客运总站",
+        "ˈtɜːrmɪnəl",
+        "Which terminal do I need?"
+      ],
+      [
+        "aisle",
+        "过道",
+        "aɪl",
+        "Could I have an aisle seat?"
+      ],
+      [
+        "recline",
+        "后仰",
+        "rɪˈklaɪn",
+        "Can this seat recline?"
+      ],
+      [
+        "transfer",
+        "换车",
+        "ˈtrænsfɜːr",
+        "Do I need to transfer?"
+      ],
+      [
+        "timetable",
+        "时刻表",
+        "ˈtaɪmteɪbəl",
+        "Is there a timetable?"
+      ],
+      [
+        "boarding point",
+        "上车点",
+        "ˈbɔːrdɪŋ pɔɪnt",
+        "Where is the boarding point?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "去 Harbour Town 的往返票。；6号发车位在哪里？。请按现场情况自己组织英语。",
+        "A return to Harbour Town, please.\nWhere is bay six?",
+        "买票；找发车位"
+      ],
+      [
+        "确认条件与选择",
+        "箱子放行李舱吗？；停多久，何时回来？。请按现场情况自己组织英语。",
+        "Should I put this suitcase in the luggage hold?\nHow long is the stop, and when should we be back?",
+        "放行李；核对停靠"
+      ],
+      [
+        "处理变化与收尾",
+        "有，但有人坐在我的座位上。；原票能坐下一班吗？。请按现场情况自己组织英语。",
+        "I do, but someone is sitting in my seat.\nCan I use my ticket on the next coach?",
+        "座位问题；改乘安排"
+      ]
+    ],
+    "transfer": [
+      "换到一日游巴士",
+      "确认邮件写 Meet at bay 4 / one suitcase in the hold。你问4号位在哪里，确认箱子放法，并询问休息停靠的返回时刻。",
+      "Where is bay four? Should I put my suitcase in the luggage hold? What time should we be back after the rest stop?",
+      "发车位；行李；返回时刻"
+    ],
+    "extra": [
+      "Back on board",
+      "回到车上，用于休息停靠之后。",
+      "Please be back on board by two."
+    ],
+    "choices": [
+      [
+        "时长还是时刻",
+        "How long is the stop?",
+        "What time should we be back?",
+        "分别问停多久和具体返回时刻。"
+      ],
+      [
+        "在车上还是已到车旁",
+        "I’m on board.",
+        "I’m waiting beside the coach.",
+        "描述位置时区分是否已上车。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "attractions",
+    "title": "景点、博物馆与展览",
+    "en": "Visiting an attraction",
+    "group": "游玩购物",
+    "intro": "选择票种、核对时段，询问包含项目、寄存与讲解服务。",
+    "context": "你预约了博物馆普通入场，想看另收费的特展。你提前到达，还带着背包，需要确认入场时间和寄存安排。",
+    "exchanges": [
+      [
+        "核对预约",
+        "Have you booked a time slot?",
+        "预约时段了吗？",
+        "Yes, I have a booking for two o’clock.",
+        "有，预约了两点。",
+        "for two o’clock 对应预订时刻，不是停留两个小时。",
+        "换景点，说明三点预约。",
+        "I have a booking for three o’clock."
+      ],
+      [
+        "票包含什么",
+        "General admission or the exhibition?",
+        "普通入场还是特展？",
+        "Does this ticket include the special exhibition?",
+        "这张票包含特展吗？",
+        "general admission 未必包含所有另收费展览。",
+        "换景点，问是否含观景台。",
+        "Does this ticket include the viewing deck?"
+      ],
+      [
+        "提前到达",
+        "Your slot is a little later.",
+        "你的时段还没到。",
+        "Can we enter early, or should we wait?",
+        "可以提前入场，还是需要等？",
+        "给出两种可能，不默认工作人员能通融。",
+        "换预约活动，询问提前开始。",
+        "Can we start early, or should we wait?"
+      ],
+      [
+        "寄存物品",
+        "Large bags aren’t allowed inside.",
+        "大包不能带入内。",
+        "Are there lockers for this backpack?",
+        "有寄存这个背包的柜子吗？",
+        "问具体物品和服务，不猜大小限制。",
+        "换美术馆，问存包处。",
+        "Is there somewhere to leave this bag?"
+      ],
+      [
+        "询问讲解",
+        "Would you like an audio guide?",
+        "需要语音讲解吗？",
+        "Is there an English audio guide, and is it included?",
+        "有英文讲解吗，已包含费用吗？",
+        "语言、提供方式和收费分开确认。",
+        "换景点，问中文讲解。",
+        "Is there a Chinese audio guide?"
+      ],
+      [
+        "离开后再进入",
+        "Are you leaving now?",
+        "现在离开吗？",
+        "Can we come back in with the same ticket?",
+        "同一张票可以再次入场吗？",
+        "re-entry 安排以该票和场馆为准。",
+        "换主题公园，问同日重入。",
+        "Is same-day re-entry allowed?"
+      ]
+    ],
+    "grammar": [
+      [
+        "预约几点与多久",
+        "a booking for two / for two hours",
+        "for two o’clock 指预约时刻；for two hours 指持续两小时。购票时留意后面的单位，不只听数字。",
+        "Our booking is for two o’clock.",
+        "我们预约在两点。",
+        "for two 也可能表示两个人，必要时补清楚人数或时间。"
+      ],
+      [
+        "票种与包含项目",
+        "admission / include",
+        "admission 指入场资格；include 指还涵盖什么。普通入场、特展和导览可能分开销售，用具体项目核对。",
+        "Is the guided tour included in admission?",
+        "入场票含导览吗？",
+        "free admission 不自动说明所有服务免费。"
+      ],
+      [
+        "许可与再次入场",
+        "Can we…? / Is…allowed?",
+        "Can we come back in? 问能否重新进入；Is re-entry allowed? 更概括地问规则。保留票据是否足够，需要听现场说明。",
+        "Can we leave for lunch and come back?",
+        "能出去吃午饭再回来吗？",
+        "不要仅凭票上没有写就认定可以重入。"
+      ]
+    ],
+    "words": [
+      [
+        "admission",
+        "入场资格；门票",
+        "ədˈmɪʃən",
+        "Is admission included?"
+      ],
+      [
+        "time slot",
+        "预约时段",
+        "taɪm slɑːt",
+        "Which time slot is available?"
+      ],
+      [
+        "exhibition",
+        "展览",
+        "ˌeksɪˈbɪʃən",
+        "Is the exhibition included?"
+      ],
+      [
+        "gallery",
+        "展厅；画廊",
+        "ˈɡæləri",
+        "Where is the main gallery?"
+      ],
+      [
+        "audio guide",
+        "语音讲解",
+        "ˈɔːdioʊ ɡaɪd",
+        "Is there an audio guide?"
+      ],
+      [
+        "locker",
+        "寄存柜",
+        "ˈlɑːkər",
+        "Are lockers available?"
+      ],
+      [
+        "entrance",
+        "入口",
+        "ˈentrəns",
+        "Which entrance should we use?"
+      ],
+      [
+        "queue",
+        "队伍；排队",
+        "kjuː",
+        "Is this the right queue?"
+      ],
+      [
+        "re-entry",
+        "再次入场",
+        "ˌriːˈentri",
+        "Is re-entry allowed?"
+      ],
+      [
+        "included",
+        "已包含的",
+        "ɪnˈkluːdɪd",
+        "Is that included?"
+      ],
+      [
+        "concession",
+        "优惠票价",
+        "kənˈseʃən",
+        "Are there concession tickets?"
+      ],
+      [
+        "sold out",
+        "售罄",
+        "soʊld aʊt",
+        "Are all time slots sold out?"
+      ],
+      [
+        "cloakroom",
+        "衣帽寄存处",
+        "ˈkloʊkruːm",
+        "Where is the cloakroom?"
+      ],
+      [
+        "viewing deck",
+        "观景平台",
+        "ˈvjuːɪŋ dek",
+        "Does the ticket include the viewing deck?"
+      ],
+      [
+        "last entry",
+        "最后入场",
+        "læst ˈentri",
+        "What time is last entry?"
+      ],
+      [
+        "temporary",
+        "临时的；短期的",
+        "ˈtempəreri",
+        "Where is the temporary exhibition?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "有，预约了两点。；这张票包含特展吗？。请按现场情况自己组织英语。",
+        "Yes, I have a booking for two o’clock.\nDoes this ticket include the special exhibition?",
+        "核对预约；票包含什么"
+      ],
+      [
+        "确认条件与选择",
+        "可以提前入场，还是需要等？；有寄存这个背包的柜子吗？。请按现场情况自己组织英语。",
+        "Can we enter early, or should we wait?\nAre there lockers for this backpack?",
+        "提前到达；寄存物品"
+      ],
+      [
+        "处理变化与收尾",
+        "有英文讲解吗，已包含费用吗？；同一张票可以再次入场吗？。请按现场情况自己组织英语。",
+        "Is there an English audio guide, and is it included?\nCan we come back in with the same ticket?",
+        "询问讲解；离开后再进入"
+      ]
+    ],
+    "transfer": [
+      "换到观景塔",
+      "菜单列 General entry / Sunset slot / Audio guide extra。你想订日落时段，问普通票是否适用、讲解另收多少，以及是否可以再次进入。",
+      "Is a general entry ticket valid for the sunset slot? How much extra is the audio guide? Is re-entry allowed?",
+      "票适用时段；服务费用；重入"
+    ],
+    "extra": [
+      "Last entry",
+      "最后允许入场的时间，可能早于闭馆。",
+      "What time is last entry?"
+    ],
+    "choices": [
+      [
+        "入场时刻还是闭馆时刻",
+        "What time is last entry?",
+        "What time do you close?",
+        "最后入场和闭馆不是同一时间。"
+      ],
+      [
+        "票种还是人数",
+        "Two general admission tickets.",
+        "Two exhibition tickets.",
+        "同样两张票，包含内容可能不同。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "guided-tours",
+    "title": "导览与一日游",
+    "en": "Joining a guided tour",
+    "group": "游玩购物",
+    "intro": "找集合点、核对行程，途中提问并记清返回时间。",
+    "context": "你报名半日步行导览，集合点有两组人。途中安排自由活动，最后可选择在市中心结束或跟团返回。",
+    "exchanges": [
+      [
+        "找对队伍",
+        "Which tour are you joining?",
+        "参加哪条导览？",
+        "Is this the historic city walking tour?",
+        "这是古城步行导览吗？",
+        "核对名称和时间，不只看有人排队就加入。",
+        "换巴士游，核对海岸线路。",
+        "Is this the coastal bus tour?"
+      ],
+      [
+        "确认集合位置",
+        "Meet by the fountain.",
+        "在喷泉旁集合。",
+        "Which side of the fountain should we meet on?",
+        "喷泉哪一侧集合？",
+        "大地标仍可能有多个入口或方位，继续缩小范围。",
+        "换车站，问在哪个入口。",
+        "Which entrance should we meet at?"
+      ],
+      [
+        "确认包含项目",
+        "Lunch is not included.",
+        "不含午餐。",
+        "Which stops and tickets are included?",
+        "包含哪些停靠点和门票？",
+        "行程到访和票价包含是两回事。",
+        "换一日游，问是否含船票。",
+        "Is the boat ticket included?"
+      ],
+      [
+        "没听清讲解",
+        "Any questions?",
+        "有问题吗？",
+        "Could you repeat the name of that building?",
+        "能重复建筑的名称吗？",
+        "定位要重复的信息，不必要求从头再讲。",
+        "换导览，问刚才年份。",
+        "Could you repeat the year you mentioned?"
+      ],
+      [
+        "自由活动后返回",
+        "You have some free time.",
+        "可以自由活动一会儿。",
+        "What time and where should we meet again?",
+        "几点、在哪里再次集合？",
+        "时间与地点一起确认，避免只记其中一项。",
+        "换团队活动，问下一次集合。",
+        "When and where should we meet again?"
+      ],
+      [
+        "结束地点",
+        "You can finish here or return with us.",
+        "可以在这里结束或跟我们返回。",
+        "Where does the tour finish if I stay with the group?",
+        "跟团的话最终在哪里结束？",
+        "finish 问终点，不是下一站。",
+        "换活动，问最终返回点。",
+        "Where do we return to at the end?"
+      ]
+    ],
+    "grammar": [
+      [
+        "集合的时间地点",
+        "meet at / meet by / meet again",
+        "at 后接具体集合点，by 表示某物附近，again 表示再次集合。大型地点最好问具体入口或哪一侧。",
+        "Shall we meet by the main entrance?",
+        "在主入口旁集合吗？",
+        "知道景点名称不等于已经知道具体集合位置。"
+      ],
+      [
+        "包含还是仅到访",
+        "include / stop at",
+        "stop at 说明行程会停靠；include the ticket 才明确票价内涵盖门票。需要自己购票时可继续询问地点和安排。",
+        "Do we stop there, and is entry included?",
+        "会在那里停靠吗，入场已包含吗？",
+        "不要把行程照片里的项目都视为已付费包含。"
+      ],
+      [
+        "请对方重复具体信息",
+        "repeat + 名词",
+        "repeat the name / time / meeting point 直接说明没听清哪一部分。Could you speak a little more slowly? 请求语速放慢，与重复是不同需求。",
+        "Could you repeat the meeting time more slowly?",
+        "能慢一点重复集合时间吗？",
+        "不要只答 yes；未理解集合安排时及时确认。"
+      ]
+    ],
+    "words": [
+      [
+        "guided tour",
+        "导览",
+        "ˈɡaɪdɪd tʊr",
+        "Is this the guided tour?"
+      ],
+      [
+        "meeting point",
+        "集合点",
+        "ˈmiːtɪŋ pɔɪnt",
+        "Where is the meeting point?"
+      ],
+      [
+        "guide",
+        "导游；讲解员",
+        "ɡaɪd",
+        "Who is our guide?"
+      ],
+      [
+        "itinerary",
+        "行程安排",
+        "aɪˈtɪnəreri",
+        "Could I see the itinerary?"
+      ],
+      [
+        "included",
+        "包含的",
+        "ɪnˈkluːdɪd",
+        "Which tickets are included?"
+      ],
+      [
+        "free time",
+        "自由活动时间",
+        "friː taɪm",
+        "How much free time do we have?"
+      ],
+      [
+        "return",
+        "返回",
+        "rɪˈtɜːrn",
+        "Where do we return to?"
+      ],
+      [
+        "fountain",
+        "喷泉",
+        "ˈfaʊntən",
+        "We’ll meet by the fountain."
+      ],
+      [
+        "repeat",
+        "重复",
+        "rɪˈpiːt",
+        "Could you repeat the name?"
+      ],
+      [
+        "group",
+        "团队",
+        "ɡruːp",
+        "I’ll stay with the group."
+      ],
+      [
+        "headset",
+        "耳机接收设备",
+        "ˈhedset",
+        "My headset isn’t working."
+      ],
+      [
+        "landmark",
+        "地标",
+        "ˈlændmɑːrk",
+        "What is that landmark called?"
+      ],
+      [
+        "departure",
+        "出发",
+        "dɪˈpɑːrtʃər",
+        "What time is departure?"
+      ],
+      [
+        "duration",
+        "持续时间",
+        "duˈreɪʃən",
+        "What is the duration?"
+      ],
+      [
+        "optional",
+        "可选的",
+        "ˈɑːpʃənəl",
+        "Is this stop optional?"
+      ],
+      [
+        "drop-off",
+        "下客点",
+        "ˈdrɑːpɔːf",
+        "Where is the final drop-off?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "这是古城步行导览吗？；喷泉哪一侧集合？。请按现场情况自己组织英语。",
+        "Is this the historic city walking tour?\nWhich side of the fountain should we meet on?",
+        "找对队伍；确认集合位置"
+      ],
+      [
+        "确认条件与选择",
+        "包含哪些停靠点和门票？；能重复建筑的名称吗？。请按现场情况自己组织英语。",
+        "Which stops and tickets are included?\nCould you repeat the name of that building?",
+        "确认包含项目；没听清讲解"
+      ],
+      [
+        "处理变化与收尾",
+        "几点、在哪里再次集合？；跟团的话最终在哪里结束？。请按现场情况自己组织英语。",
+        "What time and where should we meet again?\nWhere does the tour finish if I stay with the group?",
+        "自由活动后返回；结束地点"
+      ]
+    ],
+    "transfer": [
+      "换到海岸一日游",
+      "确认信息写 Meet at station west entrance / Boat ride optional / Return to city square。你核对西入口、船票是否另买，以及自由活动后几点集合。",
+      "Is the meeting point at the west entrance? Is the boat ticket included or extra? What time should we meet after the free time?",
+      "集合点；可选费用；返回集合"
+    ],
+    "extra": [
+      "Stick with the group",
+      "跟着团队，避免把它理解成粘住。",
+      "I’ll stick with the group."
+    ],
+    "choices": [
+      [
+        "多久还是何时结束",
+        "How long is the tour?",
+        "What time does the tour finish?",
+        "前句问时长，后句问结束时刻。"
+      ],
+      [
+        "到访还是已含门票",
+        "Do we stop at the castle?",
+        "Is the castle ticket included?",
+        "到访安排和票价范围分别确认。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "groceries",
+    "title": "超市与便利店补给",
+    "en": "Everyday supplies",
+    "group": "游玩购物",
+    "intro": "找饮水、零食和洗漱用品，看懂规格，处理自助结账问题。",
+    "context": "你在旅途中买水、零食和牙膏。货架优惠条件不清楚，自助结账又提示需要工作人员协助。",
+    "exchanges": [
+      [
+        "找商品",
+        "Can I help you find anything?",
+        "需要找什么？",
+        "Where can I find toothpaste?",
+        "牙膏在哪里？",
+        "Where can I find…? 是找商品位置的通用句。",
+        "换商店找防晒用品。",
+        "Where can I find sunscreen?"
+      ],
+      [
+        "选饮水",
+        "Still or sparkling?",
+        "无气还是气泡水？",
+        "Still water, please. Is this a single bottle or a pack?",
+        "要无气水。这是单瓶还是整包？",
+        "水的类型和包装数量分开确认。",
+        "换店问是否整包计价。",
+        "Is that the price for the whole pack?"
+      ],
+      [
+        "看促销",
+        "It’s on offer.",
+        "这个在促销。",
+        "Do I need to buy two to get that price?",
+        "要买两件才是这个价吗？",
+        "询问数量条件，不仅看大字标价。",
+        "换商品问是否需会员卡。",
+        "Do I need a membership card for that price?"
+      ],
+      [
+        "没有货时",
+        "We’re out of the smaller size.",
+        "小规格没货了。",
+        "Do you have anything similar in a smaller pack?",
+        "有没有类似的小包装？",
+        "similar 找相似商品，不默认大包能拆卖。",
+        "换店，问类似替代品。",
+        "Do you have anything similar?"
+      ],
+      [
+        "结账卡住",
+        "Please wait for assistance.",
+        "请等工作人员协助。",
+        "Could you help me with this machine?",
+        "能帮我操作这台机器吗？",
+        "说明具体问题更便于协助。",
+        "换自动售票机，请求帮助。",
+        "Could you help me with this machine?"
+      ],
+      [
+        "价格不一致",
+        "Is there a problem?",
+        "有问题吗？",
+        "The shelf label showed a different price.",
+        "货架标签上是另一个价格。",
+        "描述看到的信息并请核对，不先断定收费错误。",
+        "换商店，核对标价。",
+        "Could you check the shelf price, please?"
+      ]
+    ],
+    "grammar": [
+      [
+        "位置与商品",
+        "Where can I find…?",
+        "find 后直接接要找的物品；若自己不知道英文，可以描述用途：something to clean my glasses。不需要为了问路先掌握全部商品名。",
+        "Where can I find travel-size toothpaste?",
+        "小支旅行装牙膏在哪里？",
+        "不要用 Where has toothpaste? 代替位置问句。"
+      ],
+      [
+        "促销有条件",
+        "Do I need to…to get…?",
+        "前一个 to 后是需要做的动作，后一个 to 表示为了得到某价格。数量、会员条件与规格可分别确认。",
+        "Do I need to buy three to get the discount?",
+        "买三件才享优惠吗？",
+        "折扣标签不一定适用于所有口味或规格。"
+      ],
+      [
+        "机器出了什么问题",
+        "It won’t scan / I need assistance",
+        "won’t scan 表示目前无法扫描；不是单纯将来不扫描。说明卡在哪一步，再请工作人员帮忙，不必猜内部故障原因。",
+        "This barcode won’t scan.",
+        "这个条码扫不出来。",
+        "不要为了通过提示自行输入别的商品；请工作人员核对。"
+      ]
+    ],
+    "words": [
+      [
+        "aisle",
+        "货架通道",
+        "aɪl",
+        "Which aisle is it in?"
+      ],
+      [
+        "toothpaste",
+        "牙膏",
+        "ˈtuːθpeɪst",
+        "Where is the toothpaste?"
+      ],
+      [
+        "still water",
+        "无气水",
+        "stɪl ˈwɔːtər",
+        "Still water, please."
+      ],
+      [
+        "sparkling water",
+        "气泡水",
+        "ˈspɑːrklɪŋ ˈwɔːtər",
+        "Is this sparkling water?"
+      ],
+      [
+        "pack",
+        "一包；一组",
+        "pæk",
+        "Is this sold as a pack?"
+      ],
+      [
+        "offer",
+        "促销",
+        "ˈɔːfər",
+        "Is it on offer?"
+      ],
+      [
+        "shelf label",
+        "货架标签",
+        "ʃelf ˈleɪbəl",
+        "Could you check the shelf label?"
+      ],
+      [
+        "barcode",
+        "条码",
+        "ˈbɑːrkoʊd",
+        "The barcode won’t scan."
+      ],
+      [
+        "self-checkout",
+        "自助结账",
+        "self ˈtʃekaʊt",
+        "Where is self-checkout?"
+      ],
+      [
+        "assistance",
+        "协助",
+        "əˈsɪstəns",
+        "I need assistance, please."
+      ],
+      [
+        "travel-size",
+        "旅行小规格的",
+        "ˈtrævəl saɪz",
+        "Do you have a travel-size bottle?"
+      ],
+      [
+        "membership",
+        "会员资格",
+        "ˈmembərʃɪp",
+        "Does this require membership?"
+      ],
+      [
+        "discount",
+        "折扣",
+        "ˈdɪskaʊnt",
+        "How do I get the discount?"
+      ],
+      [
+        "reusable bag",
+        "可重复使用的袋子",
+        "riːˈjuːzəbəl bæɡ",
+        "Do you sell reusable bags?"
+      ],
+      [
+        "receipt",
+        "小票",
+        "rɪˈsiːt",
+        "Could I have the receipt?"
+      ],
+      [
+        "out of stock",
+        "缺货",
+        "aʊt əv stɑːk",
+        "Is it out of stock?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "牙膏在哪里？；要无气水。这是单瓶还是整包？。请按现场情况自己组织英语。",
+        "Where can I find toothpaste?\nStill water, please. Is this a single bottle or a pack?",
+        "找商品；选饮水"
+      ],
+      [
+        "确认条件与选择",
+        "要买两件才是这个价吗？；有没有类似的小包装？。请按现场情况自己组织英语。",
+        "Do I need to buy two to get that price?\nDo you have anything similar in a smaller pack?",
+        "看促销；没有货时"
+      ],
+      [
+        "处理变化与收尾",
+        "能帮我操作这台机器吗？；货架标签上是另一个价格。。请按现场情况自己组织英语。",
+        "Could you help me with this machine?\nThe shelf label showed a different price.",
+        "结账卡住；价格不一致"
+      ]
+    ],
+    "transfer": [
+      "换到便利店",
+      "标牌写 Snack deal: drink + sandwich；水为双瓶装。你问双瓶价格、套餐能否换饮品，结账时说明条码扫不出来。",
+      "Is that price for both bottles? Can I choose a different drink in the meal deal? This barcode won’t scan. Could you help?",
+      "包装单位；优惠条件；机器问题"
+    ],
+    "extra": [
+      "Meal deal",
+      "组合餐促销，具体可选商品要核对。",
+      "Which drinks are included in the meal deal?"
+    ],
+    "choices": [
+      [
+        "单瓶还是整包",
+        "Is that per bottle?",
+        "Is that for the whole pack?",
+        "明确价格单位。"
+      ],
+      [
+        "找不到还是没货",
+        "Where can I find it?",
+        "Is it out of stock?",
+        "前句问位置，后句问供应状态。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "shopping",
+    "title": "纪念品与服装购物",
+    "en": "Choosing something to take home",
+    "group": "游玩购物",
+    "intro": "问尺寸、材质和包装，试穿后表达松紧，确认退换条件。",
+    "context": "你想买一件外套和两份礼物。外套袖子有点长，礼物需要分开包装；购买前还想了解退换方式。",
+    "exchanges": [
+      [
+        "寻找尺码",
+        "What size are you looking for?",
+        "想找什么尺码？",
+        "Do you have this in a smaller size?",
+        "这个有小一号吗？",
+        "this in… 指同款的另一规格。",
+        "换店，问是否大一号。",
+        "Do you have this in a larger size?"
+      ],
+      [
+        "请求试穿",
+        "Would you like to try it on?",
+        "想试穿吗？",
+        "Yes, where are the fitting rooms?",
+        "想，试衣间在哪里？",
+        "try on 穿戴试用，不是品尝。",
+        "换鞋店，想试这双。",
+        "Could I try these on?"
+      ],
+      [
+        "表达不合身",
+        "How does it fit?",
+        "合身吗？",
+        "The sleeves are a little too long.",
+        "袖子稍微太长了。",
+        "指出部位和问题，不只说 wrong size。",
+        "换鞋店，说明脚趾处太紧。",
+        "They’re too tight around the toes."
+      ],
+      [
+        "询问材质",
+        "Would you like to know more about it?",
+        "想进一步了解吗？",
+        "What is it made of?",
+        "是什么材质？",
+        "made of 常用于辨认材料，不是问产地。",
+        "换围巾，问羊毛比例。",
+        "Is this made of wool?"
+      ],
+      [
+        "礼物包装",
+        "Are these gifts?",
+        "这些是礼物吗？",
+        "Yes. Could you wrap them separately?",
+        "是，能分别包装吗？",
+        "分别包装与分别付款是不同要求。",
+        "换纪念品店，要求分装。",
+        "Could you put them in separate bags?"
+      ],
+      [
+        "确认退换",
+        "Anything else you’d like to know?",
+        "还想了解什么？",
+        "Can it be exchanged if the size isn’t right?",
+        "尺码不合适能换吗？",
+        "购买前询问本店当前条件，不假定普遍可退。",
+        "换店，问退货期限。",
+        "What is the return policy?"
+      ]
+    ],
+    "grammar": [
+      [
+        "试穿的代词位置",
+        "try it on / try them on",
+        "衣服单件通常用 it，一双鞋常用 them。代词放在 try 和 on 之间；商品名称作宾语时两种位置都可能出现。",
+        "Could I try them on?",
+        "能试穿这双吗？",
+        "不要说 try on them。"
+      ],
+      [
+        "不合身说具体",
+        "too tight / too loose / too long",
+        "too 表示超过自己的合适范围；a little too 可以缓和。补充 around the waist、at the shoulders 等位置，让店员知道怎样找替代。",
+        "It’s too tight around the shoulders.",
+        "肩膀这里太紧。",
+        "small 与 tight 不完全一样，可能只某个部位紧。"
+      ],
+      [
+        "材料与产地",
+        "made of / made in",
+        "made of 问材料，made in 问生产地点。想确认是否本地设计或生产，应分别询问，不从纪念品图案推断。",
+        "Was this made locally?",
+        "这个是在本地生产的吗？",
+        "本地销售不自动表示本地制造。"
+      ]
+    ],
+    "words": [
+      [
+        "size",
+        "尺码",
+        "saɪz",
+        "Do you have a smaller size?"
+      ],
+      [
+        "fitting room",
+        "试衣间",
+        "ˈfɪtɪŋ ruːm",
+        "Where is the fitting room?"
+      ],
+      [
+        "sleeve",
+        "袖子",
+        "sliːv",
+        "The sleeves are too long."
+      ],
+      [
+        "tight",
+        "紧的",
+        "taɪt",
+        "It’s a little tight."
+      ],
+      [
+        "loose",
+        "松的",
+        "luːs",
+        "It’s too loose."
+      ],
+      [
+        "material",
+        "材质",
+        "məˈtɪriəl",
+        "What material is this?"
+      ],
+      [
+        "wool",
+        "羊毛",
+        "wʊl",
+        "Is this made of wool?"
+      ],
+      [
+        "wrap",
+        "包装",
+        "ræp",
+        "Could you wrap it?"
+      ],
+      [
+        "exchange",
+        "换货",
+        "ɪksˈtʃeɪndʒ",
+        "Can I exchange it?"
+      ],
+      [
+        "return policy",
+        "退货规定",
+        "rɪˈtɜːrn ˈpɑːləsi",
+        "What is the return policy?"
+      ],
+      [
+        "souvenir",
+        "纪念品",
+        "ˌsuːvəˈnɪr",
+        "I’m looking for a small souvenir."
+      ],
+      [
+        "handmade",
+        "手工制作的",
+        "ˌhændˈmeɪd",
+        "Is it handmade?"
+      ],
+      [
+        "locally made",
+        "本地制作的",
+        "ˈloʊkəli meɪd",
+        "Was it locally made?"
+      ],
+      [
+        "gift receipt",
+        "礼物收据",
+        "ɡɪft rɪˈsiːt",
+        "Can I have a gift receipt?"
+      ],
+      [
+        "fragile",
+        "易碎的",
+        "ˈfrædʒəl",
+        "Could you wrap this fragile item?"
+      ],
+      [
+        "refund",
+        "退款",
+        "ˈriːfʌnd",
+        "Is a refund possible?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "这个有小一号吗？；想，试衣间在哪里？。请按现场情况自己组织英语。",
+        "Do you have this in a smaller size?\nYes, where are the fitting rooms?",
+        "寻找尺码；请求试穿"
+      ],
+      [
+        "确认条件与选择",
+        "袖子稍微太长了。；是什么材质？。请按现场情况自己组织英语。",
+        "The sleeves are a little too long.\nWhat is it made of?",
+        "表达不合身；询问材质"
+      ],
+      [
+        "处理变化与收尾",
+        "是，能分别包装吗？；尺码不合适能换吗？。请按现场情况自己组织英语。",
+        "Yes. Could you wrap them separately?\nCan it be exchanged if the size isn’t right?",
+        "礼物包装；确认退换"
+      ]
+    ],
+    "transfer": [
+      "换到鞋店和礼品柜台",
+      "鞋子脚趾处太紧，你想试大一号，并问不合脚能否换货；另外两件礼物想分开包装。",
+      "These are too tight around the toes. Could I try a larger size? Can I exchange them if they don’t fit? Could you wrap the two gifts separately?",
+      "部位；尺码；退换；分装"
+    ],
+    "extra": [
+      "Just browsing",
+      "先看看，暂时不需要具体服务。",
+      "I’m just browsing, thanks."
+    ],
+    "choices": [
+      [
+        "材料还是产地",
+        "What is it made of?",
+        "Where was it made?",
+        "分别问原材料和生产地点。"
+      ],
+      [
+        "换货还是退款",
+        "Can I exchange it?",
+        "Can I get a refund?",
+        "换成别的商品与退回钱不是同一要求。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "cycling",
+    "title": "骑行与自行车租赁",
+    "en": "Renting a bicycle",
+    "group": "活动",
+    "intro": "选车型、调坐垫、试刹车，问路线与归还安排。",
+    "context": "你想租半天自行车，先说明骑行经验，确认头盔、车锁和归还地点；试骑时发现坐垫太高、刹车手感不对。",
+    "exchanges": [
+      [
+        "选择车型",
+        "What kind of bike would you like?",
+        "想租哪种车？",
+        "A city bike for a short ride, please.",
+        "短途骑行用的城市车。",
+        "先说用途，店员才能解释合适车型。",
+        "换租赁点，想要电助力车。",
+        "I’d like an electric bike for a short ride."
+      ],
+      [
+        "调整尺寸",
+        "How does the bike feel?",
+        "这辆感觉怎么样？",
+        "The saddle is too high. Could you adjust it?",
+        "坐垫太高，能调整吗？",
+        "具体说哪个部件和哪里不合适，调整交给工作人员。",
+        "换另一辆，坐垫偏低。",
+        "The saddle is too low. Could you adjust it?"
+      ],
+      [
+        "核对配件",
+        "Do you need any extras?",
+        "还要配件吗？",
+        "Are a helmet and a lock included?",
+        "包含头盔和锁吗？",
+        "配件是否包括租金、尺寸是否合适，都可确认。",
+        "换租赁店，问是否有车灯。",
+        "Are lights included?"
+      ],
+      [
+        "说明问题",
+        "Is everything working?",
+        "都正常吗？",
+        "The brakes don’t feel right. Could you check them?",
+        "刹车感觉不对，能检查吗？",
+        "不确定原因也可以描述手感，未检查前不勉强使用。",
+        "换另一辆，车链有异响。",
+        "The chain is making a strange noise. Could you check it?"
+      ],
+      [
+        "确认路线",
+        "Where are you planning to ride?",
+        "准备骑去哪？",
+        "Is this route suitable for a beginner?",
+        "这条路线适合新手吗？",
+        "说明自己的水平，询问当前路线情况。",
+        "换骑行中心，问是否有无车路线。",
+        "Is there a traffic-free route?"
+      ],
+      [
+        "归还与超时",
+        "Please return it by six.",
+        "请六点前归还。",
+        "Can I return it here, and what if I’m late?",
+        "在这里还吗，晚了怎么办？",
+        "地点、截止时刻和超时费用分别核对。",
+        "换另一家，问能否异地归还。",
+        "Can I return it at another location?"
+      ]
+    ],
+    "grammar": [
+      [
+        "部件与问题",
+        "The saddle is too high / The brakes feel…",
+        "saddle、brakes 等词让问题具体。feel 表示使用感受；不是要求自己判断机械故障。请求工作人员检查或调整。",
+        "Could you check the brakes before I leave?",
+        "出发前能检查刹车吗？",
+        "不要把不熟悉的技术调整当作语言课的操作说明。"
+      ],
+      [
+        "用途与时长",
+        "for a short ride / for half a day",
+        "第一个 for 说明用途，第二个 for 说明租用时长。询价时把车型与时长一起给出，容易得到正确报价。",
+        "How much is a city bike for half a day?",
+        "城市车半天多少钱？",
+        "half-day 的实际计费边界要问清楚。"
+      ],
+      [
+        "归还的条件",
+        "by six / at this location",
+        "by six 是不晚于六点，at this location 指归还地点。若路线可能耗时更久，可先问延长租期和收费方式。",
+        "Can I extend the rental if I need more time?",
+        "时间不够能延长吗？",
+        "return it by six 不表示六点以后随时可还。"
+      ]
+    ],
+    "words": [
+      [
+        "city bike",
+        "城市自行车",
+        "ˈsɪti baɪk",
+        "I’d like a city bike."
+      ],
+      [
+        "helmet",
+        "头盔",
+        "ˈhelmɪt",
+        "Is a helmet included?"
+      ],
+      [
+        "saddle",
+        "车座；坐垫",
+        "ˈsædəl",
+        "The saddle is too high."
+      ],
+      [
+        "brakes",
+        "刹车",
+        "breɪks",
+        "Could you check the brakes?"
+      ],
+      [
+        "lock",
+        "车锁",
+        "lɑːk",
+        "Does it come with a lock?"
+      ],
+      [
+        "route",
+        "路线",
+        "ruːt",
+        "Is this route suitable?"
+      ],
+      [
+        "rental",
+        "租赁",
+        "ˈrentəl",
+        "How much is the rental?"
+      ],
+      [
+        "return",
+        "归还",
+        "rɪˈtɜːrn",
+        "Where do I return it?"
+      ],
+      [
+        "adjust",
+        "调整",
+        "əˈdʒʌst",
+        "Could you adjust the saddle?"
+      ],
+      [
+        "beginner",
+        "初学者",
+        "bɪˈɡɪnər",
+        "I’m a beginner."
+      ],
+      [
+        "pedal",
+        "脚踏",
+        "ˈpedəl",
+        "This pedal feels loose."
+      ],
+      [
+        "chain",
+        "车链",
+        "tʃeɪn",
+        "The chain is making a noise."
+      ],
+      [
+        "gear",
+        "档位；变速装置",
+        "ɡɪr",
+        "Could you explain the gears?"
+      ],
+      [
+        "tyre",
+        "轮胎（英式）",
+        "ˈtaɪər",
+        "The tyre looks flat."
+      ],
+      [
+        "puncture",
+        "爆胎小孔；扎胎",
+        "ˈpʌŋktʃər",
+        "What should I do if I get a puncture?"
+      ],
+      [
+        "pump",
+        "打气筒",
+        "pʌmp",
+        "Is a pump included?"
+      ],
+      [
+        "basket",
+        "车篮",
+        "ˈbæskɪt",
+        "Does it have a basket?"
+      ],
+      [
+        "lights",
+        "车灯",
+        "laɪts",
+        "Are lights included?"
+      ],
+      [
+        "electric bike",
+        "电助力自行车",
+        "ɪˈlektrɪk baɪk",
+        "Do you rent electric bikes?"
+      ],
+      [
+        "battery",
+        "电池",
+        "ˈbætəri",
+        "Is the battery fully charged?"
+      ],
+      [
+        "charger",
+        "充电器",
+        "ˈtʃɑːrdʒər",
+        "Is the charger included?"
+      ],
+      [
+        "deposit",
+        "押金",
+        "dɪˈpɑːzɪt",
+        "Is there a deposit?"
+      ],
+      [
+        "traffic-free",
+        "无机动车交通的",
+        "ˈtræfɪk friː",
+        "Is there a traffic-free path?"
+      ],
+      [
+        "damage",
+        "损坏",
+        "ˈdæmɪdʒ",
+        "Could we note this existing damage?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "短途骑行用的城市车。；坐垫太高，能调整吗？。请按现场情况自己组织英语。",
+        "A city bike for a short ride, please.\nThe saddle is too high. Could you adjust it?",
+        "选择车型；调整尺寸"
+      ],
+      [
+        "确认条件与选择",
+        "包含头盔和锁吗？；刹车感觉不对，能检查吗？。请按现场情况自己组织英语。",
+        "Are a helmet and a lock included?\nThe brakes don’t feel right. Could you check them?",
+        "核对配件；说明问题"
+      ],
+      [
+        "处理变化与收尾",
+        "这条路线适合新手吗？；在这里还吗，晚了怎么办？。请按现场情况自己组织英语。",
+        "Is this route suitable for a beginner?\nCan I return it here, and what if I’m late?",
+        "确认路线；归还与超时"
+      ]
+    ],
+    "transfer": [
+      "换到电助力车租赁点",
+      "你想租一天电助力车，问电池是否充满、头盔车锁是否包含，以及能否在另一个网点还。坐垫太低，请工作人员调整。",
+      "I’d like an electric bike for the day. Is the battery fully charged? Are a helmet and lock included? Can I return it at another location? The saddle is too low; could you adjust it?",
+      "时长；电池；配件；异地还；调整"
+    ],
+    "extra": [
+      "For the day",
+      "租用到当天约定归还时刻，不一定是整24小时。",
+      "How much is it for the day?"
+    ],
+    "choices": [
+      [
+        "用途还是租期",
+        "A bike for a short ride.",
+        "A bike for half a day.",
+        "分别说明要做什么和租多久。"
+      ],
+      [
+        "还车时刻还是租用时长",
+        "Return it by six.",
+        "Rent it for six hours.",
+        "六点前归还与租六小时不同。"
+      ]
+    ],
+    "notice": "本课练习预约、装备、限制与求助的英语。具体动作、天气条件及参加要求由现场专业人员确认；未理解说明时请先暂停并提问。"
+  },
+  {
+    "id": "car-rental",
+    "title": "租车自驾",
+    "en": "Picking up a rental car",
+    "group": "活动",
+    "intro": "核对车型、文件、保障范围、已有损伤和还车要求。",
+    "context": "你预订了一辆自动挡汽车，取车时需要核对车型和所需文件，记录车身已有划痕，并问清油量、还车地点和押金安排。",
+    "exchanges": [
+      [
+        "核对车型",
+        "Manual or automatic?",
+        "手动还是自动挡？",
+        "I booked an automatic. Could you check the booking?",
+        "我订了自动挡，能核对吗？",
+        "说明原订单而非默默接受不同操作方式。",
+        "换租赁点，确认自动挡。",
+        "Is this car an automatic?"
+      ],
+      [
+        "所需文件",
+        "May I see your documents?",
+        "能看所需文件吗？",
+        "Which documents do you need from me?",
+        "需要我提供哪些文件？",
+        "按运营方与目的地实际要求核对，不从课程推断资格。",
+        "换活动报名，问需要什么文件。",
+        "Which documents do I need to bring?"
+      ],
+      [
+        "了解保障范围",
+        "Would you like additional cover?",
+        "需要额外保障吗？",
+        "What is included, and what is excluded?",
+        "哪些包括、哪些不包括？",
+        "了解当前合同，不把产品名称当作完整保障承诺。",
+        "换租赁服务，问承担金额。",
+        "What would I have to pay if there is damage?"
+      ],
+      [
+        "记录已有划痕",
+        "Please check the vehicle.",
+        "请检查车辆。",
+        "Could you note this scratch before I take the car?",
+        "取车前能记录这条划痕吗？",
+        "指明已有情况并请记录，不是承认由自己造成。",
+        "换另一辆，记录保险杠凹痕。",
+        "Could you note this dent on the bumper?"
+      ],
+      [
+        "还车油量",
+        "Please check the fuel policy.",
+        "请看燃油条款。",
+        "How much fuel should be in the tank when I return it?",
+        "还车时油量需要多少？",
+        "问当前合同要求，不默认都是满取满还。",
+        "换电动车，问还车电量。",
+        "What battery level is required when I return it?"
+      ],
+      [
+        "归还与押金",
+        "Return it to this location.",
+        "在这个地点还车。",
+        "What time is it due back, and when is the deposit released?",
+        "几点前归还，押金何时解除？",
+        "due back 问截止时刻；押金处理另确认。",
+        "换租赁点，问营业外还车安排。",
+        "Is there an after-hours return option?"
+      ]
+    ],
+    "grammar": [
+      [
+        "预订内容和实际交付",
+        "I booked… / Is this…?",
+        "I booked an automatic 说明原订单，Is this an automatic? 核对眼前车辆。若不同，先请工作人员解释替代安排，避免仅凭外观判断。",
+        "Is this the car class I booked?",
+        "这是我预订的车型级别吗？",
+        "车型级别不一定保证某个品牌或具体型号。"
+      ],
+      [
+        "包含与除外",
+        "included / excluded / excess",
+        "included 与 excluded 分别问保障内和除外项目；excess 常指某些合同中的自付额。具体责任需按条款解释，不从口头名称自行推断。",
+        "Could you explain the excess and exclusions?",
+        "能解释自付额和除外项目吗？",
+        "本课练询问合同，不替你判断哪份保障应当购买。"
+      ],
+      [
+        "已有损伤",
+        "existing damage / note this scratch",
+        "existing damage 指取车前已经存在的情况。请工作人员记录，并核对记录方式，能把交流落到具体事项。",
+        "Is this scratch already recorded?",
+        "这条划痕已记录吗？",
+        "Do I pay for this? 与 Is it already recorded? 是不同问题。"
+      ]
+    ],
+    "words": [
+      [
+        "automatic",
+        "自动挡的",
+        "ˌɔːtəˈmætɪk",
+        "I booked an automatic."
+      ],
+      [
+        "manual",
+        "手动挡的",
+        "ˈmænjuəl",
+        "Is this a manual?"
+      ],
+      [
+        "licence",
+        "驾驶执照（英式）",
+        "ˈlaɪsəns",
+        "Which licence documents do you need?"
+      ],
+      [
+        "deposit",
+        "押金",
+        "dɪˈpɑːzɪt",
+        "When is the deposit released?"
+      ],
+      [
+        "cover",
+        "保障范围",
+        "ˈkʌvər",
+        "What does the cover include?"
+      ],
+      [
+        "excess",
+        "部分合同中的自付额",
+        "ɪkˈses",
+        "Could you explain the excess?"
+      ],
+      [
+        "scratch",
+        "划痕",
+        "skrætʃ",
+        "Could you record this scratch?"
+      ],
+      [
+        "fuel policy",
+        "燃油要求",
+        "ˈfjuːəl ˈpɑːləsi",
+        "What is the fuel policy?"
+      ],
+      [
+        "return location",
+        "还车地点",
+        "rɪˈtɜːrn loʊˈkeɪʃən",
+        "Where is the return location?"
+      ],
+      [
+        "due back",
+        "应归还的",
+        "duː bæk",
+        "When is the car due back?"
+      ],
+      [
+        "dent",
+        "凹痕",
+        "dent",
+        "There is a dent here."
+      ],
+      [
+        "bumper",
+        "保险杠",
+        "ˈbʌmpər",
+        "The bumper has a scratch."
+      ],
+      [
+        "mileage",
+        "行驶里程",
+        "ˈmaɪlɪdʒ",
+        "Is there a mileage limit?"
+      ],
+      [
+        "unlimited",
+        "不限的",
+        "ʌnˈlɪmɪtɪd",
+        "Is mileage unlimited?"
+      ],
+      [
+        "additional driver",
+        "附加驾驶人",
+        "əˈdɪʃənəl ˈdraɪvər",
+        "Can I add another driver?"
+      ],
+      [
+        "one-way rental",
+        "异地还车租赁",
+        "wʌn weɪ ˈrentəl",
+        "Is a one-way rental available?"
+      ],
+      [
+        "roadside assistance",
+        "道路救援协助",
+        "ˈroʊdsaɪd əˈsɪstəns",
+        "Who do I contact for roadside assistance?"
+      ],
+      [
+        "charging point",
+        "充电点",
+        "ˈtʃɑːrdʒɪŋ pɔɪnt",
+        "Where is the charging point?"
+      ],
+      [
+        "charging cable",
+        "充电线",
+        "ˈtʃɑːrdʒɪŋ ˈkeɪbəl",
+        "Is a charging cable included?"
+      ],
+      [
+        "registration",
+        "车辆登记信息",
+        "ˌredʒɪˈstreɪʃən",
+        "Where are the registration documents?"
+      ],
+      [
+        "exclusion",
+        "除外项目",
+        "ɪkˈskluːʒən",
+        "What exclusions apply?"
+      ],
+      [
+        "toll",
+        "道路通行费",
+        "toʊl",
+        "How are tolls handled?"
+      ],
+      [
+        "after-hours",
+        "营业时间之外的",
+        "ˈæftər aʊərz",
+        "How does after-hours return work?"
+      ],
+      [
+        "inspection",
+        "检查",
+        "ɪnˈspekʃən",
+        "Can we do an inspection together?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "我订了自动挡，能核对吗？；需要我提供哪些文件？。请按现场情况自己组织英语。",
+        "I booked an automatic. Could you check the booking?\nWhich documents do you need from me?",
+        "核对车型；所需文件"
+      ],
+      [
+        "确认条件与选择",
+        "哪些包括、哪些不包括？；取车前能记录这条划痕吗？。请按现场情况自己组织英语。",
+        "What is included, and what is excluded?\nCould you note this scratch before I take the car?",
+        "了解保障范围；记录已有划痕"
+      ],
+      [
+        "处理变化与收尾",
+        "还车时油量需要多少？；几点前归还，押金何时解除？。请按现场情况自己组织英语。",
+        "How much fuel should be in the tank when I return it?\nWhat time is it due back, and when is the deposit released?",
+        "还车油量；归还与押金"
+      ]
+    ],
+    "transfer": [
+      "换到电动车租赁",
+      "订单是自动挡电动车；车门有旧划痕。你核对所需证件、记录划痕、问充电线和还车电量，并询问异地还车。",
+      "Which documents do you need? Could you record this existing scratch? Is the charging cable included? What battery level is required at return, and can I return it at another branch?",
+      "证件；已有损伤；配件；还车条件；网点"
+    ],
+    "extra": [
+      "Due back",
+      "应在某时归还。",
+      "What time is it due back?"
+    ],
+    "choices": [
+      [
+        "需要的证件还是资格结论",
+        "Which documents do you need?",
+        "Am I eligible to rent this vehicle?",
+        "前句问文件，后句请运营方核对资格。"
+      ],
+      [
+        "押金还是最终收费",
+        "Is this a deposit?",
+        "Is this the final charge?",
+        "授权占用、押金与最终收费需分别确认。"
+      ]
+    ],
+    "notice": ""
+  },
+  {
+    "id": "hiking",
+    "title": "徒步与步道咨询",
+    "en": "At the trailhead",
+    "group": "活动",
+    "intro": "问步道距离、爬升与当前状况，说明经验，确认集合与返回安排。",
+    "context": "游客中心有环线和原路往返路线。你是新手，想了解距离和爬升，确认当天是否开放，再问是否能租登山杖。",
+    "exchanges": [
+      [
+        "说明经验",
+        "How much hiking have you done?",
+        "有多少徒步经验？",
+        "I’m a beginner. Is there an easier route?",
+        "我是新手，有容易一点的路线吗？",
+        "诚实说明水平，不用为了参加活动夸大经验。",
+        "换游客中心，找适合新手的路线。",
+        "Which route is suitable for a beginner?"
+      ],
+      [
+        "了解路线形状",
+        "It’s an out-and-back trail.",
+        "是原路往返步道。",
+        "Is that distance one way or the total distance?",
+        "这个距离是单程还是总长？",
+        "总长与单程别混淆；loop 则是环线。",
+        "换路线，核对公里数。",
+        "Is that the total distance?"
+      ],
+      [
+        "了解爬升",
+        "There’s some elevation gain.",
+        "有一些爬升。",
+        "How steep is the trail?",
+        "步道有多陡？",
+        "distance 和 elevation gain 是不同信息。",
+        "换活动，询问是否有陡坡。",
+        "Are there any steep sections?"
+      ],
+      [
+        "询问当天状况",
+        "Conditions can change.",
+        "状况可能变化。",
+        "Is the trail open today, and are there any closures?",
+        "今天开放吗，有封闭路段吗？",
+        "问当前开放状况，不依据旧地图推断。",
+        "换另一条步道，问路况。",
+        "What are the trail conditions today?"
+      ],
+      [
+        "租借装备",
+        "Do you need any equipment?",
+        "需要装备吗？",
+        "Can I rent trekking poles here?",
+        "能租登山杖吗？",
+        "复数 poles 常指一对；具体是否提供需问。",
+        "换租赁店，问防水外套。",
+        "Can I rent a waterproof jacket here?"
+      ],
+      [
+        "没跟上讲解",
+        "We’ll meet back at the trailhead.",
+        "在登山口集合。",
+        "Could you show me the meeting point on the map?",
+        "能在地图上指出集合点吗？",
+        "show me 比只重复地点名更具体。",
+        "换导览，让对方指出返回点。",
+        "Could you show me the return point on the map?"
+      ]
+    ],
+    "grammar": [
+      [
+        "单程与总距离",
+        "one way / total / round trip",
+        "one way 表示单程，total distance 和 round trip 常用于核对全程。路线名称不能替代距离说明；再问预计时间与地形。",
+        "How long does the full walk usually take?",
+        "走完全程通常要多久？",
+        "里程短不自动等于容易，地形与爬升也要问。"
+      ],
+      [
+        "描述自己能接受的路线",
+        "easier / less steep",
+        "easier 比较整体难度，less steep 更具体地比较坡度。把自己经验与担心的部分说出来，便于工作人员解释。",
+        "I’d prefer a less steep route.",
+        "我更想走不那么陡的路线。",
+        "不要用 flat 表示所有简单路线，平坦与整体难度不同。"
+      ],
+      [
+        "当前状况与地图信息",
+        "open today / marked on the map",
+        "地图表示路线位置，open today 确认当前能否进入。想了解临时封闭、天气或道路状况，应问现场人员或最新公告。",
+        "Are there any sections we should avoid today?",
+        "今天有哪些路段不应进入？",
+        "本课不提供路线风险判断，请依据现场专业信息。"
+      ]
+    ],
+    "words": [
+      [
+        "trail",
+        "步道",
+        "treɪl",
+        "Is this trail open?"
+      ],
+      [
+        "trailhead",
+        "步道起点；登山口",
+        "ˈtreɪlhed",
+        "Where is the trailhead?"
+      ],
+      [
+        "route",
+        "路线",
+        "ruːt",
+        "Which route is easier?"
+      ],
+      [
+        "loop",
+        "环线",
+        "luːp",
+        "Is it a loop?"
+      ],
+      [
+        "out-and-back",
+        "原路往返的",
+        "aʊt ənd bæk",
+        "Is it an out-and-back trail?"
+      ],
+      [
+        "elevation gain",
+        "累计爬升",
+        "ˌelɪˈveɪʃən ɡeɪn",
+        "What’s the elevation gain?"
+      ],
+      [
+        "steep",
+        "陡的",
+        "stiːp",
+        "Is it very steep?"
+      ],
+      [
+        "closure",
+        "封闭",
+        "ˈkloʊʒər",
+        "Are there any closures?"
+      ],
+      [
+        "trekking poles",
+        "登山杖",
+        "ˈtrekɪŋ poʊlz",
+        "Can I rent trekking poles?"
+      ],
+      [
+        "map",
+        "地图",
+        "mæp",
+        "Could you mark it on the map?"
+      ],
+      [
+        "marker",
+        "路标",
+        "ˈmɑːrkər",
+        "Are the markers easy to see?"
+      ],
+      [
+        "junction",
+        "岔路口",
+        "ˈdʒʌŋkʃən",
+        "Where is the next junction?"
+      ],
+      [
+        "ridge",
+        "山脊",
+        "rɪdʒ",
+        "Does the route follow the ridge?"
+      ],
+      [
+        "descent",
+        "下坡；下降段",
+        "dɪˈsent",
+        "How long is the descent?"
+      ],
+      [
+        "footwear",
+        "鞋类装备",
+        "ˈfʊtwer",
+        "What footwear is required?"
+      ],
+      [
+        "waterproof",
+        "防水的",
+        "ˈwɔːtərpruːf",
+        "Do you rent waterproof jackets?"
+      ],
+      [
+        "daylight",
+        "日光；白天光照",
+        "ˈdeɪlaɪt",
+        "When does it start to get dark?"
+      ],
+      [
+        "forecast",
+        "天气预报",
+        "ˈfɔːrkæst",
+        "Where can I check the forecast?"
+      ],
+      [
+        "slippery",
+        "湿滑的",
+        "ˈslɪpəri",
+        "Is the path slippery today?"
+      ],
+      [
+        "permit",
+        "许可凭证",
+        "ˈpɜːrmɪt",
+        "Do I need a permit?"
+      ],
+      [
+        "ranger",
+        "公园管理人员",
+        "ˈreɪndʒər",
+        "Where can I speak to a ranger?"
+      ],
+      [
+        "shelter",
+        "避护处",
+        "ˈʃeltər",
+        "Is there a shelter on the route?"
+      ],
+      [
+        "guided hike",
+        "有领队的徒步",
+        "ˈɡaɪdɪd haɪk",
+        "Is there a guided hike?"
+      ],
+      [
+        "meeting point",
+        "集合点",
+        "ˈmiːtɪŋ pɔɪnt",
+        "Where is the meeting point?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "我是新手，有容易一点的路线吗？；这个距离是单程还是总长？。请按现场情况自己组织英语。",
+        "I’m a beginner. Is there an easier route?\nIs that distance one way or the total distance?",
+        "说明经验；了解路线形状"
+      ],
+      [
+        "确认条件与选择",
+        "步道有多陡？；今天开放吗，有封闭路段吗？。请按现场情况自己组织英语。",
+        "How steep is the trail?\nIs the trail open today, and are there any closures?",
+        "了解爬升；询问当天状况"
+      ],
+      [
+        "处理变化与收尾",
+        "能租登山杖吗？；能在地图上指出集合点吗？。请按现场情况自己组织英语。",
+        "Can I rent trekking poles here?\nCould you show me the meeting point on the map?",
+        "租借装备；没跟上讲解"
+      ]
+    ],
+    "transfer": [
+      "换到环线徒步",
+      "公告写 Lake Loop / Distance 6 km / Ask about current conditions。你问6公里是否总长、有多陡、今天是否有关闭路段，并让管理员标出起点。",
+      "Is six kilometres the total distance? How steep is the trail? Are any sections closed today? Could you mark the trailhead on the map?",
+      "总距离；坡度；当前开放；地图"
+    ],
+    "extra": [
+      "Out and back",
+      "从同一路线去，再原路返回。",
+      "Is that six kilometres out and back?"
+    ],
+    "choices": [
+      [
+        "距离还是时间",
+        "How far is it?",
+        "How long does it take?",
+        "分别问路程和预计用时。"
+      ],
+      [
+        "地图存在还是今天开放",
+        "Is it on the map?",
+        "Is it open today?",
+        "位置资料不能替代当天开放信息。"
+      ]
+    ],
+    "notice": "本课练习预约、装备、限制与求助的英语。具体动作、天气条件及参加要求由现场专业人员确认；未理解说明时请先暂停并提问。"
+  },
+  {
+    "id": "camping",
+    "title": "露营与营地入住",
+    "en": "At the campsite",
+    "group": "活动",
+    "intro": "选营位、核对设施，租帐篷睡袋，询问规则和归还条件。",
+    "context": "你已订两晚帐篷营位，需要找到营位、洗手间和饮用水点。租来的帐篷缺一根帐杆，晚上需要联系营地人员。",
+    "exchanges": [
+      [
+        "营位与预订",
+        "Do you have a reservation?",
+        "有预订吗？",
+        "Yes, a tent pitch for two nights.",
+        "有，两晚帐篷营位。",
+        "pitch 在此是搭营位置，不是投球。",
+        "换营地，说明一晚营位。",
+        "A tent pitch for one night, please."
+      ],
+      [
+        "核对设施",
+        "What facilities do you need?",
+        "需要哪些设施？",
+        "Are showers and drinking water available?",
+        "有淋浴和饮用水吗？",
+        "分别确认设施提供和使用方式，不只问有无厕所。",
+        "换营地，问淋浴是否另收费。",
+        "Is there an extra charge for showers?"
+      ],
+      [
+        "租用睡眠装备",
+        "Will you need bedding?",
+        "需要睡眠用品吗？",
+        "Can I rent a sleeping bag and a sleeping mat?",
+        "能租睡袋和防潮垫吗？",
+        "sleeping mat 与 sleeping bag 是不同装备。",
+        "换租赁点，问是否有充气垫。",
+        "Can I rent an inflatable sleeping mat?"
+      ],
+      [
+        "缺少帐篷配件",
+        "Is everything in the bag?",
+        "袋子里配件齐吗？",
+        "A tent pole seems to be missing.",
+        "好像缺一根帐杆。",
+        "seems to be 表示初步观察；请工作人员核对。",
+        "换租赁包，说明缺地钉。",
+        "Some tent pegs seem to be missing."
+      ],
+      [
+        "询问营地规则",
+        "Please read the campsite rules.",
+        "请看营地规定。",
+        "Where is cooking allowed, and what are the quiet hours?",
+        "哪里允许做饭，安静时段是什么时候？",
+        "规则因营地和当天情况而异，直接问。",
+        "换营地，确认是否允许明火。",
+        "Are open fires allowed today?"
+      ],
+      [
+        "归还与求助",
+        "Reception closes at eight.",
+        "前台八点关门。",
+        "Who should I contact if there’s a problem after that?",
+        "之后有问题联系谁？",
+        "核对夜间联系方式，不把前台下班理解成无人处理。",
+        "换另一营地，问夜间联系人。",
+        "Is there an after-hours contact number?"
+      ]
+    ],
+    "grammar": [
+      [
+        "营位与整座营地",
+        "pitch / campsite",
+        "pitch 常指分配给一组客人的营位；campsite 可指整座营地，也有地区使用差异。预订时说明 tent pitch 能减少与房车营位混淆。",
+        "Is this pitch for a tent or a campervan?",
+        "这是帐篷营位还是房车营位？",
+        "不要把营地名称当作具体营位号。"
+      ],
+      [
+        "缺少与损坏",
+        "missing / damaged",
+        "missing 是没有找到，damaged 是存在但损坏。seems to be 适合尚未完全确定时，请工作人员一起核对。",
+        "This pole seems to be damaged.",
+        "这根帐杆好像损坏了。",
+        "不要为了凑全装备自行替代关键部件，请租赁人员处理。"
+      ],
+      [
+        "允许做什么与哪里能做",
+        "Is…allowed? / Where can I…?",
+        "Is cooking allowed? 问能否做；Where can I cook? 问允许时的具体地点。问火源等事项要以当前规则为准。",
+        "Where can I refill drinking water?",
+        "在哪里补充饮用水？",
+        "tap water 的用途需确认，不根据水龙头外观推断。"
+      ]
+    ],
+    "words": [
+      [
+        "pitch",
+        "营位",
+        "pɪtʃ",
+        "Which pitch is ours?"
+      ],
+      [
+        "tent",
+        "帐篷",
+        "tent",
+        "Can I rent a tent?"
+      ],
+      [
+        "sleeping bag",
+        "睡袋",
+        "ˈsliːpɪŋ bæɡ",
+        "Is a sleeping bag included?"
+      ],
+      [
+        "sleeping mat",
+        "睡垫；防潮垫",
+        "ˈsliːpɪŋ mæt",
+        "Can I rent a sleeping mat?"
+      ],
+      [
+        "tent pole",
+        "帐杆",
+        "tent poʊl",
+        "A tent pole is missing."
+      ],
+      [
+        "peg",
+        "地钉",
+        "peɡ",
+        "Are all the pegs included?"
+      ],
+      [
+        "shower block",
+        "淋浴设施区",
+        "ˈʃaʊər blɑːk",
+        "Where is the shower block?"
+      ],
+      [
+        "drinking water",
+        "饮用水",
+        "ˈdrɪŋkɪŋ ˈwɔːtər",
+        "Where can I get drinking water?"
+      ],
+      [
+        "quiet hours",
+        "安静时段",
+        "ˈkwaɪət aʊərz",
+        "What are the quiet hours?"
+      ],
+      [
+        "after-hours contact",
+        "非营业时段联系人",
+        "ˈæftər aʊərz ˈkɑːntækt",
+        "Is there an after-hours contact?"
+      ],
+      [
+        "groundsheet",
+        "帐底垫布",
+        "ˈɡraʊndʃiːt",
+        "Is a groundsheet included?"
+      ],
+      [
+        "flysheet",
+        "帐篷外帐",
+        "ˈflaɪʃiːt",
+        "Is the flysheet included?"
+      ],
+      [
+        "guy rope",
+        "帐篷风绳",
+        "ɡaɪ roʊp",
+        "Could you show me the guy ropes?"
+      ],
+      [
+        "mallet",
+        "木槌；橡胶锤",
+        "ˈmælɪt",
+        "Is there a mallet?"
+      ],
+      [
+        "air bed",
+        "充气床",
+        "er bed",
+        "Is a pump included with the air bed?"
+      ],
+      [
+        "pump",
+        "气泵",
+        "pʌmp",
+        "Could I borrow a pump?"
+      ],
+      [
+        "hook-up",
+        "营位接电设施",
+        "ˈhʊkʌp",
+        "Does the pitch have an electric hook-up?"
+      ],
+      [
+        "washroom",
+        "盥洗室",
+        "ˈwɑːʃruːm",
+        "Where are the washrooms?"
+      ],
+      [
+        "rubbish",
+        "垃圾（英式）",
+        "ˈrʌbɪʃ",
+        "Where should I put rubbish?"
+      ],
+      [
+        "recycling",
+        "回收",
+        "ˌriːˈsaɪklɪŋ",
+        "Where is the recycling area?"
+      ],
+      [
+        "fire pit",
+        "指定火坑",
+        "ˈfaɪər pɪt",
+        "Are the fire pits open today?"
+      ],
+      [
+        "stove",
+        "炉具",
+        "stoʊv",
+        "Could staff show me how this stove is used?"
+      ],
+      [
+        "cooking area",
+        "烹饪区",
+        "ˈkʊkɪŋ ˈeriə",
+        "Where is the cooking area?"
+      ],
+      [
+        "campground",
+        "露营地",
+        "ˈkæmpɡraʊnd",
+        "Where is the campground office?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "有，两晚帐篷营位。；有淋浴和饮用水吗？。请按现场情况自己组织英语。",
+        "Yes, a tent pitch for two nights.\nAre showers and drinking water available?",
+        "营位与预订；核对设施"
+      ],
+      [
+        "确认条件与选择",
+        "能租睡袋和防潮垫吗？；好像缺一根帐杆。。请按现场情况自己组织英语。",
+        "Can I rent a sleeping bag and a sleeping mat?\nA tent pole seems to be missing.",
+        "租用睡眠装备；缺少帐篷配件"
+      ],
+      [
+        "处理变化与收尾",
+        "哪里允许做饭，安静时段是什么时候？；之后有问题联系谁？。请按现场情况自己组织英语。",
+        "Where is cooking allowed, and what are the quiet hours?\nWho should I contact if there’s a problem after that?",
+        "询问营地规则；归还与求助"
+      ]
+    ],
+    "transfer": [
+      "换到森林营地",
+      "预订为一晚帐篷营位。租用套装有帐篷但没有睡袋；你问能否另租、确认饮用水位置，缺地钉时请工作人员处理。",
+      "We have a tent pitch for one night. Can we rent sleeping bags separately? Where is the drinking water point? Some tent pegs are missing; could you check the kit?",
+      "预订；睡眠装备；饮水点；缺件"
+    ],
+    "extra": [
+      "All packed up",
+      "已把物品收拾打包好，不一定已经归还。",
+      "We’re all packed up. Where do we return the kit?"
+    ],
+    "choices": [
+      [
+        "营位还是住宿设施",
+        "A tent pitch.",
+        "A cabin.",
+        "一个是搭帐篷的位置，一个是小屋，预订内容不同。"
+      ],
+      [
+        "没有还是已损坏",
+        "A pole is missing.",
+        "A pole is damaged.",
+        "分别说明缺件和损伤。"
+      ]
+    ],
+    "notice": "本课练习预约、装备、限制与求助的英语。具体动作、天气条件及参加要求由现场专业人员确认；未理解说明时请先暂停并提问。"
+  },
+  {
+    "id": "kayaking",
+    "title": "皮划艇体验与租赁",
+    "en": "On a kayaking trip",
+    "group": "活动",
+    "intro": "说明经验、选单人或双人艇，试穿浮力装备并问清导览和返回。",
+    "context": "你和同伴想参加新手皮划艇活动，需要确认是否由教练带领、装备是否合身，以及何时何地返回。",
+    "exchanges": [
+      [
+        "说明经验",
+        "Have you paddled before?",
+        "以前划过吗？",
+        "No, this is my first time. Is there a guided beginner session?",
+        "没有，第一次。有带领的新手场吗？",
+        "据实说明经验，不把租到器材等同于适合独立参加。",
+        "换活动点，说明只参加过一次。",
+        "I’ve only done this once before."
+      ],
+      [
+        "单人还是双人",
+        "Single or tandem?",
+        "单人还是双人？",
+        "A tandem kayak for two, please.",
+        "想要两人用的双人艇。",
+        "tandem 常指前后双人配置。",
+        "换活动，问是否有单人艇。",
+        "Do you have single kayaks?"
+      ],
+      [
+        "装备合身",
+        "How does the buoyancy aid fit?",
+        "浮力装备合身吗？",
+        "It feels too loose. Could you check the fit?",
+        "感觉太松，能检查是否合身吗？",
+        "具体设备名称按现场使用，试穿合身由工作人员确认。",
+        "换另一件，说明太紧。",
+        "This feels too tight. Could you check it?"
+      ],
+      [
+        "物品防水",
+        "Do you have anything to store?",
+        "有随身物品要存放吗？",
+        "Is a dry bag included, or are there lockers?",
+        "包含防水袋，还是有储物柜？",
+        "先问可用存放方式，不凭 dry 名称保证所有用途。",
+        "换活动点，问手机存放。",
+        "Where can I leave my phone?"
+      ],
+      [
+        "听不懂说明",
+        "Is everyone clear on the briefing?",
+        "都明白讲解了吗？",
+        "Could you show me that again before we start?",
+        "出发前能再示范一次吗？",
+        "未理解时先请示范，不假装听懂。",
+        "换教练，请放慢示范。",
+        "Could you demonstrate that more slowly?"
+      ],
+      [
+        "结束和天气",
+        "We may change the route today.",
+        "今天可能换路线。",
+        "Where will we finish, and what happens if conditions change?",
+        "在哪结束，情况变化时怎么安排？",
+        "问运营方当日方案，不自行推断天气是否适合。",
+        "换活动，问是否改期。",
+        "Would the session be rescheduled if conditions change?"
+      ]
+    ],
+    "grammar": [
+      [
+        "第一次与有限经验",
+        "my first time / only once before",
+        "这两种说法帮助工作人员了解经验水平。不要因为动作名称听过就说 experienced；可以具体说明自己参加过几次、是否有教练。",
+        "I’m a beginner and would like an instructor-led session.",
+        "我是新手，想参加教练带领的活动。",
+        "beginner 不是自动获准参加所有线路的保证。"
+      ],
+      [
+        "合身与需要调整",
+        "too loose / too tight / check the fit",
+        "fit 是尺寸与穿戴合适程度，不只是衣服号码。描述不适并让工作人员检查，可避免只要求换一个数字规格。",
+        "Could you check whether this fits properly?",
+        "能检查是否穿戴合适吗？",
+        "不要通过语言教材自行调整或判断浮力设备适用性。"
+      ],
+      [
+        "示范与重复",
+        "show me / repeat / explain",
+        "repeat 通常重说，show me 用动作示范，explain 讲明含义。没看懂动作时请求示范，没听清时间则请求重复。",
+        "Could you explain the return signal again?",
+        "能再解释返回信号吗？",
+        "课堂句子不能代替现场完整说明。"
+      ]
+    ],
+    "words": [
+      [
+        "kayak",
+        "皮划艇中的一种",
+        "ˈkaɪæk",
+        "Is this a kayak?"
+      ],
+      [
+        "paddle",
+        "桨；划桨",
+        "ˈpædəl",
+        "Is a paddle included?"
+      ],
+      [
+        "tandem",
+        "双人前后配置的",
+        "ˈtændəm",
+        "We’d like a tandem kayak."
+      ],
+      [
+        "single",
+        "单人的",
+        "ˈsɪŋɡəl",
+        "Do you have single kayaks?"
+      ],
+      [
+        "buoyancy aid",
+        "浮力辅助装备",
+        "ˈbɔɪənsi eɪd",
+        "Could you check this buoyancy aid?"
+      ],
+      [
+        "dry bag",
+        "防水储物袋",
+        "draɪ bæɡ",
+        "Is a dry bag included?"
+      ],
+      [
+        "briefing",
+        "出发前说明",
+        "ˈbriːfɪŋ",
+        "Could you repeat the briefing?"
+      ],
+      [
+        "guided",
+        "有人员带领的",
+        "ˈɡaɪdɪd",
+        "Is this a guided session?"
+      ],
+      [
+        "launch point",
+        "下水出发点",
+        "lɔːntʃ pɔɪnt",
+        "Where is the launch point?"
+      ],
+      [
+        "landing point",
+        "靠岸结束点",
+        "ˈlændɪŋ pɔɪnt",
+        "Where is the landing point?"
+      ],
+      [
+        "life jacket",
+        "救生衣",
+        "laɪf ˈdʒækɪt",
+        "Could staff check the life jacket?"
+      ],
+      [
+        "strap",
+        "固定带",
+        "stræp",
+        "This strap feels loose."
+      ],
+      [
+        "cockpit",
+        "坐舱",
+        "ˈkɑːkpɪt",
+        "Could you explain this cockpit?"
+      ],
+      [
+        "sit-on-top",
+        "开放式坐在艇面的艇型",
+        "sɪt ɑːn tɑːp",
+        "Is this a sit-on-top kayak?"
+      ],
+      [
+        "spray skirt",
+        "防浪裙",
+        "spreɪ skɜːrt",
+        "Could you explain the spray skirt?"
+      ],
+      [
+        "blade",
+        "桨叶",
+        "bleɪd",
+        "This blade looks damaged."
+      ],
+      [
+        "current",
+        "水流",
+        "ˈkɜːrənt",
+        "What are the currents like today?"
+      ],
+      [
+        "tide",
+        "潮汐",
+        "taɪd",
+        "Will the tide affect the session?"
+      ],
+      [
+        "shore",
+        "岸边",
+        "ʃɔːr",
+        "Where will we meet on shore?"
+      ],
+      [
+        "locker",
+        "储物柜",
+        "ˈlɑːkər",
+        "Are there lockers?"
+      ],
+      [
+        "instructor",
+        "教练",
+        "ɪnˈstrʌktər",
+        "Who is our instructor?"
+      ],
+      [
+        "reschedule",
+        "改期",
+        "ˌriːˈskedʒuːl",
+        "Can we reschedule the session?"
+      ],
+      [
+        "canoe",
+        "独木舟的一类",
+        "kəˈnuː",
+        "Do you also rent canoes?"
+      ],
+      [
+        "demonstrate",
+        "示范",
+        "ˈdemənstreɪt",
+        "Could you demonstrate that again?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "没有，第一次。有带领的新手场吗？；想要两人用的双人艇。。请按现场情况自己组织英语。",
+        "No, this is my first time. Is there a guided beginner session?\nA tandem kayak for two, please.",
+        "说明经验；单人还是双人"
+      ],
+      [
+        "确认条件与选择",
+        "感觉太松，能检查是否合身吗？；包含防水袋，还是有储物柜？。请按现场情况自己组织英语。",
+        "It feels too loose. Could you check the fit?\nIs a dry bag included, or are there lockers?",
+        "装备合身；物品防水"
+      ],
+      [
+        "处理变化与收尾",
+        "出发前能再示范一次吗？；在哪结束，情况变化时怎么安排？。请按现场情况自己组织英语。",
+        "Could you show me that again before we start?\nWhere will we finish, and what happens if conditions change?",
+        "听不懂说明；结束和天气"
+      ]
+    ],
+    "transfer": [
+      "换到湖边活动中心",
+      "活动板写 Beginner tandem session / Guide included / Lockers available。你是第一次，确认双人艇、储物柜和结束点，穿戴感觉松时请教练检查。",
+      "This is our first time. Is the tandem session guided? Where are the lockers and the finish point? This buoyancy aid feels loose; could you check the fit?",
+      "经验；带领；储物；结束；合身"
+    ],
+    "extra": [
+      "First-timer",
+      "第一次参加的人。",
+      "We’re first-timers."
+    ],
+    "choices": [
+      [
+        "自己租还是教练带领",
+        "Is this rental only?",
+        "Is an instructor included?",
+        "租赁与带领服务的范围不同。"
+      ],
+      [
+        "重说还是示范",
+        "Could you repeat that?",
+        "Could you show me that?",
+        "分别请求再说一遍与演示动作。"
+      ]
+    ],
+    "notice": "本课练习预约、装备、限制与求助的英语。具体动作、天气条件及参加要求由现场专业人员确认；未理解说明时请先暂停并提问。"
+  },
+  {
+    "id": "snorkelling",
+    "title": "浮潜活动与装备",
+    "en": "Joining a snorkelling trip",
+    "group": "活动",
+    "intro": "问活动要求、试面镜脚蹼，说明漏水和不适，确认船上安排。",
+    "context": "你想参加带领的浮潜行程，需要如实说明经验和游泳情况。试装备时面镜漏水、脚蹼不合脚，希望教练协助。",
+    "exchanges": [
+      [
+        "询问参加条件",
+        "Have you snorkelled before?",
+        "以前浮潜过吗？",
+        "No. What experience or swimming ability is required?",
+        "没有。需要什么经验或游泳能力？",
+        "据实说明，让运营方核对是否适合参加。",
+        "换活动，说明自己不确定能否参加。",
+        "Could you check whether this trip is suitable for me?"
+      ],
+      [
+        "面镜合适吗",
+        "Does the mask fit?",
+        "面镜合适吗？",
+        "Water is getting into the mask. Could you check it?",
+        "面镜进水，能检查吗？",
+        "描述实际问题，请现场人员处理。",
+        "换面镜，说明不舒服。",
+        "This mask feels uncomfortable. Could you check the fit?"
+      ],
+      [
+        "脚蹼尺寸",
+        "What size fins do you need?",
+        "脚蹼要什么尺寸？",
+        "These are too tight. Could I try a larger pair?",
+        "这双太紧，能试大一双吗？",
+        "fins 常按一双说；鞋码和实际合脚程度都要确认。",
+        "换租赁点，试小一双。",
+        "Could I try a smaller pair?"
+      ],
+      [
+        "浮力装备",
+        "Do you need help with the equipment?",
+        "需要帮忙检查装备吗？",
+        "Could you check the flotation vest for me?",
+        "能帮我检查浮力背心吗？",
+        "设备的名称和使用方式按现场要求，不自行猜用途。",
+        "换活动点，请检查穿戴。",
+        "Could you check that I’m wearing this correctly?"
+      ],
+      [
+        "个人物品",
+        "You can leave your bag on board.",
+        "包可以放船上。",
+        "Is there a secure place for my phone and glasses?",
+        "有地方保管手机和眼镜吗？",
+        "secure 问保管安排，不等于运营方承担任何责任。",
+        "换船，问是否有防水储物。",
+        "Is waterproof storage available?"
+      ],
+      [
+        "不舒服时求助",
+        "Are you comfortable continuing?",
+        "还想继续吗？",
+        "I’d like to stop and speak to the guide.",
+        "我想先停下，找领队。",
+        "明确说停止和求助，不把不适隐藏为没事。",
+        "换任何体验活动，请先暂停。",
+        "I’d like to pause and speak to the instructor."
+      ]
+    ],
+    "grammar": [
+      [
+        "资格要求要问具体",
+        "What ability is required?",
+        "询问经验、游泳能力和参加条件，让组织者核对。required 表示必须符合的条件，不是可选建议；不理解时请解释。",
+        "Is this session suitable for a complete beginner?",
+        "这个活动适合完全新手吗？",
+        "不要为套句型夸大游泳水平或忽略报名信息。"
+      ],
+      [
+        "成对物品",
+        "a pair of fins / these fins",
+        "a pair 表示一双，用 these 指这两只脚蹼。说明脚趾或脚跟哪里不适，比只报尺码更具体。",
+        "These fins are too tight around my toes.",
+        "这双脚蹼脚趾处太紧。",
+        "不是通过脚蹼型号名称自行判断是否合身。"
+      ],
+      [
+        "表达暂停与求助",
+        "I’d like to stop / Could you help?",
+        "I’d like to stop 明确停止意愿；I’m not sure 只表示不确定。需要暂停时直接说清楚，并按现场教练安排寻求帮助。",
+        "I don’t feel comfortable continuing. Could you help me?",
+        "我不想继续了，能帮我吗？",
+        "这只是求助表达，不替代现场紧急处置培训。"
+      ]
+    ],
+    "words": [
+      [
+        "snorkelling",
+        "浮潜（英式拼写）",
+        "ˈsnɔːrkəlɪŋ",
+        "Is this a guided snorkelling trip?"
+      ],
+      [
+        "mask",
+        "面镜",
+        "mæsk",
+        "Could you check the mask?"
+      ],
+      [
+        "snorkel",
+        "呼吸管",
+        "ˈsnɔːrkəl",
+        "Is a snorkel included?"
+      ],
+      [
+        "fins",
+        "脚蹼",
+        "fɪnz",
+        "Could I try larger fins?"
+      ],
+      [
+        "flotation vest",
+        "浮力背心",
+        "floʊˈteɪʃən vest",
+        "Could you check this flotation vest?"
+      ],
+      [
+        "guide",
+        "领队",
+        "ɡaɪd",
+        "Who is our guide?"
+      ],
+      [
+        "fit",
+        "合身程度",
+        "fɪt",
+        "Could you check the fit?"
+      ],
+      [
+        "leak",
+        "漏水",
+        "liːk",
+        "The mask seems to leak."
+      ],
+      [
+        "swimming ability",
+        "游泳能力",
+        "ˈswɪmɪŋ əˈbɪləti",
+        "What swimming ability is required?"
+      ],
+      [
+        "stop",
+        "停止",
+        "stɑːp",
+        "I’d like to stop."
+      ],
+      [
+        "strap",
+        "带子",
+        "stræp",
+        "This strap feels tight."
+      ],
+      [
+        "mouthpiece",
+        "咬嘴",
+        "ˈmaʊθpiːs",
+        "Could you explain this mouthpiece?"
+      ],
+      [
+        "wetsuit",
+        "湿式防寒衣",
+        "ˈwetsuːt",
+        "Is a wetsuit provided?"
+      ],
+      [
+        "rash vest",
+        "防磨防晒上衣",
+        "ræʃ vest",
+        "Do I need a rash vest?"
+      ],
+      [
+        "boat",
+        "船",
+        "boʊt",
+        "Where do we board the boat?"
+      ],
+      [
+        "on board",
+        "在船上",
+        "ɑːn bɔːrd",
+        "Can I leave this on board?"
+      ],
+      [
+        "shore",
+        "岸边",
+        "ʃɔːr",
+        "Where is the shore entry point?"
+      ],
+      [
+        "reef",
+        "礁区",
+        "riːf",
+        "Will the guide explain the reef rules?"
+      ],
+      [
+        "visibility",
+        "能见度",
+        "ˌvɪzəˈbɪləti",
+        "What is visibility like today?"
+      ],
+      [
+        "current",
+        "水流",
+        "ˈkɜːrənt",
+        "Could you explain today’s conditions?"
+      ],
+      [
+        "briefing",
+        "活动前说明",
+        "ˈbriːfɪŋ",
+        "I didn’t understand part of the briefing."
+      ],
+      [
+        "glasses",
+        "眼镜",
+        "ˈɡlæsɪz",
+        "Where can I leave my glasses?"
+      ],
+      [
+        "secure storage",
+        "安全存放处",
+        "sɪˈkjʊr ˈstɔːrɪdʒ",
+        "Is secure storage available?"
+      ],
+      [
+        "reschedule",
+        "改期",
+        "ˌriːˈskedʒuːl",
+        "Can we reschedule?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "没有。需要什么经验或游泳能力？；面镜进水，能检查吗？。请按现场情况自己组织英语。",
+        "No. What experience or swimming ability is required?\nWater is getting into the mask. Could you check it?",
+        "询问参加条件；面镜合适吗"
+      ],
+      [
+        "确认条件与选择",
+        "这双太紧，能试大一双吗？；能帮我检查浮力背心吗？。请按现场情况自己组织英语。",
+        "These are too tight. Could I try a larger pair?\nCould you check the flotation vest for me?",
+        "脚蹼尺寸；浮力装备"
+      ],
+      [
+        "处理变化与收尾",
+        "有地方保管手机和眼镜吗？；我想先停下，找领队。。请按现场情况自己组织英语。",
+        "Is there a secure place for my phone and glasses?\nI’d like to stop and speak to the guide.",
+        "个人物品；不舒服时求助"
+      ]
+    ],
+    "transfer": [
+      "换到岸边浮潜课程",
+      "说明自己是完全新手，询问参加要求。试穿的脚蹼太大、面镜不舒服，请工作人员检查；未听懂返回信号，请再解释。",
+      "I’m a complete beginner. What ability is required? These fins are too big, and the mask is uncomfortable. Could you check the fit and explain the return signal again?",
+      "经验；要求；尺寸；检查；说明"
+    ],
+    "extra": [
+      "A good fit",
+      "尺寸和穿戴合适，不是在夸装备好看。",
+      "Could you check if this is a good fit?"
+    ],
+    "choices": [
+      [
+        "参加条件还是包含装备",
+        "What ability is required?",
+        "What equipment is included?",
+        "分别问人的条件与套餐装备。"
+      ],
+      [
+        "不确定还是决定暂停",
+        "I’m not sure I understand.",
+        "I’d like to stop.",
+        "要暂停时清楚说出，不只表示犹豫。"
+      ]
+    ],
+    "notice": "本课练习预约、装备、限制与求助的英语。具体动作、天气条件及参加要求由现场专业人员确认；未理解说明时请先暂停并提问。"
+  },
+  {
+    "id": "scuba",
+    "title": "水肺潜水：预约与沟通",
+    "en": "At the dive centre",
+    "group": "活动",
+    "intro": "如实说明资格，核对教练与装备，没理解时及时请人解释。",
+    "context": "你到潜水中心咨询体验项目，不假设浮潜等于潜水经验。需要核对资格、报名信息、教练安排和装备穿戴。",
+    "exchanges": [
+      [
+        "说明资格",
+        "Are you a certified diver?",
+        "有潜水认证吗？",
+        "No. Do you offer an instructor-led beginner programme?",
+        "没有。有教练带领的新手体验吗？",
+        "据实说明认证情况，由潜水中心判断可参加的项目。",
+        "换中心，说明自己有认证但很久没参加。",
+        "I’m certified, but I haven’t dived for a long time."
+      ],
+      [
+        "核对报名要求",
+        "Please complete these forms.",
+        "请填这些表。",
+        "Could you explain which forms I need to complete?",
+        "能说明要填写哪些表吗？",
+        "不理解表格就询问；涉及个人健康的信息据实填写。",
+        "换项目，询问需提供哪些信息。",
+        "What information do you need from me?"
+      ],
+      [
+        "教练安排",
+        "You’ll meet your instructor shortly.",
+        "稍后见教练。",
+        "Who will be supervising the session?",
+        "谁负责带领这次活动？",
+        "supervising 问负责指导的人，不等于单纯交通接送。",
+        "换体验项目，问指导人员。",
+        "Who will be supervising us?"
+      ],
+      [
+        "装备名称",
+        "Let’s check the equipment.",
+        "来核对装备。",
+        "Could you explain what this regulator and BCD are for?",
+        "能解释这个调节器和BCD的用途吗？",
+        "先了解名称与用途，操作须由教练完整说明。",
+        "换中心，问潜水电脑的用途。",
+        "Could you explain what the dive computer is for?"
+      ],
+      [
+        "穿戴不合适",
+        "How does the wetsuit feel?",
+        "防寒衣穿着如何？",
+        "It feels too tight around my shoulders. Could you check the size?",
+        "肩部感觉太紧，能检查尺码吗？",
+        "具体说部位，让工作人员检查是否合适。",
+        "换装备，说明脚蹼松。",
+        "The fins feel loose. Could you check the fit?"
+      ],
+      [
+        "没理解时暂停",
+        "Are you ready to continue?",
+        "准备继续吗？",
+        "Not yet. I didn’t understand that part. Could you explain it again?",
+        "还没，那部分没听懂，能再解释吗？",
+        "未理解就直接说明，不跟着点头继续。",
+        "换任何教学活动，要求示范。",
+        "Could you demonstrate that before we continue?"
+      ]
+    ],
+    "grammar": [
+      [
+        "认证与体验不能混答",
+        "certified / beginner programme",
+        "certified 表示具有相应认证；参加过一次活动不自动表示已获认证。向中心说明真实资格和近期经验，让教练确认适合的项目。",
+        "I’ve tried it once, but I’m not certified.",
+        "我体验过一次，但没有认证。",
+        "不要把 snorkelling 经验表述成 scuba certification。"
+      ],
+      [
+        "问装备用途",
+        "What is this for?",
+        "for 在这里问用途。regulator、BCD、dive computer 等是不同装备；认识单词不表示已理解操作。可以逐项请教练解释与示范。",
+        "Could you show me how this is used?",
+        "能示范这个如何使用吗？",
+        "本课不提供下潜、呼吸或减压操作步骤。"
+      ],
+      [
+        "继续前说明未理解",
+        "Not yet / I didn’t understand…",
+        "Not yet 表示目前未准备好；接着指出哪一部分没理解。Could you explain it again? 请求重讲，demonstrate 请求示范。",
+        "I’m not ready to continue until I understand the briefing.",
+        "我想先听懂说明再继续。",
+        "不要为了避免尴尬回答 ready；先核对自己真的理解。"
+      ]
+    ],
+    "words": [
+      [
+        "scuba diving",
+        "水肺潜水",
+        "ˈskuːbə ˈdaɪvɪŋ",
+        "Do you offer beginner scuba sessions?"
+      ],
+      [
+        "certification",
+        "认证",
+        "ˌsɜːrtɪfɪˈkeɪʃən",
+        "What certification is required?"
+      ],
+      [
+        "instructor",
+        "教练",
+        "ɪnˈstrʌktər",
+        "Who is the instructor?"
+      ],
+      [
+        "regulator",
+        "呼吸调节器",
+        "ˈreɡjəleɪtər",
+        "Could you explain the regulator?"
+      ],
+      [
+        "BCD",
+        "浮力控制装置简称",
+        "ˌbiː siː ˈdiː",
+        "Could you explain this BCD?"
+      ],
+      [
+        "wetsuit",
+        "湿式防寒衣",
+        "ˈwetsuːt",
+        "Could you check the wetsuit size?"
+      ],
+      [
+        "fins",
+        "脚蹼",
+        "fɪnz",
+        "The fins feel loose."
+      ],
+      [
+        "mask",
+        "面镜",
+        "mæsk",
+        "Could you check the mask?"
+      ],
+      [
+        "briefing",
+        "活动前完整说明",
+        "ˈbriːfɪŋ",
+        "Could you repeat the briefing?"
+      ],
+      [
+        "supervise",
+        "指导；监督",
+        "ˈsuːpərvaɪz",
+        "Who will supervise the session?"
+      ],
+      [
+        "dive centre",
+        "潜水中心",
+        "daɪv ˈsentər",
+        "Where is the dive centre?"
+      ],
+      [
+        "tank",
+        "气瓶",
+        "tæŋk",
+        "Could you explain this tank?"
+      ],
+      [
+        "dive computer",
+        "潜水电脑",
+        "daɪv kəmˈpjuːtər",
+        "What is the dive computer for?"
+      ],
+      [
+        "weight system",
+        "配重系统",
+        "weɪt ˈsɪstəm",
+        "Could the instructor check the weight system?"
+      ],
+      [
+        "gauge",
+        "仪表",
+        "ɡeɪdʒ",
+        "Could you explain this gauge?"
+      ],
+      [
+        "buddy",
+        "潜伴",
+        "ˈbʌdi",
+        "Who is my buddy for the session?"
+      ],
+      [
+        "signal",
+        "信号",
+        "ˈsɪɡnəl",
+        "Could you explain that signal again?"
+      ],
+      [
+        "depth",
+        "深度",
+        "depθ",
+        "Could you explain the planned depth?"
+      ],
+      [
+        "questionnaire",
+        "问卷",
+        "ˌkwestʃəˈner",
+        "Could you explain the questionnaire?"
+      ],
+      [
+        "equipment check",
+        "装备核查",
+        "ɪˈkwɪpmənt tʃek",
+        "Will the instructor do an equipment check?"
+      ],
+      [
+        "refresher",
+        "复习训练",
+        "rɪˈfreʃər",
+        "Do you offer a refresher session?"
+      ],
+      [
+        "rental kit",
+        "租赁装备套装",
+        "ˈrentəl kɪt",
+        "What is included in the rental kit?"
+      ],
+      [
+        "mouthpiece",
+        "咬嘴",
+        "ˈmaʊθpiːs",
+        "This mouthpiece feels uncomfortable."
+      ],
+      [
+        "demonstrate",
+        "示范",
+        "ˈdemənstreɪt",
+        "Could you demonstrate that again?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "没有。有教练带领的新手体验吗？；能说明要填写哪些表吗？。请按现场情况自己组织英语。",
+        "No. Do you offer an instructor-led beginner programme?\nCould you explain which forms I need to complete?",
+        "说明资格；核对报名要求"
+      ],
+      [
+        "确认条件与选择",
+        "谁负责带领这次活动？；能解释这个调节器和BCD的用途吗？。请按现场情况自己组织英语。",
+        "Who will be supervising the session?\nCould you explain what this regulator and BCD are for?",
+        "教练安排；装备名称"
+      ],
+      [
+        "处理变化与收尾",
+        "肩部感觉太紧，能检查尺码吗？；还没，那部分没听懂，能再解释吗？。请按现场情况自己组织英语。",
+        "It feels too tight around my shoulders. Could you check the size?\nNot yet. I didn’t understand that part. Could you explain it again?",
+        "穿戴不合适；没理解时暂停"
+      ]
+    ],
+    "transfer": [
+      "换到潜水中心咨询台",
+      "你有认证但很久未潜水，想问是否提供复习训练、哪些装备含在内。试穿防寒衣肩部太紧，未理解一个信号，请再解释。",
+      "I’m certified, but I haven’t dived for a long time. Do you offer a refresher session? What equipment is included? The wetsuit feels tight around my shoulders. Could you explain that signal again?",
+      "真实经验；复习训练；装备；合身；说明"
+    ],
+    "extra": [
+      "Not yet",
+      "目前还没有／还没准备好，需要结合问题理解。",
+      "Not yet. Could you explain that again?"
+    ],
+    "choices": [
+      [
+        "认证还是体验过",
+        "I’m certified.",
+        "I’ve tried it once.",
+        "体验经历与认证不同，据实说明。"
+      ],
+      [
+        "认识名称还是理解操作",
+        "What is this called?",
+        "Could you show me how it is used?",
+        "分别问名称与请求专业示范。"
+      ]
+    ],
+    "notice": "本课练习预约、装备、限制与求助的英语。具体动作、天气条件及参加要求由现场专业人员确认；未理解说明时请先暂停并提问。"
+  },
+  {
+    "id": "surfing",
+    "title": "冲浪课程与租板",
+    "en": "At the surf school",
+    "group": "活动",
+    "intro": "选新手课程，认板、脚绳和防寒衣，问当天安排与求助方式。",
+    "context": "你首次参加冲浪课，想确认教练、小组人数和装备。防寒衣不合身、讲解没听懂时，需要请工作人员处理。",
+    "exchanges": [
+      [
+        "说明水平",
+        "Have you surfed before?",
+        "以前冲浪过吗？",
+        "No, this is my first lesson.",
+        "没有，这是第一节课。",
+        "把真实经验告诉教练，不根据视频经历说会操作。",
+        "换冲浪学校，说明只上过一课。",
+        "I’ve only had one lesson before."
+      ],
+      [
+        "课程与租板",
+        "Do you want a lesson or rental only?",
+        "上课还是只租板？",
+        "A beginner lesson with an instructor, please.",
+        "要教练带领的新手课。",
+        "rental only 不含教学，须确认服务范围。",
+        "换活动中心，问是否含教练。",
+        "Is an instructor included?"
+      ],
+      [
+        "装备范围",
+        "The board is included.",
+        "包含冲浪板。",
+        "Does that also include a leash and a wetsuit?",
+        "也包含脚绳和防寒衣吗？",
+        "also 追问额外装备，不能从板已含推断整套都含。",
+        "换租板店，问脚绳是否含。",
+        "Is a leash included?"
+      ],
+      [
+        "防寒衣尺寸",
+        "How does the wetsuit fit?",
+        "防寒衣合身吗？",
+        "It feels too tight at the neck. Could you check it?",
+        "脖子处太紧，能检查吗？",
+        "指出部位与感觉，让工作人员判断与调整。",
+        "换另一件，说明肩部不适。",
+        "It feels uncomfortable around my shoulders."
+      ],
+      [
+        "未理解示范",
+        "Shall we move on?",
+        "继续下一步吗？",
+        "Could you demonstrate that again more slowly?",
+        "能再慢一点示范吗？",
+        "清楚表达未理解；讲解完成不等于自己掌握。",
+        "换课程，请再解释信号。",
+        "Could you explain that signal again?"
+      ],
+      [
+        "当天与改期",
+        "We’re checking today’s conditions.",
+        "正在评估今天的条件。",
+        "What happens if the lesson can’t go ahead?",
+        "如果课上不了怎么安排？",
+        "询问运营方改期或退款处理，不自己判断海况。",
+        "换课程，问是否改期。",
+        "Can we reschedule if the lesson is cancelled?"
+      ]
+    ],
+    "grammar": [
+      [
+        "课程与租赁",
+        "a lesson / rental only",
+        "lesson 含教学安排，rental only 只提供器材。确认教练、小组和语言支持，能避免订成与经验不匹配的服务。",
+        "Is this suitable for someone who has never surfed?",
+        "适合完全没冲过浪的人吗？",
+        "租到器材不意味着已具备独立使用资格。"
+      ],
+      [
+        "装备和身体位置",
+        "tight at the neck / around the shoulders",
+        "at 指具体位置，around 描述周围区域。把不适部位说清楚，再请工作人员检查，而非自行判断大小是否符合要求。",
+        "Could I try another size?",
+        "能试另一尺码吗？",
+        "换尺码仍应由工作人员确认合身和适用性。"
+      ],
+      [
+        "课程能否进行",
+        "go ahead / be cancelled",
+        "go ahead 表示按计划进行；cancelled 表示取消。想知道改期、费用和通知方式，应分别询问。",
+        "When will you let us know if it can go ahead?",
+        "什么时候通知是否照常上课？",
+        "语言课不提供判断海况或具体动作的训练。"
+      ]
+    ],
+    "words": [
+      [
+        "surfboard",
+        "冲浪板",
+        "ˈsɜːrfbɔːrd",
+        "Is a surfboard included?"
+      ],
+      [
+        "leash",
+        "脚绳；系绳",
+        "liːʃ",
+        "Is the leash included?"
+      ],
+      [
+        "wetsuit",
+        "湿式防寒衣",
+        "ˈwetsuːt",
+        "Could you check the wetsuit?"
+      ],
+      [
+        "instructor",
+        "教练",
+        "ɪnˈstrʌktər",
+        "Who is our instructor?"
+      ],
+      [
+        "beginner lesson",
+        "新手课",
+        "bɪˈɡɪnər ˈlesən",
+        "I’d like a beginner lesson."
+      ],
+      [
+        "rental only",
+        "仅租赁",
+        "ˈrentəl ˈoʊnli",
+        "Is this rental only?"
+      ],
+      [
+        "conditions",
+        "现场条件；海况",
+        "kənˈdɪʃənz",
+        "How are today’s conditions?"
+      ],
+      [
+        "demonstrate",
+        "示范",
+        "ˈdemənstreɪt",
+        "Could you demonstrate it again?"
+      ],
+      [
+        "reschedule",
+        "改期",
+        "ˌriːˈskedʒuːl",
+        "Can we reschedule?"
+      ],
+      [
+        "size",
+        "尺码",
+        "saɪz",
+        "Could I try another size?"
+      ],
+      [
+        "soft-top",
+        "软面板类型的",
+        "sɔːft tɑːp",
+        "Is this a soft-top board?"
+      ],
+      [
+        "fin",
+        "板鳍",
+        "fɪn",
+        "Could you check the fin?"
+      ],
+      [
+        "wax",
+        "板蜡",
+        "wæks",
+        "Could you explain what the wax is for?"
+      ],
+      [
+        "rash vest",
+        "防磨上衣",
+        "ræʃ vest",
+        "Is a rash vest provided?"
+      ],
+      [
+        "ankle",
+        "脚踝",
+        "ˈæŋkəl",
+        "This feels tight around my ankle."
+      ],
+      [
+        "shore",
+        "岸边",
+        "ʃɔːr",
+        "Where do we meet on shore?"
+      ],
+      [
+        "wave",
+        "浪",
+        "weɪv",
+        "Will the instructor explain the waves today?"
+      ],
+      [
+        "tide",
+        "潮汐",
+        "taɪd",
+        "Will the tide affect the lesson?"
+      ],
+      [
+        "current",
+        "水流",
+        "ˈkɜːrənt",
+        "Could you explain the current conditions?"
+      ],
+      [
+        "briefing",
+        "活动前说明",
+        "ˈbriːfɪŋ",
+        "I need help understanding the briefing."
+      ],
+      [
+        "group size",
+        "小组人数",
+        "ɡruːp saɪz",
+        "What is the group size?"
+      ],
+      [
+        "private lesson",
+        "私教课",
+        "ˈpraɪvət ˈlesən",
+        "Do you offer private lessons?"
+      ],
+      [
+        "meeting point",
+        "集合点",
+        "ˈmiːtɪŋ pɔɪnt",
+        "Where is the meeting point?"
+      ],
+      [
+        "go ahead",
+        "按计划进行",
+        "ɡoʊ əˈhed",
+        "Will the lesson go ahead?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "没有，这是第一节课。；要教练带领的新手课。。请按现场情况自己组织英语。",
+        "No, this is my first lesson.\nA beginner lesson with an instructor, please.",
+        "说明水平；课程与租板"
+      ],
+      [
+        "确认条件与选择",
+        "也包含脚绳和防寒衣吗？；脖子处太紧，能检查吗？。请按现场情况自己组织英语。",
+        "Does that also include a leash and a wetsuit?\nIt feels too tight at the neck. Could you check it?",
+        "装备范围；防寒衣尺寸"
+      ],
+      [
+        "处理变化与收尾",
+        "能再慢一点示范吗？；如果课上不了怎么安排？。请按现场情况自己组织英语。",
+        "Could you demonstrate that again more slowly?\nWhat happens if the lesson can’t go ahead?",
+        "未理解示范；当天与改期"
+      ]
+    ],
+    "transfer": [
+      "换到海边冲浪学校",
+      "报名页写 Group lesson / Board included / Wetsuit extra。你是第一次，问教练语言和小组人数、租防寒衣费用，以及取消时能否改期。",
+      "This is my first lesson. Can the instructor explain in English? What is the group size? How much extra is the wetsuit rental? Can we reschedule if the lesson is cancelled?",
+      "经验；语言；人数；装备费；改期"
+    ],
+    "extra": [
+      "Go ahead",
+      "按原计划进行，也可能在其他情境表示允许继续。",
+      "Will the lesson go ahead today?"
+    ],
+    "choices": [
+      [
+        "器材还是教学",
+        "Is the board included?",
+        "Is instruction included?",
+        "器材包含不代表教学包含。"
+      ],
+      [
+        "取消还是改期",
+        "Has it been cancelled?",
+        "Can we reschedule it?",
+        "前句确认状态，后句提出后续安排。"
+      ]
+    ],
+    "notice": "本课练习预约、装备、限制与求助的英语。具体动作、天气条件及参加要求由现场专业人员确认；未理解说明时请先暂停并提问。"
+  },
+  {
+    "id": "skiing",
+    "title": "滑雪课程与装备租赁",
+    "en": "At the ski resort",
+    "group": "活动",
+    "intro": "区分双板和单板，试靴认装备，问雪票、课程与集合地点。",
+    "context": "你第一次到滑雪场，计划学双板。租雪靴时脚趾不舒服，需要专业人员检查，并核对课程是否含装备和雪票。",
+    "exchanges": [
+      [
+        "双板还是单板",
+        "Skiing or snowboarding?",
+        "双板还是单板？",
+        "Skiing. I’m a complete beginner.",
+        "双板，我是完全新手。",
+        "skiing 与 snowboarding 是不同项目，先明确。",
+        "换课程，说明想学单板。",
+        "Snowboarding. I’m a complete beginner."
+      ],
+      [
+        "租赁范围",
+        "Do you need the full package?",
+        "需要全套吗？",
+        "Does the package include boots, skis and poles?",
+        "包含雪靴、双板和雪杖吗？",
+        "package 内容各店不同，逐项确认。",
+        "换单板租赁，问是否含靴和板。",
+        "Does it include boots and a snowboard?"
+      ],
+      [
+        "雪靴不合适",
+        "How do the boots feel?",
+        "雪靴感觉如何？",
+        "My toes feel uncomfortable. Could you check the fit?",
+        "脚趾不舒服，能检查是否合脚吗？",
+        "报告部位和感受，请专业人员检查。",
+        "换另一双，说明脚跟感觉松。",
+        "My heel feels loose. Could you check the fit?"
+      ],
+      [
+        "固定器核查",
+        "Please wait for the equipment check.",
+        "请等装备检查。",
+        "Could a technician check the bindings?",
+        "能请技术人员检查固定器吗？",
+        "认识 binding 不代表可以自行调整。",
+        "换单板装备，要求工作人员核查。",
+        "Could a technician check this equipment?"
+      ],
+      [
+        "雪票与课程",
+        "Have you bought a lift pass?",
+        "买雪票了吗？",
+        "Is a lift pass included in the lesson price?",
+        "课价包含雪票吗？",
+        "课程、装备与缆车使用可能分开收费。",
+        "换滑雪学校，问租赁费是否含。",
+        "Is equipment rental included in the lesson price?"
+      ],
+      [
+        "集合与条件",
+        "Meet at the beginner area.",
+        "在新手区集合。",
+        "Could you show me the meeting point, and will the lesson go ahead today?",
+        "能指一下集合点，今天课照常吗？",
+        "集合位置与当前运营信息分别核对。",
+        "换课程，确认通知方式。",
+        "How will you let us know if the lesson is cancelled?"
+      ]
+    ],
+    "grammar": [
+      [
+        "双板和单板别混答",
+        "skis / snowboard",
+        "skis 常用复数表示一对双板，a snowboard 是一块单板。boots、poles 等也常用复数。点租赁套装时明确项目。",
+        "I need ski boots, not snowboard boots.",
+        "我需要双板雪靴，不是单板雪靴。",
+        "项目不同不表示装备可以自行混用，交由工作人员核对。"
+      ],
+      [
+        "部位与穿戴感受",
+        "around my toes / my heel feels loose",
+        "描述脚趾、脚跟、小腿等部位，让工作人员评估尺码与穿戴。不要因为想快点开始而略过不适。",
+        "Could you check the fit around my calves?",
+        "能检查小腿这里是否合适吗？",
+        "本课不指导如何调整雪靴或固定器。"
+      ],
+      [
+        "三种费用分开问",
+        "lesson / rental / lift pass",
+        "lesson 是教学，rental 是装备租用，lift pass 是场地缆车等使用凭证的一类。组合是否含这些项目需看具体产品。",
+        "Does that price include the lesson, rental and lift pass?",
+        "这个价包含课、装备和雪票吗？",
+        "一个 package 名称不等于统一的全包范围。"
+      ]
+    ],
+    "words": [
+      [
+        "skis",
+        "双板滑雪板",
+        "skiːz",
+        "Are skis included?"
+      ],
+      [
+        "snowboard",
+        "单板滑雪板",
+        "ˈsnoʊbɔːrd",
+        "I’d like to rent a snowboard."
+      ],
+      [
+        "boots",
+        "雪靴",
+        "buːts",
+        "Could you check these boots?"
+      ],
+      [
+        "poles",
+        "雪杖",
+        "poʊlz",
+        "Are poles included?"
+      ],
+      [
+        "bindings",
+        "固定器",
+        "ˈbaɪndɪŋz",
+        "Could a technician check the bindings?"
+      ],
+      [
+        "helmet",
+        "头盔",
+        "ˈhelmɪt",
+        "Is a helmet included?"
+      ],
+      [
+        "lift pass",
+        "雪票；缆车通行凭证",
+        "lɪft pæs",
+        "Is a lift pass included?"
+      ],
+      [
+        "beginner area",
+        "新手区域",
+        "bɪˈɡɪnər ˈeriə",
+        "Where is the beginner area?"
+      ],
+      [
+        "instructor",
+        "教练",
+        "ɪnˈstrʌktər",
+        "Who is our instructor?"
+      ],
+      [
+        "technician",
+        "技术人员",
+        "tekˈnɪʃən",
+        "Could I speak to a technician?"
+      ],
+      [
+        "goggles",
+        "滑雪镜",
+        "ˈɡɑːɡəlz",
+        "Do you rent goggles?"
+      ],
+      [
+        "gloves",
+        "手套",
+        "ɡlʌvz",
+        "Are gloves included?"
+      ],
+      [
+        "base layer",
+        "贴身内层",
+        "beɪs ˈleɪər",
+        "Do I need a base layer?"
+      ],
+      [
+        "waterproof jacket",
+        "防水外套",
+        "ˈwɔːtərpruːf ˈdʒækɪt",
+        "Can I rent a waterproof jacket?"
+      ],
+      [
+        "ski pants",
+        "滑雪裤",
+        "skiː pænts",
+        "Do you rent ski pants?"
+      ],
+      [
+        "calf",
+        "小腿肚",
+        "kæf",
+        "It feels tight around my calf."
+      ],
+      [
+        "heel",
+        "脚跟",
+        "hiːl",
+        "My heel feels loose."
+      ],
+      [
+        "toe",
+        "脚趾",
+        "toʊ",
+        "My toes feel uncomfortable."
+      ],
+      [
+        "slope",
+        "雪道；坡面",
+        "sloʊp",
+        "Which slopes are open today?"
+      ],
+      [
+        "chairlift",
+        "吊椅缆车",
+        "ˈtʃerlɪft",
+        "Is this the right chairlift?"
+      ],
+      [
+        "gondola",
+        "箱式缆车",
+        "ˈɡɑːndələ",
+        "Where is the gondola station?"
+      ],
+      [
+        "piste",
+        "滑雪道",
+        "piːst",
+        "Could you explain the piste map?"
+      ],
+      [
+        "rental package",
+        "租赁套装",
+        "ˈrentəl ˈpækɪdʒ",
+        "What’s in the rental package?"
+      ],
+      [
+        "equipment check",
+        "装备核查",
+        "ɪˈkwɪpmənt tʃek",
+        "When is the equipment check?"
+      ]
+    ],
+    "tasks": [
+      [
+        "说清基本需求",
+        "双板，我是完全新手。；包含雪靴、双板和雪杖吗？。请按现场情况自己组织英语。",
+        "Skiing. I’m a complete beginner.\nDoes the package include boots, skis and poles?",
+        "双板还是单板；租赁范围"
+      ],
+      [
+        "确认条件与选择",
+        "脚趾不舒服，能检查是否合脚吗？；能请技术人员检查固定器吗？。请按现场情况自己组织英语。",
+        "My toes feel uncomfortable. Could you check the fit?\nCould a technician check the bindings?",
+        "雪靴不合适；固定器核查"
+      ],
+      [
+        "处理变化与收尾",
+        "课价包含雪票吗？；能指一下集合点，今天课照常吗？。请按现场情况自己组织英语。",
+        "Is a lift pass included in the lesson price?\nCould you show me the meeting point, and will the lesson go ahead today?",
+        "雪票与课程；集合与条件"
+      ]
+    ],
+    "transfer": [
+      "换到单板新手课",
+      "报名为 Snowboard lesson / Rental extra / Meet at school desk。你说明是完全新手，问单板与雪靴租金、雪票是否含、集合点在哪里；靴子脚跟松，请工作人员检查。",
+      "I’m a complete beginner at snowboarding. How much is board and boot rental? Is a lift pass included? Where is the school desk? My heel feels loose in these boots; could you check the fit?",
+      "项目；经验；租赁；雪票；集合；穿戴"
+    ],
+    "extra": [
+      "Full package",
+      "全套组合，但仍应核对具体包含什么。",
+      "What is included in the full package?"
+    ],
+    "choices": [
+      [
+        "双板还是单板",
+        "A pair of skis.",
+        "A snowboard.",
+        "数量与项目都不同。"
+      ],
+      [
+        "教学还是通行凭证",
+        "A beginner lesson.",
+        "A lift pass.",
+        "买课程不必然含缆车或场地凭证。"
+      ]
+    ],
+    "notice": "本课练习预约、装备、限制与求助的英语。具体动作、天气条件及参加要求由现场专业人员确认；未理解说明时请先暂停并提问。"
   }
 ]

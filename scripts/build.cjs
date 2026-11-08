@@ -17,4 +17,4 @@ for(const [page,source]of Object.entries(pages)){
  fs.writeFileSync(path.join(dist,page),html);
 }
 fs.copyFileSync(path.join(dist,'restaurant.html'),path.join(dist,'table-talk.html'));
-console.log('Built home and 10 travel topics in dist/.');
+console.log('Built home and '+(travel.lessons.length+2)+' travel topics in dist/.');

@@ -1,6 +1,6 @@
 {
   "name": "table-talk-web",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Scenario-based English: restaurant conversations, practical vocabulary and recall.",
   "scripts": {

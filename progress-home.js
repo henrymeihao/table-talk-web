@@ -1,5 +1,5 @@
 (()=>{
- const ids=['restaurant','cafe','bakery','brunch','pub','cocktails','hotel','luggage','metro','rail'];
+ const ids=[...document.querySelectorAll('.topic-card')].map(card=>card.getAttribute('href').replace('.html','')).filter(id=>/^[a-z][a-z0-9-]*$/.test(id));
  const keyFor=id=>id==='restaurant'?'table-talk-v2':id==='cafe'?'table-talk-cafe-v1':'table-talk-'+id+'-v1';
  const keys=ids.map(keyFor),labels={};
  for(const card of document.querySelectorAll('.topic-card')){const id=card.getAttribute('href').replace('.html','');labels[id]=card.querySelector('h3').textContent}
@@ -52,5 +52,12 @@
   finally{event.target.value=''}
  });
  $('#restore-progress-text').addEventListener('click',()=>restoreText($('#backup-json').value));
+ const search=document.querySelector('#topic-search');
+ if(search)search.addEventListener('input',()=>{
+  const query=search.value.trim().toLocaleLowerCase();let count=0;
+  for(const card of document.querySelectorAll('.topic-card')){card.hidden=!card.textContent.toLocaleLowerCase().includes(query);if(!card.hidden)count++}
+  for(const section of document.querySelectorAll('.topic-section'))section.hidden=![...section.querySelectorAll('.topic-card')].some(card=>!card.hidden);
+  document.querySelector('#topic-search-status').textContent=query?'找到 '+count+' 个主题':'';
+ });
  window.addEventListener('pageshow',render);document.addEventListener('visibilitychange',()=>{if(!document.hidden)render()});render();
 })();
