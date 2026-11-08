@@ -2,7 +2,8 @@
   "name": "table-talk-web",
   "version": "1.0.0",
   "private": true,
-  "description": "Scenario-based English: restaurant conversations, practical vocabulary and recall.",
+  "description": "Scenario-based travel English across 33 topics, with pronunciation, practice and local progress.",
+  "license": "MIT",
   "scripts": {
     "test": "node tests/learning-store.cjs && node tests/pronunciation.cjs && node tests/topics.cjs && node tests/travel.cjs && node tests/progress.cjs",
     "build": "node scripts/build.cjs && node scripts/publish-static.cjs",
