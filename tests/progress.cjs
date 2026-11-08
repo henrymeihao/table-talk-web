@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),Store=require('../learning-store.js');
+const words=[{id:'w-sample',legacy:'0-0'}],tasks=[{id:'understand'}],expressions=[{id:'e0'}];
+const yesterday=Date.UTC(2026,10,7,12),today=yesterday+86400000;
+let s=Store.normalise({schema:3,drafts:{understand:'private practice answer'},saved:['w-sample'],ratings:{understand:1},reviews:{'task:understand':{due:today+1000,score:1,count:2,active:true,last:yesterday}}},words,tasks,expressions,yesterday);
+assert.equal(s.history.length,0,'Do not invent earlier practice events');
+Store.record(s,'task:understand',1,yesterday);Store.record(s,'word:w-sample',2,today);
+s.lastSection='review';const restored=Store.normalise(JSON.parse(JSON.stringify(s)),words,tasks,expressions,today);
+assert.equal(restored.history.length,2);assert.equal(restored.history[0].at,yesterday);assert.equal(restored.lastSection,'review');assert.equal(restored.drafts.understand,'private practice answer');
+assert.equal(restored.reviews['task:understand'].due,today+1000,'Reopening does not reset the due date');
+const bad=Store.normalise({lastSection:'javascript:alert(1)',history:[{key:'bogus',at:today,score:2},{key:'task:understand',at:today,score:9}]},words,tasks,expressions,today);
+assert.equal(bad.lastSection,'top');assert.equal(bad.history.length,0);
+console.log('PASS: legacy preservation, dated practice across days, position resume, stable review dates and invalid-history rejection.');

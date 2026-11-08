@@ -1,0 +1,36 @@
+const fs=require('node:fs');
+const vm=require('node:vm');
+const assert=require('node:assert/strict');
+const path=require('node:path');
+const base=path.resolve(__dirname,'..');
+const Store=require(path.join(base,'learning-store.js'));
+const context=vm.createContext({});
+for(const file of ['lesson.js','lexicon.js'])vm.runInContext(fs.readFileSync(path.join(base,file),'utf8'),context);
+const {words,allTasks,coreExpressions}=vm.runInContext('({words,allTasks,coreExpressions})',context);
+const normalise=(raw,now=1000000)=>Store.normalise(raw,words,allTasks,coreExpressions,now);
+const old=normalise({saved:['0-3','2-4','w-mussels'],drafts:{understand:'my own sentence',unknown:'ignore'},ratings:{understand:1,unknown:2},reviews:{}});
+assert.deepEqual([...old.saved],['w-mussels','w-oysters','w-still-water','w-sparkling-water']);
+assert.equal(old.drafts.understand,'my own sentence');
+assert.equal(old.drafts.unknown,undefined);
+assert.equal(old.ratings.understand,1);
+assert.equal(old.reviews['task:understand'].due,1000000+86400000);
+assert.equal(Store.due(old,1000000).length,4);
+Store.rate(old,'word:w-mussels',2,1000000);
+assert.equal(old.reviews['word:w-mussels'].due,1000000+259200000);
+assert(!Store.due(old,1000000+259199999).includes('word:w-mussels'));
+assert(Store.due(old,1000000+259200000).includes('word:w-mussels'));
+const restored=normalise(JSON.parse(JSON.stringify(old)),2000000);
+assert.equal(restored.reviews['word:w-mussels'].due,old.reviews['word:w-mussels'].due);
+assert.equal(restored.drafts.understand,'my own sentence');
+restored.saved=restored.saved.filter(id=>id!=='w-mussels');
+restored.reviews['word:w-mussels'].active=false;
+assert(!Store.due(normalise(restored),1e12).includes('word:w-mussels'));
+for(const [score,interval]of [[0,600000],[1,86400000],[2,259200000]]){
+ const state=normalise(null);Store.enroll(state,'expr:swap',1000);Store.rate(state,'expr:swap',score,1000);
+ assert.equal(state.reviews['expr:swap'].due,1000+interval);
+}
+assert.equal(new Set(words.map(w=>w.id)).size,words.length);
+assert(words.every(w=>!w.text.includes(' / ')&&w.ipa&&w.meaning&&w.example&&w.legacy));
+const corrupt=normalise({saved:['bogus'],reviews:{'word:w-mussels':{due:null,score:2},'bogus':{due:1,score:0}},ratings:{understand:8}});
+assert.equal(Object.keys(corrupt.reviews).length,0);
+console.log(`PASS: migration preserves grouped bookmarks, drafts and ratings; ${words.length} unique words; persisted due dates, all intervals and invalid records checked.`);

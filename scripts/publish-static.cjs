@@ -1,0 +1,2 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..');fs.mkdirSync(path.join(root,'docs'),{recursive:true});for(const name of fs.readdirSync(path.join(root,'dist'))){if(name.endsWith('.html'))fs.copyFileSync(path.join(root,'dist',name),path.join(root,'docs',name))}fs.writeFileSync(path.join(root,'docs','.nojekyll'),'');console.log('Updated docs/ for GitHub Pages.');

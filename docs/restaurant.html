@@ -1,0 +1,453 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#254e43"><title>Table Talk · 读懂菜单，把需求说清楚</title><style>:root{--bg:#f7f5ee;--ink:#263c32;--text:#36453d;--muted:#71766c;--line:#d9dccf;--green:#254e43;--accent:#a65036;--pale:#e9edde}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.85 system-ui,'Microsoft YaHei',sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}a{color:var(--green);text-underline-offset:4px}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #ba795b;outline-offset:4px}.reading-track{position:fixed;top:0;left:0;right:0;height:3px;z-index:10;background:#dce1d4}.reading-track i{display:block;background:var(--accent);width:0;height:100%}header{height:96px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;max-width:1390px;margin:auto;padding:0 5%}.brand{display:flex;align-items:center;gap:13px;font-size:14px;letter-spacing:2px;font-weight:650;text-decoration:none}.brand b{display:grid;place-items:center;width:38px;height:38px;background:var(--green);border-radius:50%;color:var(--bg);font:700 25px Georgia,serif;letter-spacing:-2px}.brand span{font-size:11px;letter-spacing:1px;font-weight:400;color:var(--muted);border-left:1px solid var(--line);padding-left:15px}.edition,.eyebrow{font-size:10px;letter-spacing:2px}.eyebrow{color:var(--accent);font-weight:650}.edition{color:var(--muted)}.layout{max-width:1210px;margin:55px auto 0;display:grid;grid-template-columns:220px minmax(0,1fr);gap:72px;padding:0 32px}aside{position:sticky;top:32px;align-self:start}aside h2{font:400 27px/1.6 Georgia,'Microsoft YaHei',serif;margin:18px 0 9px}aside>p{font-size:12px;color:var(--muted)}nav{display:grid;margin:28px 0 32px;gap:5px}nav a{font-size:12px;padding:10px 12px;text-decoration:none;border-left:2px solid transparent}nav a:hover{background:var(--pale);border-color:var(--green)}.side-note{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:12px}.small{font-size:12px;color:var(--muted)}#save-status{font-size:10px;margin-top:25px}main{min-width:0}h1{font:400 clamp(42px,5.2vw,67px)/1.17 Georgia,serif;color:var(--ink);margin:17px 0 22px;letter-spacing:-1.4px}h1 em{font-weight:400;color:var(--green)}.lead{max-width:600px;color:#5d695e;font-size:16px;line-height:2}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 29px}.meta span{font-size:10px;border:1px solid #c7cebd;padding:3px 9px;border-radius:3px;color:#60705f}.hero{background:#e5eadb;display:grid;grid-template-columns:1fr 220px;border-radius:6px;overflow:hidden}.hero>div:first-child{padding:28px}.hero h3{font-size:21px;font-weight:500;margin:12px 0}.hero p{font-size:13px;line-height:1.95}.dish{background:#d6dfcb;display:flex;justify-content:center;align-items:center;flex-direction:column}.dish svg{width:210px;max-width:100%}.dish span{font:italic 12px Georgia,serif;color:#62745b;margin-top:2px}.route{padding:20px 0;margin-top:16px;border-bottom:1px solid var(--line)}.route b{font-size:13px}.route p{font-size:13px;margin:6px 0;color:var(--muted)}.chapter{padding:55px 0 8px;scroll-margin-top:10px}.chapter-head{display:flex;justify-content:space-between;gap:15px;color:var(--accent);font-size:10px;letter-spacing:1.2px;border-top:1px solid var(--line);padding-top:18px}.chapter h2{font:400 35px/1.3 Georgia,serif;margin:22px 0 12px;color:var(--ink);letter-spacing:-.6px}.desc{color:var(--muted);font-size:14px;margin-bottom:25px}.menu{background:#fffcf5;border:1px solid var(--line);padding:24px 30px;margin:25px 0 32px}.menu-title{font:22px Georgia,serif;letter-spacing:2px;text-align:center}.menu-caption{font-size:9px;letter-spacing:2px;text-align:center;color:var(--muted);margin:9px 0 17px}.menu-line{display:flex;justify-content:space-between;gap:17px;padding:17px 0;border-top:1px dotted #cdd2c4}.menu-line b{font:19px Georgia,serif;display:block}.menu-line small{font:13px Georgia,serif;color:var(--muted);display:block;margin:5px 0}.menu-line p{font-size:12px;color:var(--muted);margin:5px 0}.menu-line>span{font:18px Georgia,serif}.line{display:grid;grid-template-columns:64px 1fr;gap:15px;border-bottom:1px solid var(--line);padding:18px 0}.speaker{font-size:9px;color:var(--accent);letter-spacing:1px;margin-top:3px}.line p{margin:0}.line .en{font-size:17px}.line .zh{font-size:13px;color:var(--muted);margin-top:6px}mark{background:#e4eacb;color:#274c3e;border-radius:2px;padding:1px 3px}.insight{background:var(--pale);border-left:3px solid #87956c;padding:20px 23px;margin:25px 0;font-size:13px}.insight p{margin:9px 0}.en{font-family:Georgia,serif;font-size:17px}.pattern{margin:24px 0;border:1px solid var(--line);background:#fcfaf4;padding:26px 29px}.pattern-head{display:flex;align-items:start;gap:14px}.pattern-head>span{font:25px Georgia,serif;color:#a5ad94}.pattern h3{font-size:18px;font-weight:550;margin:0 0 15px;line-height:1.7;color:var(--ink)}.pattern p{font-size:13px;margin:12px 0}.formula{font:18px/1.75 Georgia,serif;background:#e9edde;padding:13px 17px;color:var(--green);overflow-wrap:anywhere}.examples{padding-left:16px;border-left:2px solid #bec8ad;margin:17px 0}.examples p{font-family:Georgia,serif;font-size:17px;margin:8px 0}.examples small{font-family:system-ui,'Microsoft YaHei',sans-serif;display:block;font-size:12px;color:var(--muted)}.mistake{padding-top:12px;border-top:1px dashed var(--line);font-size:12px}.mistake strong{color:var(--accent)}.search-label{display:block;font-size:11px;color:var(--muted);margin-bottom:7px}input[type=search]{width:100%;border:1px solid #c9d1bd;border-radius:4px;background:#fffcf5;padding:12px 15px;color:var(--ink);font-size:14px;margin-bottom:15px}.word-group h3{display:flex;justify-content:space-between;gap:15px;font-size:16px;margin:25px 0 6px}.word-group h3 span{font-size:11px;color:var(--muted);font-weight:400}.word{border-bottom:1px solid var(--line);padding:20px 0;display:grid;grid-template-columns:180px 1fr 34px;gap:18px;align-items:start}.word h4{font:20px/1.3 Georgia,serif;margin:2px 0 6px;color:var(--ink)}.word .pos{font-size:10px;color:var(--muted)}.word .meaning{font-size:13px;margin:0 0 5px}.word .example{font:15px/1.6 Georgia,serif;margin:0 0 7px}.word .usage{font-size:12px;color:var(--muted);margin:0}.star{border:1px solid var(--line);color:var(--green);background:none;width:32px;height:32px;border-radius:50%;font-size:19px;line-height:1}.star[aria-pressed=true]{background:#e6d9af;border-color:#c0ac74}.idiom{padding:22px 0;border-bottom:1px solid var(--line)}.idiom-head{display:flex;justify-content:space-between;gap:16px;align-items:baseline}.idiom h3{font:23px Georgia,serif;margin:0}.badge{font-size:10px;background:#e7ebde;color:#54684b;padding:3px 8px;white-space:nowrap}.idiom p{font-size:13px;margin:10px 0}.idiom .en{font-size:17px}.task{padding:26px;border:1px solid var(--line);border-radius:5px;margin:20px 0;background:#fcfaf4}.task h3{font-size:18px;margin:7px 0 14px;font-weight:500}.task label{display:block;font-size:12px;color:var(--muted)}textarea{display:block;width:100%;min-height:130px;resize:vertical;border:1px solid #ccd2c0;border-radius:3px;background:var(--bg);font:15px/1.8 system-ui,sans-serif;padding:15px;color:var(--ink);margin:9px 0 17px}.criteria{font-size:12px;color:var(--muted);padding:0 0 12px}.ratings{display:flex;gap:8px;flex-wrap:wrap}.ratings button{border:1px solid #c7cfb9;background:none;padding:8px 12px;min-height:42px;font-size:12px;color:var(--green);border-radius:3px}.ratings button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}.answer-link{font-size:11px;display:inline-block;margin-top:12px}.answer-divider{padding:35px 0 22px;margin-top:40px;border-top:1px dashed var(--line)}.answer-divider>span{font-size:10px;color:var(--accent);letter-spacing:1px}.answer-divider h3{font-size:24px;font-weight:500;margin:12px 0}.answer-divider p{font-size:13px;color:var(--muted)}.answer{border-top:1px solid var(--line);padding:24px 0;scroll-margin-top:30px}.answer h4{margin:0 0 15px;font-size:13px}.answer p{font-size:13px}.answer .en{font-size:19px;color:var(--green);line-height:1.8}.answer .alternatives{background:var(--pale);padding:13px 17px;font-size:13px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);margin:22px 0;background:var(--pale)}.stat{text-align:center;padding:21px 10px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;font:32px Georgia,serif;color:var(--green)}.stat span{font-size:11px;color:var(--muted)}.review-note{font-size:13px;color:var(--muted)}.weak-row,.saved-row{padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:start}.weak-row a{font-size:13px}.weak-row span{font-size:11px;color:var(--muted)}.saved-row p{margin:0;font-size:12px;color:var(--muted)}.saved-row b{font:18px Georgia,serif;color:var(--ink)}.saved-row .usage{margin-top:5px}#review>h3{font-size:16px;font-weight:550;margin-top:28px}footer{padding:35px 0 45px;margin-top:50px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}footer b{font-size:10px;letter-spacing:1.5px;font-weight:500}.sources{display:flex;gap:15px;flex-wrap:wrap;font-size:11px}[hidden]{display:none!important}@media(max-width:1000px){.layout{grid-template-columns:180px minmax(0,1fr);gap:35px}.hero{grid-template-columns:1fr 170px}aside h2{font-size:24px}.word{grid-template-columns:140px 1fr 32px;gap:14px}}@media(max-width:700px){header{height:76px;padding:0 22px}.brand{font-size:12px}.brand span,.edition{display:none}.layout{display:block;margin:25px auto 0;padding:0 22px}aside{position:static}aside>.eyebrow,aside h2,aside>p,aside .side-note{display:none}nav{display:flex;overflow-x:auto;gap:5px;margin:0 0 26px;padding-bottom:7px}nav a{font-size:11px;white-space:nowrap;padding:8px;border-left:none;border-bottom:1px solid var(--line)}h1{font-size:48px}.lead{font-size:14px}.hero{grid-template-columns:1fr 110px}.hero>div:first-child{padding:20px}.hero h3{font-size:18px}.hero p{font-size:12px}.dish svg{width:110px}.dish span{display:none}.meta{gap:6px}.meta span{font-size:9px}.chapter{padding-top:40px}.chapter h2{font-size:29px}.chapter-head{font-size:9px;letter-spacing:.7px}.menu{padding:22px 18px}.menu-line b{font-size:17px}.menu-line small{font-size:12px}.line{grid-template-columns:42px 1fr;gap:10px}.speaker{font-size:8px}.line .en{font-size:16px}.line .zh{font-size:12px}.pattern{padding:21px 18px}.pattern h3{font-size:16px}.formula{font-size:16px;padding:12px}.word{grid-template-columns:1fr 32px;gap:8px 12px}.word>div:first-child{grid-column:1}.word .word-body{grid-column:1;grid-row:2}.word .star{grid-column:2;grid-row:1}.word h4{font-size:21px;display:inline;margin-right:10px}.idiom-head{flex-wrap:wrap;gap:6px}.idiom h3{font-size:21px}.task{padding:21px 18px}.ratings{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.ratings button{font-size:11px;padding:8px 4px}.weak-row{display:block}.weak-row span{display:block;margin-top:5px}.chapter .desc{font-size:13px}.insight{padding:17px}.saved-row{gap:12px}.answer .en{font-size:18px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.ipa{display:block;font:13px/1.7 "Segoe UI",system-ui,sans-serif;color:#68745f;overflow-wrap:anywhere;margin:8px 0}.word-audio{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.say{display:inline-flex;gap:5px;align-items:center;min-height:36px;padding:5px 9px;border:1px solid #c8d1bb;border-radius:4px;color:var(--green);background:transparent;font-size:11px}.say:hover,.say.speaking{background:var(--green);color:white}.say:disabled{opacity:.4;cursor:default}.speech-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;background:var(--pale);padding:16px 18px}.speech-toolbar p{font-size:12px;margin:0}.slow-option{font-size:12px;display:flex;align-items:center;gap:5px;white-space:nowrap}.slow-option input{accent-color:var(--green);width:16px;height:16px}.speech-status{font-size:11px;color:var(--muted);min-height:22px;margin:10px 0 18px}.say:focus-visible{outline:3px solid #ba795b;outline-offset:3px}@media(max-width:700px){.speech-toolbar{align-items:flex-start;flex-direction:column;gap:10px}.ipa{margin:8px 0 6px}.word-audio{margin:8px 0 2px}.say{min-height:42px;padding:7px 12px}.word>div:first-child{min-width:0}.word .pos{white-space:nowrap}}
+
+.say{white-space:nowrap}
+
+.learning-layers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:20px 0 6px}.learning-layers>div{border-top:1px solid var(--line);padding-top:15px}.learning-layers p{font-size:12px;line-height:1.8}.learning-layers a{font-size:11px}.badge.muted{background:#e9e8de;color:#737866}.core-expression{padding:20px 0;border-bottom:1px solid var(--line)}.core-expression h3{font:23px/1.5 Georgia,serif;margin:10px 0}.core-expression p{font-size:13px;margin:7px 0}.core-expression p:last-child{color:var(--muted)}.core-followup{display:flex;flex-wrap:wrap;gap:15px 25px;margin:24px 0 32px;font-size:12px}.subheading{font-size:19px;font-weight:550;margin:35px 0 18px}.choice-card{border-left:3px solid #a5b08d;background:#eeeee4;padding:21px 24px;margin:18px 0}.choice-card h3{font-size:16px;font-weight:550;margin:0 0 13px}.choice-card p{font-size:13px}.choice-pair{border-bottom:1px solid #cdd4bf;padding-bottom:8px}.choice-pair p{font:18px/1.7 Georgia,serif;margin:8px 0;color:var(--green)}.dictionary-link{display:inline-block;font-size:10px;margin-top:10px;color:var(--muted)}.review-dashboard{display:grid;grid-template-columns:1fr 200px;gap:24px;padding:24px;background:var(--pale);border:1px solid var(--line);margin:22px 0}.review-dashboard p{margin:8px 0}.review-dashboard strong{font:35px Georgia,serif;color:var(--green)}.review-actions{display:grid;gap:9px;align-content:center}.action-button{background:var(--green);color:white;font:13px system-ui,sans-serif;padding:12px 18px;min-height:44px;border:1px solid var(--green);border-radius:4px;cursor:pointer}.action-button.secondary{color:var(--green);background:transparent}.action-button:disabled{opacity:.45;cursor:default}.text-control{border:0;background:none;color:var(--green);font-size:11px;min-height:35px;text-decoration:underline;text-underline-offset:4px}.text-control:disabled{opacity:.65;text-decoration:none;cursor:default}.session-header{border-top:1px solid var(--line);padding-top:25px;margin:28px 0 15px;display:flex;justify-content:space-between;gap:18px;align-items:start}.session-header h3{font-size:19px;margin:0}.recall-card{background:#fcfaf4;border:1px solid var(--line);padding:23px;margin:17px 0}.recall-card h4{font-size:16px;font-weight:500;line-height:1.9;margin:10px 0 18px}.recall-answer{background:var(--pale);padding:16px 18px;margin-bottom:18px}.recall-answer p{margin:6px 0}.recall-answer .en{font-size:19px;color:var(--green)}.rating-receipt{font-size:11px;color:var(--muted);min-height:20px;margin-bottom:0}.saved-row small{font-size:10px;color:var(--muted)}#review-session{scroll-margin-top:30px}.transfer-menu{border-top:3px solid #9d795e}
+@media(max-width:700px){.learning-layers{grid-template-columns:1fr;gap:13px}.learning-layers>div{padding:13px 0 0}.learning-layers p{margin:8px 0}.core-expression h3{font-size:20px}.choice-card{padding:18px}.choice-pair p{font-size:17px}.review-dashboard{grid-template-columns:1fr;padding:20px;gap:10px}.review-actions{grid-template-columns:1fr 1fr}.review-actions .text-control{grid-column:1/-1}.session-header{flex-direction:column;gap:12px}.recall-card{padding:19px}.idiom-head{flex-wrap:wrap}.idiom-head .badge{white-space:normal;font-size:9px}.action-button{font-size:12px;padding:11px}.word-audio .say{padding:7px 10px}}
+
+.exchange{padding:25px 0;border-bottom:1px solid var(--line)}.exchange h3{font-size:19px;font-weight:550;margin:10px 0 18px}.exchange>p{font-size:13px}.exchange-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:var(--pale);padding:20px 24px}.exchange-pair p{font:20px/1.6 Georgia,serif;color:var(--green);margin:8px 0}.exchange-pair small{font-size:12px;color:var(--muted)}.reference-fold{border:1px solid var(--line);padding:18px 22px;margin:24px 0}.reference-fold summary{cursor:pointer;font-size:14px;color:var(--green);padding:6px 0}.reference-fold[open]>summary{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:12px}#essentials .word{padding-top:22px;padding-bottom:22px}@media(max-width:700px){.exchange-pair{grid-template-columns:1fr;gap:17px;padding:18px}.exchange-pair>div+div{border-top:1px solid #cdd4bf;padding-top:13px}.exchange-pair p{font-size:19px}.reference-fold{padding:16px}.reference-fold summary{font-size:13px}}
+
+.audio-global{position:sticky;top:3px;z-index:8;background:var(--bg);border:1px solid var(--line);margin:28px 0 0;box-shadow:0 3px 8px #263c3209}.audio-global .speech-toolbar{padding:12px 16px;gap:10px}.audio-global .speech-toolbar p{font-size:11px;line-height:1.6}.audio-global .speech-status{padding:0 16px;margin:5px 0 8px;min-height:0;font-size:10px;line-height:1.5}.sentence-audio{margin:0 0 10px;min-height:36px;font:11px system-ui,sans-serif}.exchange-pair small{display:block}.core-audio-example{font:18px/1.7 Georgia,serif;color:var(--green)}#dialogue-audio{margin:12px 0}.chapter{scroll-margin-top:0}html{scroll-padding-top:125px}@media(max-width:700px){.audio-global .speech-toolbar{flex-direction:row;flex-wrap:wrap;align-items:center;padding:10px 12px}.audio-global .speech-toolbar p{flex:1 1 100%}.audio-global .speech-toolbar br{display:none}.audio-global .speech-status{padding:0 12px}.sentence-audio{min-height:42px}.line .sentence-audio{margin:5px 0}.chapter{scroll-margin-top:0}html{scroll-padding-top:165px}}
+
+.topic-switch{display:flex;gap:17px;font-size:12px;align-items:center}.topic-switch a{text-decoration:none;color:var(--muted)}.topic-switch a[aria-current]{color:var(--green);border-bottom:1px solid var(--green)}.home-main{max-width:1120px;margin:70px auto 0;padding:0 32px}.home h1{font-family:Georgia,'Microsoft YaHei',serif;font-size:clamp(36px,4.8vw,62px);line-height:1.4;letter-spacing:-1px}.home h1 em{font-style:normal}.home .lead{max-width:650px}.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin:42px 0}.topic-card{position:relative;display:block;text-decoration:none;background:#e6ecdd;border:1px solid #cdd5c0;border-radius:6px;padding:32px;transition:transform .15s,border-color .15s}.topic-card:hover{transform:translateY(-3px);border-color:var(--green)}.topic-card h2{font:30px/1.3 Georgia,serif;max-width:80%;margin:30px 0 14px}.topic-card h3{font-size:19px;font-weight:500}.topic-card>p{font-size:14px;max-width:340px}.topic-card strong{font-size:13px}.topic-card .meta{margin:20px 0 30px}.coffee-card{background:#ede5d6;border-color:#ddd0b9}.topic-art{position:absolute;right:28px;top:50px;font:58px Georgia,serif;color:#798e6b}.coffee-card .topic-art{font-size:45px}.home-method{border-top:1px solid var(--line);padding:22px 0}.home-method h2{font-size:21px;font-weight:500}.home-method p{max-width:800px;font-size:14px}.home-method .small{font-size:12px}@media(max-width:700px){header{height:auto;min-height:92px;flex-wrap:wrap;gap:15px;padding-top:18px;padding-bottom:18px}.topic-switch{width:100%;padding-left:51px;gap:22px}.home-main{margin-top:38px;padding:0 22px}.topic-grid{grid-template-columns:1fr;gap:20px;margin:30px 0}.topic-card{padding:25px}.topic-card h2{font-size:27px}.topic-art{right:20px;top:48px}.home-method h2{font-size:18px}}
+
+.home-progress{border:1px solid var(--line);background:#eeeee4;padding:26px;margin-top:30px}.home-progress h2{font-size:22px;font-weight:500}.home-progress h3{font-size:15px;font-weight:550}.progress-columns{display:grid;grid-template-columns:1fr 1fr;gap:25px}.progress-columns a{display:block;font-size:13px;margin:9px 0}.import-label{display:inline-block;margin:12px 0 12px 16px;font-size:13px}.import-label input{display:block;max-width:100%;font-size:12px}.resume-note{padding:14px 18px;background:var(--pale);font-size:13px}.topic-progress{border-top:1px solid var(--line);padding-top:13px}.home-progress .reference-fold{background:var(--bg)}@media(max-width:700px){.progress-columns{grid-template-columns:1fr;gap:8px}.home-progress{padding:20px}.import-label{display:block;margin-left:0}}
+
+.creator-credit{font-size:12px;letter-spacing:.3px;margin-top:24px}.creator-credit a{font-weight:600}
+</style></head><body>
+<div class="reading-track" aria-hidden="true"><i id="reading-progress"></i></div>
+<header><a href="#top" class="brand"><b>tt.</b> TABLE TALK <span>生活里的英语</span></a><div class="topic-switch"><a href="index.html">全部场景</a><a href="restaurant.html" aria-current="page">餐厅</a><a href="cafe.html">咖啡店</a></div></header>
+<div class="layout"><aside><span class="eyebrow">AT THE RESTAURANT</span><h2>看懂菜单，<br>说清想吃什么。</h2><p>一节可以顺着读完的场景课。</p><nav aria-label="本节目录"><a href="#scene">01 场景对话</a><a href="#casual">02 听懂、接得上</a><a href="#patterns">03 表达怎么选</a><a href="#essentials">04 必要词块 · 14 个</a><a href="#practice">05 自己表达</a><a href="#transfer">06 换张菜单</a><a href="#review">07 隔天复习</a><a href="#lexicon">08 菜单词库 · 按需查</a></nav><div class="side-note">先听懂、接得上，再把自己的需求说清楚。主线只有 14 个必要词块，其余遇到再查。</div><p id="save-status" class="small" role="status">回答与自评保存在此浏览器</p></aside>
+<main id="top"><section class="intro"><span class="eyebrow">EVERYDAY ENGLISH · LEARN & TRANSFER</span><h1>More than<br><em>“I’d like…”</em></h1><p class="lead">不只是点上一道菜。读懂烹饪方式，问清配料，提出替换；听到一句随口的英语，也知道怎么接。</p><div class="meta"><span>核心学习约 20 分钟</span><span>扩展内容随时查阅</span><span>连续阅读 · 自动保存</span></div><div class="hero"><div><span class="eyebrow">TODAY’S TABLE</span><h3>你想吃鱼，配一份沙拉。</h3><p>菜单上的 pan-seared 和 caper butter 看着陌生。你不太喜欢刺山柑，也想把酱汁单独放。要怎么问，才能点到自己想吃的东西？</p></div><div class="dish" aria-hidden="true"><svg viewBox="0 0 240 240"><circle cx="120" cy="120" r="103" fill="#f4f1e4"/><circle cx="120" cy="120" r="82" fill="none" stroke="#d9ddcf"/><path d="M84 80Q139 49 181 107L155 159Q104 167 70 117Z" fill="#ce9670"/><path d="M91 91l71 40M84 104l66 39M109 80l64 38" stroke="#ab734e" stroke-width="4"/><g fill="#84965c"><ellipse cx="62" cy="135" rx="13" ry="27" transform="rotate(-30 62 135)"/><ellipse cx="81" cy="158" rx="13" ry="25" transform="rotate(20 81 158)"/><ellipse cx="56" cy="167" rx="13" ry="19" transform="rotate(60 56 167)"/></g><circle cx="94" cy="173" r="10" fill="#b95d45"/><circle cx="57" cy="125" r="9" fill="#b95d45"/><path d="M158 66a28 28 0 0 1 29 31l-29-4Z" fill="#d9bd62"/></svg><span>a little more to talk about</span></div></div><div class="route"><b>这次先学哪条路线？</b><div class="learning-layers"><div><span class="badge">这次先会用</span><p>读对话 → 接上 6 组口语 → 学表达、认 14 个词块 → 做任务。</p><a href="#patterns">进入核心表达 →</a></div><div><span class="badge muted">遇到能认出</span><p>更多食材、做法和口感留在页末词库；按需展开，不算本节作业。</p><a href="#lexicon">按需要查词 →</a></div><div><span class="badge muted">有兴趣再积累</span><p>实用接话放在主线；更口语化的打包说法、夸张表达单独扩展。</p><a href="#casual">先看实用接话 →</a></div></div></div></section>
+
+
+
+
+
+<div class="audio-global" aria-label="全页朗读设置"><div class="speech-toolbar"><p>对话、口语和词表都可以听。<br>再点同一按钮停止，换一句自动切换。</p><label class="slow-option"><input type="checkbox" id="speech-slow"> 慢速朗读</label><button class="say" id="speech-stop" disabled>停止朗读</button></div><p class="speech-status" id="speech-status" role="status">使用设备英语合成语音，部分声音需要网络；词条另有词典发音入口。</p></div><section id="scene" class="chapter"><div class="chapter-head"><span>01 / IN CONTEXT</span><span>先看懂一次真实交流</span></div><h2>Don’t guess the menu.</h2><p class="desc">先看菜单，再读对话。中文直接放在英文下方，重点词块用颜色标出。</p><div class="menu"><div class="menu-title">THE LITTLE TABLE</div><div class="menu-caption">LUNCH MENU · 练习用虚构菜单</div><div class="menu-line"><div><b>Pan-seared sea bass</b><small>Roasted fennel · caper butter · choice of side</small><p>香煎海鲈鱼，配烤茴香球茎、刺山柑黄油酱；配菜自选</p></div><span>$24</span></div><div class="menu-line"><div><b>Braised lamb shank</b><small>Mashed potatoes · seasonal vegetables</small><p>慢炖羊小腿，配土豆泥和时蔬</p></div><span>$26</span></div><div class="menu-line"><div><b>Wild mushroom risotto</b><small>Parmesan · truffle oil</small><p>野生蘑菇意式烩饭，配帕尔马干酪和松露油</p></div><span>$19</span></div><p class="small">SIDES / 配菜：fries 薯条 · mixed greens 混合生菜 · roasted vegetables 烤蔬菜</p></div><div id="dialogue-audio"></div><div id="dialogue"></div><div class="insight"><b>读懂菜名的办法</b><p><strong>pan-seared</strong>（怎么做）+ <strong>sea bass</strong>（主食材）+ <strong>with caper butter</strong>（配什么）。先拆成几块，再追问不认识的部分，比猜整道菜容易。</p><p class="en">What’s caper butter? / What does it taste like?</p><p>“刺山柑黄油酱是什么？” / “它是什么味道？”两种问法都可以把陌生词变成交流的起点。</p></div></section><section id="casual" class="chapter"><div class="chapter-head"><span>02 / HEAR IT, KEEP IT GOING</span><span>主线 · 6 组实用口语</span></div><h2>Know what to say next.</h2><p class="desc">从点单前到结账，听懂对方在问什么，再选一句自然的回应。每组都说明用法和语气，可以顺着读，不用逐张翻卡。</p><div id="everyday-exchanges"></div><p class="insight">对话里的 I’m torn between… 表示“在两个选择之间拿不定主意”；I’ll go with… 表示“那我选……”。把它们连起来，就能从犹豫走到决定。</p><details class="reference-fold"><summary>口语扩展：打包说法、店家赠送与熟人间的夸张表达</summary><p class="small">有兴趣再看。标明使用场合，不要求这一轮主动掌握。</p><div id="idioms"></div></details></section><section id="patterns" class="chapter"><div class="chapter-head"><span>03 / YOUR CORE TOOLKIT</span><span>这次先会用 · 6 个核心表达</span></div><h2>Understand the moving parts.</h2><p class="desc">不只记整句。弄清每一部分在做什么，换一道菜、换一个需求也能说。</p><div id="core-expressions"></div><div class="core-followup"><a href="#practice">先用这 6 个表达做任务 →</a><a href="#grammar-depth">想弄清句型规则，继续深入 ↓</a></div><h3 class="subheading">同一个需求，为什么有两种说法？</h3><div id="choice-context"></div><h3 class="subheading" id="grammar-depth">按需深入：5 组语法说明</h3><p class="small">需要时逐项看；可以先完成任务，再回来查不确定的句型。</p><div id="grammar"></div></section><section id="essentials" class="chapter"><div class="chapter-head"><span>04 / JUST THE USEFUL WORDS</span><span>主线 · 14 个必要词块</span></div><h2>A small working vocabulary.</h2><p class="desc">先认出这些能影响点餐的词：配菜、酱汁、熟度、饮品与费用。bill / check 是同一需求的地区说法，不算两项额外任务。每个词都可以听读音；想练哪个，再收藏哪个，不会自动把整张词表加入复习。</p><div id="essential-words"></div><p class="small">遇到 sea bass、caper 等具体食材，不必先背完再点菜。可以问 What’s that?，也可以到页末词库查阅。</p></section><section id="practice" class="chapter"><div class="chapter-head"><span>05 / MAKE IT YOURS</span><span>集中做一次输出练习</span></div><h2>Your table. Your words.</h2><p class="desc">三个任务一起放在这里。可以写，也可以说；参考表达在更下方，先给自己一点独立组织的时间。</p><div id="tasks"></div><div class="answer-divider"><span>REFERENCE EXPRESSIONS</span><h3>练完了，再往下对照。</h3><p>不同答案都可能成立。重点检查需求有没有说完整，再回到题目记录自己的掌握情况。</p></div><div id="answers"></div><div class="insight"><b>下一步：离开熟悉的菜单</b><p>上面是对本课内容的练习。接下来换一家店，看看你能否自己选出合适的表达。</p><a href="#transfer">做新菜单任务 →</a></div></section><section id="transfer" class="chapter"><div class="chapter-head"><span>06 / A DIFFERENT MENU</span><span>核心迁移 · 不按原对话复现</span></div><h2>New place. Same skills.</h2><p class="desc">这家小店的菜单第一次出现。先看英语描述，按自己的需求完成交流；参考表达在任务下方。</p><div class="menu transfer-menu"><div class="menu-title">CORNER SOUP & SANDWICH</div><div class="menu-caption">A NEW MENU · 练习用虚构菜单</div><div class="menu-line"><div><b>Roasted tomato soup</b><small>Tomato · cream · basil</small></div><span>$9</span></div><div class="menu-line"><div><b>Roasted pepper soup</b><small>Roasted peppers · vegetable stock · olive oil</small></div><span>$9</span></div><div class="menu-line"><div><b>Grilled mushroom sandwich</b><small>Mushrooms · cheese · mustard mayo</small></div><span>$12</span></div><p class="small">Small or large bowls available. Ask us about bread and sides.</p></div><div id="transfer-task"></div><div class="answer-divider"><span>AFTER YOUR ATTEMPT</span><h3>先完成交流，再对照。</h3><p>自查有没有问清需求、处理不能调整的情况，并确认新选择。</p></div><div id="transfer-answer"></div></section><section id="review" class="chapter"><div class="chapter-head"><span>07 / RECALL & REUSE</span><span>隔天再用 · 自动保存复习日期</span></div><h2>Remember it somewhere else.</h2><p class="desc">学完任务会安排下次回忆；收藏的词先做一次提取练习。核心表达会换到咖啡店情境，不只是再看原句。</p><div id="summary" aria-live="polite"></div><div class="review-dashboard"><div><span class="eyebrow">READY TO RECALL</span><p><strong id="due-count">0</strong> 项待复习</p><p id="review-next" class="small"></p></div><div class="review-actions"><button class="action-button" id="start-due">开始到期复习</button><button class="action-button secondary" id="start-early">提前练一轮</button><button class="text-control" id="enroll-core">把核心表达加入复习</button></div></div><p class="small">简单安排：还不会，10 分钟后；有提示能说，明天；能独立表达，3 天后。以你本次自评重新计时；没有自评的项目保持原日期。</p><div id="review-session"></div><h3>下次先练这些任务</h3><div id="weak"></div><h3>独立收藏的词语</h3><div id="saved"></div><p class="small">再次打开此文件，就能看到到期内容。记录保存在当前浏览器，不自动跨设备同步，也不发送提醒。你可以随时提前复习。</p></section><section id="lexicon" class="chapter"><div class="chapter-head"><span>08 / LOOK IT UP WHEN NEEDED</span><span id="word-count"></span></div><h2>Your menu reference.</h2><p class="desc">这里保留更丰富的食材、做法和口感词。遇到了再查，不算本节必学内容；只有你主动收藏的词才加入回忆练习。</p><label class="search-label" for="word-search">在扩展词库中查找（英文、中文或相关例句）</label><input id="word-search" type="search" placeholder="试试：炖 / mushroom / 口感" autocomplete="off"><details id="reference-vocabulary" class="reference-fold"><summary>展开菜单词库 · 不需要这一轮学完</summary><div id="words"></div></details><p id="no-words" hidden class="insight">没有找到匹配词语。可以换个关键词，或清空搜索。</p></section><footer><b>TABLE TALK / FIELD NOTES 01</b><p>本节例句与中文讲解为自编。以下词义、烹饪用语和地区差异参考 Cambridge Dictionary；不同餐厅的菜单名称仍可能不同。</p><div class="sources"><a href="https://dictionary.cambridge.org/pronunciation/english/gnocchi">gnocchi 发音</a><a href="https://dictionary.cambridge.org/pronunciation/english/risotto">risotto 发音</a><a href="https://dictionary.cambridge.org/dictionary/english/braise">braise</a><a href="https://dictionary.cambridge.org/dictionary/english/sear">sear</a><a href="https://dictionary.cambridge.org/dictionary/english/poach">poach</a><a href="https://dictionary.cambridge.org/dictionary/english/entree">entrée</a><a href="https://dictionary.cambridge.org/dictionary/english/on-the-house">on the house</a><a href="https://dictionary.cambridge.org/dictionary/english/doggy-bag">doggy bag</a></div><p class="creator-credit">Created by <a href="https://github.com/henrymeihao" target="_blank" rel="noopener noreferrer">henrymeihao</a> · TABLE TALK</p></footer></main></div><script>const topic={"id": "restaurant", "storageKey": "table-talk-v2", "reviewLabel": "换到咖啡店", "coreAudioExamples": {"order": "Could I have the sea bass, please?", "ingredients": "Does the sauce contain dairy?", "included": "Does the fish come with a side?", "omit": "Could you leave out the capers?", "side": "Could I have the dressing on the side?", "swap": "Could I have mixed greens instead of fries?"}};
+
+;
+const dialogue=[
+['SERVER','Have you had a chance to look at the menu?','有时间看过菜单了吗？这是一种自然的开场问法。'],
+['YOU','Yes. I’m <mark>torn between</mark> the sea bass and the risotto. What would you recommend?','看过了。我在海鲈鱼和烩饭之间拿不定主意。你推荐什么？'],
+['SERVER','The sea bass is popular. It’s pan-seared and served with caper butter.','海鲈鱼很受欢迎。它是平底锅高温煎制的，配刺山柑黄油酱。'],
+['YOU','What does caper butter taste like?','刺山柑黄油酱是什么味道？'],
+['SERVER','It’s buttery, with a tangy, slightly salty taste from the capers.','有黄油香，刺山柑会带来一点酸味和咸味。'],
+['YOU','I’ll <mark>go with</mark> the sea bass. Could I have the butter <mark>on the side</mark>?','那我选海鲈鱼。可以把黄油酱单独放吗？'],
+['SERVER','Certainly. Would you like fries or mixed greens with that?','当然。配菜要薯条还是混合生菜？'],
+['YOU','Mixed greens, please. And could you <mark>leave out</mark> the capers?','混合生菜，谢谢。另外，可以不放刺山柑吗？'],
+['SERVER','The capers are already mixed into the butter. We can serve the fish without the butter, with a wedge of lemon instead.','刺山柑已经拌进黄油里了。我们可以不给鱼配黄油酱，换成一角柠檬。'],
+['YOU','That works for me. Just to check, does the salad <mark>come with</mark> dressing?','这样可以。再确认一下，沙拉配沙拉汁吗？'],
+['SERVER','Yes. We can put that on the side too.','配的。沙拉汁也可以单独放。'],
+['YOU','Perfect. Still water for me, please. <mark>That’s all for now.</mark>','太好了。我要不含气的水，谢谢。暂时就这些。'],
+['SERVER','How’s everything?','用餐时，服务员来问：吃得怎么样？'],
+['YOU','Everything’s great, thanks.','都很好，谢谢。没问题时简短回应就够了。'],
+['YOU','Could I take the rest home? And could we have the bill, please?','用餐结束：可以把剩下的打包吗？另外，请给我们账单。']];
+const grammar=[
+{n:'01',title:'提出请求：I’d like、I’ll have 与 Could I have',formula:'I’d like + 名词 / to + 动词原形<br>Could I have + 名词 + …?',body:'I’d like 是 I would like 的缩写。点菜时后面直接接菜名；说“想做什么”时接 to + 动词。I’ll have / I’ll go with 适合在看过菜单或听完推荐后宣布自己的选择。Could I have…? 把选择说成请求，也很适合提出调整。这里的 could 用来缓和语气，不是在讲过去。',examples:[['I’d like the sea bass, please.','我想要海鲈鱼。the 指菜单上这一道菜。'],['I’d like to try the risotto.','我想试试烩饭。try 是动词，所以前面要有 to。'],['I’ll have the lamb. Could I have extra vegetables?','我要羊肉。可以多加一点蔬菜吗？']],error:'I’d like to the sea bass → I’d like the sea bass。不是所有 like 后面都加 to；取决于后面接名词还是动词。I want… 语法也成立，但在这个服务场景中，I’d like… 更柔和。'},
+{n:'02',title:'问清菜里有什么：come with、contain 与 be made with',formula:'Does + 第三人称单数主语 + 动词原形 …?<br>Is + it / the dish + 描述 / 过去分词 …?',body:'Does it come with…? 问随菜附带什么；Does it contain…? 问是否含某种成分；Is it made with…? 追问制作时用了什么。Does 已经承担了第三人称单数形式，后面的动词回到原形。Is 则可以连接 spicy 这样的形容词，或 made 这样的过去分词。',examples:[['Does the fish come with a side?','鱼配一道配菜吗？side 在这里是可数的“一份配菜”。'],['Does the sauce contain dairy?','酱汁含乳制品吗？dairy 在这里泛指乳制品。'],['Is the risotto made with chicken stock?','烩饭是用鸡高汤做的吗？主食材是蔬菜，也不自动说明汤底是什么。']],error:'Does it comes with rice? → Does it come with rice? / Does it spicy? → Is it spicy? 先看后面是动词还是形容词，别只按中文“是不是”选助动词。'},
+{n:'03',title:'把需求说具体：without、leave out、on the side',formula:'Could I have it without + 配料?<br>Could you leave out + 配料?<br>Could I have + 酱汁 + on the side?',body:'without 表示成品里不带某种东西；leave out 把“省去这个配料”的动作说出来；on the side 表示分开放，而不是不提供。on the side 很适合酱汁和沙拉汁，因为你可以自己控制用量。配料可能预先混好，所以提出请求后，还要听对方能否调整。',examples:[['Could you leave out the capers?','可以不放刺山柑吗？也可以说：Could you leave the capers out?'],['Could I have the dressing on the side?','沙拉汁另放。它仍然会随菜提供。'],['Could you leave them out?','用代词 them 时放中间；不说 leave out them。']],error:'without onions 与 with the onions on the side 不同：前者不要洋葱，后者要洋葱但分开放。it 也要指得清楚；有鱼、酱汁和沙拉时，直接重复 the sauce 更清楚。'},
+{n:'04',title:'替换配菜：instead of 与 substitute',formula:'Could I have A instead of B?<br>Could I substitute A for B?',body:'这两个句型里 A 都是你想要的，B 是原来的。instead of 后接名词、代词或 -ing 形式；instead 单独使用时，通常不在后面直接接被替换的东西。substitute A for B 意思是用 A 替换 B，方向容易记反，刚开始直接用第一种更省心。',examples:[['Could I have mixed greens instead of fries?','我要混合生菜，替代原本的薯条。'],['Could I substitute vegetables for the potatoes?','用蔬菜替换土豆。仍然是想要的在前。'],['The fish is sold out. I’ll have the risotto instead.','鱼卖完了，那我改点烩饭。instead 在句尾就可以。']],error:'I’ll have salad instead fries → I’ll have salad instead of fries。替换是否免费也要问：Is there an extra charge for that?（这个需要额外收费吗？）'},
+{n:'05',title:'数量说自然：some、a 和“一份”的用法',formula:'some + 不可数名词 / 可数名词复数<br>a / an + 可数名词单数<br>a portion of / a side of + 食物',body:'rice、water 通常作不可数名词；fries、capers 常以复数出现。说一份菜时，可以用 a portion of…；强调额外配菜时可以用 a side of…。食物词的可数性也会随意思改变：chicken 作肉类通常不可数，a chicken 可以指一整只鸡。',examples:[['Could we have some water and a side of fries?','要一些水，再加一份薯条。'],['I’d like a bowl of rice.','一碗米饭，用容器表示份量。'],['Two coffees, please.','在点单语境里，coffees 可以省略地指两杯咖啡。']],error:'a rice 一般不用于表示“一份米饭”。点饮料时 some water 不指定容器；a glass of water 和 a bottle of water 则说清楚了一杯或一瓶。'}];
+const idioms=[
+['I’m torn between…','可以主动用','在两个选择之间拿不定主意，不是“被撕开”。后面通常明确说两个选项。','I’m torn between the lamb and the sea bass.','接着问：Which would you recommend?'],
+['I’ll go with…','可以主动用','在当前点餐语境中表示“我选……”，不是要和食物一起走。','I’ll go with the risotto, then.','适合听完推荐、比较过选项后使用。'],
+['That works for me.','可以主动用','对方提出替换或安排后，表示“这样对我来说可以”。','We can serve it without the butter. — That works for me.','不是用来泛泛评价一道菜“很好吃”的句子。'],
+['Could we get this to go?','美式口语','请把这个打包。get 在这里是自然的口语用法。','We can’t finish this. Could we get it to go?','英式语境也能听到 takeaway，但打包剩菜时 take the rest home 很清楚。'],
+['This one’s on the house.','习惯表达 · 先听懂','这份由店家免费提供。house 在这里指店家，不是房子。','The dessert is on the house.','店家宣布赠送时会用；不能把它当作自己点单时默认免费的要求。'],
+['Doggy bag','非正式名词 · 先认识','把没吃完的食物带走用的袋子或容器，并不要求家里有狗。','Could I have a doggy bag?','主动说 Could I take the rest home? 或要 a to-go box 也很直接。'],
+['I could eat a horse.','夸张口语 · 熟人间','表示非常饿，不是在点马肉。属于夸张的习惯说法。','I skipped lunch. I could eat a horse.','适合和同伴聊天；和服务员沟通需求时说 I’m really hungry 就够用。'],
+['I’m stuffed.','非正式口语','表示吃得很饱，甚至有点撑。stuffed 也会出现在菜名里表示“填了馅的”。','No dessert for me, thanks. I’m stuffed.','stuffed mushrooms 是填馅蘑菇；I’m stuffed 才是在说自己的饱腹感。']];
+const tasks=[
+{id:'understand',name:'问清陌生菜品，再做选择',goal:'你对 pan-seared sea bass 感兴趣，但不知道 caper butter 是什么味道。先问酱汁的味道，再确认鱼是不是配配菜。',checks:'问酱汁味道；确认配菜。',answer:'What does the caper butter taste like? And does the sea bass come with a side?',why:'What does… taste like? 询问味道特点；Does… come with…? 询问附带的东西。',alternative:'Could you tell me what caper butter is? Does the fish come with vegetables or fries?',hint:'taste like / come with',refs:'pattern-1'},
+{id:'customise',name:'把替换与调整一次说清楚',goal:'你要海鲈鱼，把配菜从薯条换成混合生菜，不要刺山柑，沙拉汁单独放，并询问替换是否加钱。',checks:'点鱼；换配菜；不放刺山柑；沙拉汁另放；询问额外费用。',answer:'I’d like the sea bass, please. Could I have mixed greens instead of fries, and the dressing on the side? Could you leave out the capers? Is there an extra charge for the substitution?',why:'不用强行合成一句。拆成几个短请求，指代清楚就可以。dressing 和 capers 分开说，避免 it 的指向模糊。',alternative:'服务员说刺山柑已经混进酱汁时：Could I have the fish without the caper butter, then? A wedge of lemon would be fine.',hint:'I’d like / instead of / leave out / on the side / extra charge',refs:'pattern-2'},
+{id:'resolve',name:'应对售罄，最后顺利离开',goal:'服务员说 We’re out of sea bass today。请推荐一道不辣的替代菜，然后决定点蘑菇烩饭。用餐中服务员问 How’s everything?，你觉得都不错。用餐结束后，你想打包剩下的食物、结账，并确认账单有没有服务费。',checks:'请求不辣的推荐；改点烩饭；回应用餐询问；打包；请求账单；确认服务费。',answer:'What would you recommend instead? I’d prefer something that isn’t spicy.\nI’ll go with the mushroom risotto, then.\nEverything’s great, thanks.\nCould I take the rest home? And could we have the bill, please? Is a service charge included?',why:'这是一组先后发生的交流，不必一次说给服务员听。instead 表示替代；the rest 指剩下的部分；included 询问是否已包含。',alternative:'美式说法：Could I get a to-go box? Could we get the check, please?',hint:'recommend instead / go with / the rest / bill / included',refs:'casual'}];
+
+const everydayExchanges=[
+{title:'还没选好，不用急着点',heard:'Are you ready to order?',meaning:'现在可以点菜了吗？',reply:'Could we have another minute, please?',zh:'可以再给我们一点时间吗？',why:'another minute 常泛指再等一小会儿，不需要恰好一分钟。对方在问是否准备好；说 No 后补上这个请求，交流就能继续。',use:'决定好以后：Yes, I’ll go with the fish, please.'},
+{title:'听到缺货，顺势找替代',heard:'We’re out of sea bass today.',meaning:'今天海鲈鱼卖完了／没有供应了。',reply:'What would you recommend instead?',zh:'那你推荐换成什么？',why:'be out of + 食材或菜品，在这里表示没有存货，不是“出去”。instead 接住对方的话，把交流带到替代选择。',use:'加上口味：I’d prefer something that isn’t spicy.（我更想要不辣的。）'},
+{title:'对方给了可行的替换方案',heard:'We can serve it without the butter.',meaning:'我们可以不配黄油酱。',reply:'That works for me.',zh:'这样可以。',why:'works 在这里是“这个安排可行、符合我的需求”，适合回应具体方案；不是在评价食物的味道。',use:'接着做选择：I’ll go with that, then.（那就这样吧。）'},
+{title:'用餐中，服务员来问情况',heard:'How’s everything?',meaning:'吃得怎么样？都还好吗？',reply:'Everything’s great, thanks.',zh:'都很好，谢谢。',why:'这是检查用餐情况的常见问法，不是在问你最近的生活。不必展开长聊；有问题时也可以自然接着说明。',use:'需要处理问题：Actually, I ordered the salad without dressing.（其实，我点的是不加沙拉汁的沙拉。）'},
+{title:'暂时不需要再加东西',heard:'Anything else for you?',meaning:'还需要其他的吗？',reply:'That’s all for now, thanks.',zh:'暂时就这些，谢谢。',why:'for now 限定“眼下”，给之后再点甜品或饮料留出空间。这里的 all 指本次要点的东西。',use:'如果之后想加点：Could we also have some bread, please?'},
+{title:'打包、结账，清楚收尾',heard:'Would you like a box for the rest?',meaning:'剩下的需要餐盒打包吗？',reply:'Yes, please. And could we have the bill?',zh:'好的，谢谢。另外，请给我们账单。',why:'the rest 指已经谈到的剩余食物。也可以主动问 Could I take the rest home?；美式语境常用 check 表示账单。',use:'问费用：Is a service charge included?（已经包含服务费了吗？）'}
+];
+
+;
+// Each row is one independently pronounceable, savable and reviewable meaning.
+// Final field preserves the legacy grouped bookmark's source ID for migration.
+const lexiconGroups=[
+{name:'食材与菜品',note:'遇到能认出 · 不要求一次背完',rows:[
+['sea bass','海鲈鱼','Is the sea bass grilled?','鱼类 bass 读 /bæs/，低音 bass 读 /beɪs/。','siː bæs','0-0'],
+['lamb shank','羊小腿','How is the lamb shank cooked?','shank 指腿的下段；不要和整条 leg of lamb 混同。','læm ʃæŋk','0-1'],
+['scallops','扇贝（肉）','I’d like the seared scallops.','单数 scallop；菜单上常用复数。与 mussels 比较辨认。','ˈskɑːləps','0-2'],
+['mussels','贻贝','Are the mussels served in a sauce?','单数 mussel；不是 oysters（牡蛎）。','ˈmʌsəlz','0-3'],
+['oysters','牡蛎；生蚝','Are the oysters served raw?','raw 是生的；oysters 本身不说明生吃还是熟食。','ˈɔɪstərz','0-3'],
+['chickpeas','鹰嘴豆','Does the salad contain chickpeas?','常见于沙拉和炖菜；不是鸡肉。','ˈtʃɪkpiːz','0-4'],
+['lentils','扁豆','Is the lentil soup made with vegetable stock?','作名词修饰 soup 时通常用单数 lentil。','ˈlentəlz','0-4'],
+['aubergine','茄子（英式词）','I’d like the roasted aubergine.','与美式 eggplant 指同一种常见蔬菜；此处音标标注英式读法。','UK ˈəʊbəʒiːn','0-5'],
+['eggplant','茄子（美式词）','Is the eggplant roasted or fried?','与 aubergine 比较；名字带 egg，不表示含鸡蛋。','ˈeɡplænt','0-5'],
+['fennel','茴香；此菜单指茴香球茎','Could I have the fish without the fennel?','fennel seeds 是茴香籽；bulb 是球茎。','ˈfenəl','0-6'],
+['capers','腌渍刺山柑花蕾','Could you leave out the capers?','常带酸咸味；单数 caper。','ˈkeɪpərz','0-7'],
+['risotto','意式烩饭','Is the mushroom risotto vegetarian?','菜名本身不能说明是否含肉高汤或乳制品。','rɪˈzɑːtoʊ','0-8'],
+['gnocchi','意式小团子','What sauce comes with the gnocchi?','常用土豆等制作；注意开头的 /nj/。合成读音可与词典录音对照。','ˈnjɑːki','0-9']
+]},
+{name:'烹饪方式与口感',note:'遇到能认出 · 比较时各自有自己的词条',rows:[
+['grilled','烤架或明火等烤制的','Is the fish grilled?','与 roasted 比较；都可译为“烤”，做法有别。','ɡrɪld','1-0'],
+['roasted','烘烤、烤制的','Could I have roasted vegetables?','菜单常见 roasted vegetables；区别于 pan-seared。','ˈroʊstɪd','1-0'],
+['pan-seared','平底锅高温煎出表面焦色的','Are the scallops pan-seared?','强调处理表面；不说明内部熟度。','ˌpæn ˈsɪrd','1-1'],
+['braised','加少量液体、加盖慢炖的','The braised lamb is tender.','与 roasted 的干热烤制比较。','breɪzd','1-2'],
+['poached','在热水等液体中轻煮的','I’d like poached eggs on toast.','poached eggs 常指水波蛋。','poʊtʃt','1-3'],
+['battered','裹面糊的','Is the fish battered?','batter 是面糊；与 breaded 的面包屑区分。','ˈbætərd','1-4'],
+['breaded','裹面包屑的','I’ll have the breaded chicken.','描述外层做法，不是“配面包”。','ˈbredɪd','1-4'],
+['crispy','酥脆的','The skin is crispy.','常描述表层；与 crunchy 用法有重叠。','ˈkrɪspi','1-5'],
+['crunchy','咬起来脆响的','I like crunchy vegetables.','可形容生脆蔬菜、坚果等。','ˈkrʌntʃi','1-5'],
+['tender','嫩、容易咀嚼的','Is the lamb tender?','在这里是食物口感，不是性格温柔。','ˈtendər','1-6'],
+['chewy','有嚼劲的','The bread is a little chewy.','可以是特点，也可能是抱怨难嚼；看语境。','ˈtʃuːi','1-6'],
+['tangy','明显酸爽的','The dressing is tangy.','不是 spicy（辣的）。','ˈtæŋi','1-7'],
+['rich','味道浓厚、油脂感足的','The sauce is quite rich.','此义不表示食物价格贵。','rɪtʃ','1-7'],
+['bland','味道寡淡的','It’s a little bland. Could we have some salt?','常带负面评价；a little 可以缓和语气。','blænd','1-8'],
+['greasy','油腻的','The fries are too greasy for me.','这里表达自己的口味感受。','ˈɡriːsi','1-8'],
+['medium rare','牛排等三分熟、中心偏红的熟度','I’d like my steak medium rare, please.','常用在 How would you like your steak? 的回答里；熟度叫法与具体呈现会因餐厅而异。','ˌmiːdiəm ˈrer','new-medium-rare'],
+['rare','牛排等偏生的熟度','I’d like my steak rare.','点牛排的熟度词；不要按日常“罕见”理解。','rer','1-9'],
+['medium','牛排等中等熟度的','I’d like my steak medium, please.','medium-rare 介于 rare 与 medium 之间。','ˈmiːdiəm','1-9'],
+['well-done','牛排等全熟的','I’d like it well-done.','在这里是熟度；不同于夸人做得好时的 Well done!','ˌwel ˈdʌn','1-9']
+]},
+{name:'配料、饮品与调整',note:'按需要学会用 · 提出请求时可直接替换关键词',rows:[
+['side','随主菜搭配的一份配菜','Does it come with a side?','a side 是一份配菜；on the side 则表示另放，两个用法要分清。','saɪd','new-side'],
+['stock','高汤；此处为汤底','Is it made with vegetable stock?','与 broth 日常用法有重叠，具体成分要追问。','stɑːk','2-0'],
+['broth','汤；清汤','Could I have a bowl of chicken broth?','此处是食物义；名字本身不保证某种配方。','brɔːθ','2-0'],
+['dairy','乳制品','Does the sauce contain dairy?','是类别名；dairy-free 不等于完全没有动物成分。','ˈderi','2-1'],
+['cream','奶油；稀奶油','Could you leave out the cream?','这里是食品成分，不是护肤霜。','kriːm','2-1'],
+['dressing','沙拉汁','Could I have the dressing on the side?','常与 salad 连用；另放时仍会提供。','ˈdresɪŋ','2-2'],
+['gravy','常随肉类等供应的肉汁酱','Could I have extra gravy?','可配烤肉或土豆；与沙拉 dressing 区分。','ˈɡreɪvi','2-2'],
+['a wedge','一角；楔形块','Could I have a wedge of lemon?','搭配 a wedge of…；与薄片 a slice 比较。','ə wedʒ','2-3'],
+['a slice','一片','Could I have a slice of bread?','搭配 a slice of…；不是 a whole loaf（一整条）。','ə slaɪs','2-3'],
+['still water','不含气的水','Still water for me, please.','此处 still 不表示“仍然”；与 sparkling water 比较。','stɪl ˈwɔːtər','2-4'],
+['sparkling water','气泡水','Could we have sparkling water?','描述含气与否，不说明瓶装或收费。','ˈspɑːrklɪŋ ˈwɔːtər','2-4'],
+['tap water','自来水','Do you serve tap water?','供水方式和收费依餐厅、地区而异。','tæp ˈwɔːtər','2-5'],
+['bottled water','瓶装水','A bottle of still water, please.','bottled 指包装；可再确认 still 或 sparkling。','ˈbɑːtəld ˈwɔːtər','2-5'],
+['decaf','脱咖啡因的咖啡等','Could I have a decaf coffee?','decaffeinated 的缩略形式。','ˈdiːkæf','2-6'],
+['substitute','替换（动词）','Could I substitute vegetables for the potatoes?','substitute A for B：想要的 A 在前。','ˈsʌbstɪtuːt','2-7'],
+['substitution','替换（名词）','Are substitutions possible?','提出具体要求后也可问是否收取额外费用。','ˌsʌbstɪˈtuːʃən','2-7'],
+['portion','一份；份量','Is one portion enough for two?','a large portion 表示一份的量很大。','ˈpɔːrʃən','2-8'],
+['serving','一次食用或供应的量','How many servings are in this dish?','常用于描述可供几人或几份。','ˈsɜːrvɪŋ','2-8'],
+['extra charge','额外收费','Is there an extra charge for that?','extra 是额外的；free of charge 才是免费。','ˈekstrə tʃɑːrdʒ','2-9']
+]},
+{name:'菜单栏目与用餐收尾',note:'遇到能认出 · 地区用法写在对应词下',rows:[
+['starter','前菜（常见英式词）','Could we share a starter?','与美式 appetizer 对照。','ˈstɑːrtər','3-0'],
+['appetizer','开胃菜；前菜（常见美式词）','We’ll share an appetizer.','不是 entrée 在美式菜单里的通常含义。','ˈæpətaɪzər','3-0'],
+['main course','主菜','I’d like the fish as my main course.','英式菜单也常简写 main。','ˌmeɪn ˈkɔːrs','3-1'],
+['entrée','主菜（美式菜单义）','Which entrées come with a side?','英式正式用餐也可指主菜前的一道菜；此条学习美式主菜义。','ˈɑːntreɪ','3-1'],
+['à la carte','单点；按菜点选','Can we order à la carte?','通常按菜计价，与 set menu 比较。','ˌɑː lə ˈkɑːrt','3-2'],
+['set menu','规定组合与选择范围的套餐菜单','What’s included in the set menu?','通常有固定菜数和价格，未必完全不能选菜。','ˌset ˈmenjuː','3-2'],
+['special','当日或特别供应的菜','What are today’s specials?','常用复数 specials；不自动表示打折。','ˈspeʃəl','3-3'],
+['sold out','售罄','Sorry, the sea bass is sold out.','指卖完，不是还在准备中。','ˌsoʊld ˈaʊt','3-4'],
+['available','仍有供应的','Is the sea bass still available?','可以用来确认菜品有没有。','əˈveɪləbəl','3-4'],
+['leftovers','剩下的食物','Could I take the leftovers home?','常用复数；也可说 the rest。','ˈleftoʊvərz','3-5'],
+['to-go box','外带餐盒（美式常用）','Could I get a to-go box?','说打包剩菜时可用；不是必须另下一份外卖订单。','tə ˈɡoʊ bɑːks','3-5'],
+['bill','餐费账单（常见英式词）','Could we have the bill, please?','与美式 check 对照。','bɪl','3-6'],
+['check','餐费账单（常见美式词）','Could we get the check, please?','此处不是“检查”的动词义。','tʃek','3-6'],
+['service charge','服务费','Is a service charge included?','不等同于 tip；included 表示已计入。','ˈsɜːrvɪs tʃɑːrdʒ','3-7'],
+['tip','小费','Is the tip included in the total?','收费规则依当地和餐厅而异，可以直接询问。','tɪp','3-7']
+]}];
+const wordId=text=>'w-'+text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const words=lexiconGroups.flatMap((group,gi)=>group.rows.map(row=>({id:wordId(row[0]),text:row[0],meaning:row[1],example:row[2],note:row[3],ipa:row[4],legacy:row[5],group:gi,kind:gi===1?'adj. / 做法与口感':row[0]==='substitute'?'v.':row[0]==='available'?'adj.':'词语 / 词块',dictionary:row[0].replace(/^a /,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ /g,'-')})));
+const coreExpressions=[
+{id:'order',en:'I’d like… / Could I have…?',zh:'点菜，并礼貌地提出请求',why:'I’d like… 陈述自己的选择；Could I have…? 把想得到的东西说成请求。',cue:'在咖啡店，你想要一杯不加糖的拿铁。',answer:'Could I have a latte without sugar, please?'},
+{id:'ingredients',en:'Does it contain…? / Is it made with…?',zh:'问清成分和制作材料',why:'contain 直接问有没有某成分；made with 把问题放在制作时用了什么。',cue:'在咖啡店，你想问一种汤是否用了鸡高汤。',answer:'Is this soup made with chicken stock?'},
+{id:'included',en:'Does it come with…?',zh:'确认随菜附带什么',why:'附带不等于包含在价格中。若关心收费，再问 Is that included in the price?',cue:'在咖啡店，你点了一份三明治，想确认是否配沙拉。',answer:'Does the sandwich come with a salad?'},
+{id:'omit',en:'Could you leave out…?',zh:'请对方省去某个配料',why:'Could you…? 强调请对方做一个动作。换成 Could I have it without…? 也能表达想要的成品。',cue:'在咖啡店，你点三明治，想请对方不放芥末酱。',answer:'Could you leave out the mustard, please?'},
+{id:'side',en:'Could I have… on the side?',zh:'把酱汁等分开放，自己控制用量',why:'另放仍然要；without 才是不带这份配料或酱汁。',cue:'在咖啡店，你要沙拉，但想把沙拉汁单独放。',answer:'Could I have the dressing on the side?'},
+{id:'swap',en:'Could I have A instead of B?',zh:'用想要的东西替换原来的东西',why:'想要的 A 在前，原来的 B 在后。句子方向固定，换词就能迁移。',cue:'在咖啡店，你想把普通牛奶换成燕麦奶。',answer:'Could I have oat milk instead of regular milk?'}
+];
+const contextChoices=[
+{title:'我想要什么，还是请你做什么？',a:'Could I have the salad without onions?',b:'Could you leave out the onions?',why:'两句都能表达不要洋葱。前一句以我想得到的菜为中心，后一句直接请求对方调整做法。不是一个“正确”、一个“错误”。',next:'如果配料已经拌好，两种请求都可能无法实现。接着问：Is there another salad without onions?'},
+{title:'问附带的东西，还是问制作原料？',a:'Does the fish come with rice?',b:'Is the sauce made with cream?',why:'rice 是随菜上的配菜，cream 是做进酱汁的原料。问 come with 不能代替问 contain 或 made with。',next:'come with 也不总能回答“有没有包含在标价中”。关心价格时说：Is the rice included in the price?'},
+{title:'完全不要，还是分开放？',a:'Could I have it without the dressing?',b:'Could I have the dressing on the side?',why:'前一句不需要沙拉汁，后一句仍要沙拉汁，只是放在另一个容器里。看自己的实际需求选。',next:'不想要洋葱，却说 onions on the side，对方可能会另端一份洋葱过来。'},
+{title:'对方已经说明没有了，如何继续？',a:'Is the sea bass still available?',b:'What would you recommend instead?',why:'第一句是尚不确定时确认库存；已经听到 sold out，就用第二句寻找替代，而不是重复确认相同的问题。',next:'再补一句 I’d prefer something that isn’t spicy，能让推荐更贴合自己的需求。'}
+];
+const transferTask={id:'transfer-soup',name:'换一家店：一碗没有奶油的汤',goal:'你想点烤番茄汤，但不想要奶油。先问能否去掉；服务员告诉你，奶油已经混进汤里。请推荐另一款不含乳制品的汤，再确认烤甜椒汤是否合适；如果可以，就点小碗，并问是否配面包。',checks:'尝试去掉奶油；听到不能调整后寻找替代；确认新汤是否含乳制品；选择小碗；询问面包。',answer:'Could I have the roasted tomato soup without cream?\nI see. What would you recommend instead? I’d like a soup that doesn’t contain dairy.\nIs the roasted pepper soup dairy-free? If it is, I’ll have a small bowl, please. Does it come with bread?',why:'新菜单变了，但问原料、请求省去、寻找替代和确认配菜的功能没变。不要仅凭菜单没写奶制品，就认定一定没有；把确认说出来。',alternative:'不必使用 dairy-free：Does the roasted pepper soup contain any dairy? 也能问清楚。',refs:'choice-context'};
+const allTasks=[...tasks,transferTask];
+const taskExpressionMap={understand:['ingredients','included'],customise:['order','omit','side','swap'],resolve:['order'], 'transfer-soup':['ingredients','omit','included']};
+
+const essentialTerms=['side','dressing','dairy','cream','still water','sparkling water','medium rare','sold out','extra charge','bill','check','service charge','tip','portion'];
+const essentialWords=essentialTerms.map(text=>words.find(w=>w.text===text));
+const referenceWords=words.filter(w=>!essentialTerms.includes(w.text));
+
+;
+const LearningStore=(()=>{
+ const intervals=[10*60*1000,24*60*60*1000,3*24*60*60*1000];
+ const validScore=n=>Number.isInteger(n)&&n>=0&&n<=2;
+ const sections=['top','scene','casual','patterns','essentials','practice','transfer','review','lexicon'];
+ function record(state,key,score,now=Date.now()){
+  if(!validScore(score))throw new Error('Invalid history score');
+  state.history.push({key,score,at:now});state.updatedAt=now;
+ }
+ function enroll(state,key,now=Date.now()){
+  if(state.reviews[key])state.reviews[key].active=true;
+  else state.reviews[key]={due:now,score:null,count:0,active:true,last:null};
+ }
+ function rate(state,key,score,now=Date.now()){
+  if(!validScore(score))throw new Error('Invalid review score');
+  const previous=state.reviews[key];
+  state.reviews[key]={due:now+intervals[score],score,count:(previous?.count||0)+1,active:true,last:now};
+ }
+ function due(state,now=Date.now()){
+  return Object.entries(state.reviews).filter(([,r])=>r.active&&r.due<=now).sort((a,b)=>a[1].due-b[1].due).map(([key])=>key);
+ }
+ function normalise(raw,words,tasks,expressions,now=Date.now()){
+  const source=raw&&typeof raw==='object'?raw:{};
+  const state={schema:4,drafts:{},ratings:{},saved:[],reviews:{},history:[],lastSection:'top',updatedAt:null};
+  const taskIds=new Set(tasks.map(t=>t.id));
+  const validKeys=new Set([...words.map(w=>'word:'+w.id),...tasks.map(t=>'task:'+t.id),...expressions.map(e=>'expr:'+e.id)]);
+  state.lastSection=sections.includes(source.lastSection)?source.lastSection:'top';
+  state.updatedAt=Number.isFinite(source.updatedAt)?source.updatedAt:null;
+  state.history=(Array.isArray(source.history)?source.history:[]).filter(e=>e&&validKeys.has(e.key)&&validScore(e.score)&&Number.isFinite(e.at)&&e.at>=0).map(e=>({key:e.key,score:e.score,at:e.at}));
+  for(const [id,value]of Object.entries(source.drafts||{}))if(taskIds.has(id)&&typeof value==='string')state.drafts[id]=value;
+  for(const [id,value]of Object.entries(source.ratings||{}))if(taskIds.has(id)&&validScore(value))state.ratings[id]=value;
+  // A grouped bookmark represented both words. Preserve both when separating it.
+  const saved=new Set(Array.isArray(source.saved)?source.saved:[]);
+  state.saved=words.filter(w=>saved.has(w.id)||saved.has(w.legacy)).map(w=>w.id);
+  for(const [key,r]of Object.entries(source.reviews||{})){
+   if(!validKeys.has(key)||!r||!Number.isFinite(r.due)||r.due<0||!(r.score===null||validScore(r.score)))continue;
+   state.reviews[key]={due:r.due,score:r.score,count:Number.isInteger(r.count)&&r.count>=0?r.count:0,active:r.active!==false,last:Number.isFinite(r.last)?r.last:null};
+  }
+  for(const id of state.saved)enroll(state,'word:'+id,now);
+  for(const [id,score]of Object.entries(state.ratings))if(!state.reviews['task:'+id])rate(state,'task:'+id,score,now);
+  return state;
+ }
+ return {intervals,normalise,enroll,rate,due,record,sections};
+})();
+if(typeof module!=='undefined'&&module.exports)module.exports=LearningStore;
+
+;
+function sentenceAudioMarkup(text,label='听句子'){
+ const plain=text.replace(/<[^>]*>/g,'').trim();
+ const disabled=!(window.speechSynthesis&&window.SpeechSynthesisUtterance)?' disabled':'';
+ return `<button class="say sentence-audio" data-speech="${esc(plain)}" aria-label="${label}：${esc(plain)}" aria-pressed="false"${disabled}><span aria-hidden="true">▶</span> ${label}</button>`;
+}
+function wordAudioMarkup(word){const ipa=word.ipa.startsWith('UK ')?`UK /${word.ipa.slice(3)}/`:`/${word.ipa}/`;const disabled=!(window.speechSynthesis&&window.SpeechSynthesisUtterance)?' disabled':'';return `<span class="ipa" lang="en">${ipa}</span><div class="word-audio"><button class="say" data-say="${word.id}" data-kind="word" aria-label="朗读词语：${word.text}" aria-pressed="false"${disabled}><span aria-hidden="true">▶</span> 词语</button><button class="say" data-say="${word.id}" data-kind="example" aria-label="朗读例句：${word.text}" aria-pressed="false"${disabled}><span aria-hidden="true">▶</span> 例句</button></div><a class="dictionary-link" href="https://dictionary.cambridge.org/pronunciation/english/${word.dictionary}" target="_blank" rel="noopener noreferrer">词典读音 ↗</a>`}
+let speechCurrent=null;
+function setupPronunciation(){
+ const status=document.querySelector('#speech-status');
+ const synth=window.speechSynthesis;
+ const supported=!!(synth&&window.SpeechSynthesisUtterance);
+ const controls=[...document.querySelectorAll('[data-say],[data-speech]')];
+ const stop=document.querySelector('#speech-stop');
+ const setStatus=text=>status.textContent=text;
+ function reset(current){if(speechCurrent!==current)return;clearTimeout(current.timer);current.button.setAttribute('aria-pressed','false');current.button.classList.remove('speaking');speechCurrent=null;stop.disabled=true}
+ function chooseVoice(lang='en-US'){const voices=synth.getVoices();return voices.find(v=>v.lang.toLowerCase()===lang.toLowerCase()&&v.localService)||voices.find(v=>v.lang.toLowerCase()===lang.toLowerCase())||voices.find(v=>/^en([-_]|$)/i.test(v.lang))}
+ if(!supported){controls.forEach(b=>{b.disabled=true;b.title='此浏览器未提供语音朗读'});setStatus('此浏览器不支持朗读。音标仍可查看，也可以打开下方词典发音链接。');return}
+ synth.getVoices();
+ synth.addEventListener('voiceschanged',()=>{if(!speechCurrent){const voice=chooseVoice();if(voice)setStatus(`已就绪 · ${voice.name}（${voice.lang}）`)}});
+ document.addEventListener('click',event=>{
+  if(event.target.closest('#speech-stop')){if(speechCurrent)reset(speechCurrent);synth.cancel();setStatus('已停止朗读。');return}
+  const button=event.target.closest('[data-say],[data-speech]');if(!button)return;
+  const previous=speechCurrent;
+  if(previous){reset(previous);synth.cancel();if(previous.button===button){setStatus('已停止。点击朗读按钮可以重新听。');return}}
+  const entry=words.find(w=>w.id===button.dataset.say);
+  const text=button.dataset.speech||(entry&&(button.dataset.kind==='example'?entry.example:entry.text));
+  if(!text)return;
+  const title=entry?entry.text:'英语句子';
+  const utterance=new SpeechSynthesisUtterance(text);const preferred=entry?.ipa.startsWith('UK')&&button.dataset.kind==='word'?'en-GB':'en-US';const voice=chooseVoice(preferred);
+  if(voice)utterance.voice=voice;
+  utterance.lang=voice?voice.lang:preferred;
+  utterance.rate=document.querySelector('#speech-slow').checked ? .72 : .92;
+  const current={button,utterance,timer:null};speechCurrent=current;stop.disabled=false;
+  button.setAttribute('aria-pressed','true');button.classList.add('speaking');
+  setStatus(`准备朗读：${title}。再次点击可停止。`);
+  utterance.onstart=()=>{if(speechCurrent!==current)return;clearTimeout(current.timer);setStatus(`正在朗读${button.dataset.speech?'句子':button.dataset.kind==='word'?'词语':'例句'}：${title}${voice?' · '+voice.lang:''}。再次点击可停止。`)};
+  utterance.onend=()=>{if(speechCurrent!==current)return;reset(current);setStatus('朗读结束，可以重听或继续下一句。')};
+  utterance.onerror=event=>{if(speechCurrent!==current)return;reset(current);setStatus(['interrupted','canceled'].includes(event.error)?'已停止朗读。':'暂时无法播放。请检查设备英语语音、音量或网络，也可以查看词典发音。')};
+  current.timer=setTimeout(()=>{if(speechCurrent!==current)return;reset(current);synth.cancel();setStatus('语音未能启动。可以再试一次，或打开词典发音。')},12000);
+  try{synth.speak(utterance)}catch{reset(current);setStatus('当前无法启动朗读。音标与词典发音仍可使用。')}
+ });
+ window.addEventListener('pagehide',()=>{if(speechCurrent)reset(speechCurrent);synth.cancel()});
+}
+
+;
+const $=selector=>document.querySelector(selector);
+const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const KEY=topic.storageKey;
+let storageOK=true,raw=null;
+try{raw=JSON.parse(localStorage.getItem(KEY))}catch{storageOK=false}
+const state=LearningStore.normalise(raw,words,allTasks,coreExpressions);
+for(const task of tasks)if(state.ratings[task.id]!==undefined){
+ for(const id of taskExpressionMap[task.id]||[]){
+  if(!state.reviews['expr:'+id])LearningStore.rate(state,'expr:'+id,state.ratings[task.id]);
+ }
+}
+let reviewSession=[];
+function persist(){
+ try{localStorage.setItem(KEY,JSON.stringify(state));localStorage.setItem('table-talk-last-visit',JSON.stringify({topic:topic.id,section:state.lastSection,at:Date.now()}))}catch{storageOK=false}
+ $('#save-status').textContent=storageOK?'回答、收藏与复习安排已自动保存':'当前无法保存；离开页面后记录可能丢失';
+}
+function dueLabel(time){return new Date(time).toLocaleString('zh-CN',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}
+function ratingsMarkup(id,review=false){
+ const key=review?'data-review-rate':'data-rate';
+ const current=review?undefined:state.ratings[id];
+ return `<div class="ratings" aria-label="${review?'回忆情况':'任务自评'}">${['还不会','有提示能说','能独立表达'].map((label,n)=>`<button ${key}="${id}" data-value="${n}" aria-pressed="${current===n}">${label}</button>`).join('')}</div>`;
+}
+function taskMarkup(t,i){return `<article class="task" id="task-${t.id}"><span class="eyebrow">${t.id===transferTask.id?'TRANSFER':'TASK 0'+(i+1)}</span><h3>${t.name}</h3><p>${t.goal}</p><label for="draft-${t.id}">你的回答（也可以先口头说一遍）</label><textarea id="draft-${t.id}" data-draft="${t.id}" placeholder="先试着组织自己的表达…">${esc(state.drafts[t.id]||'')}</textarea><p class="criteria">检查：${t.checks}</p>${ratingsMarkup(t.id)}<a class="answer-link" href="#answer-${t.id}">参考表达在下方 ↓</a></article>`}
+function answerMarkup(t,i){return `<article class="answer" id="answer-${t.id}"><h4>${t.id===transferTask.id?'迁移任务':String(i+1).padStart(2,'0')} / ${t.name}</h4><p class="en" lang="en">${esc(t.answer).replace(/\n/g,'<br>')}</p>${sentenceAudioMarkup(t.answer,'听参考表达')}<p>${t.why}</p><p class="alternatives">另一种说法 / 进一步应对：${t.alternative}</p><a href="#task-${t.id}" class="answer-link">回到这一题，记录自评 ↑</a></article>`}
+$('#dialogue-audio').innerHTML=sentenceAudioMarkup(dialogue.map(([,en])=>en).join(' '),'听整段对话');
+$('#dialogue').innerHTML=dialogue.map(([who,en,zh])=>`<div class="line"><span class="speaker">${who}</span><div><p class="en" lang="en">${en}</p>${sentenceAudioMarkup(en)}<p class="zh">${zh}</p></div></div>`).join('');
+const coreAudioExamples=topic.coreAudioExamples;
+$('#core-expressions').innerHTML=coreExpressions.map(e=>`<article class="core-expression"><span class="badge">这次先会用</span><h3 lang="en">${e.en}</h3><p><strong>${e.zh}</strong></p><p>${e.why}</p><p class="core-audio-example" lang="en">${coreAudioExamples[e.id]}</p>${sentenceAudioMarkup(coreAudioExamples[e.id],'听完整例句')}</article>`).join('');
+$('#grammar').innerHTML=grammar.map((g,i)=>`<article class="pattern" id="pattern-${i}"><div class="pattern-head"><span>${g.n}</span><h3>${g.title}</h3></div><div class="formula" lang="en">${g.formula}</div><p>${g.body}</p><div class="examples">${g.examples.map(([en,zh])=>`<p lang="en">${en}<small lang="zh-CN">${zh}</small></p>${sentenceAudioMarkup(en)}`).join('')}</div><div class="mistake"><strong>留意区别 / 常见误用</strong><p>${g.error}</p></div></article>`).join('');
+$('#choice-context').innerHTML=contextChoices.map(c=>`<article class="choice-card"><h3>${c.title}</h3><div class="choice-pair"><p lang="en">${c.a}</p>${sentenceAudioMarkup(c.a)}<p lang="en">${c.b}</p>${sentenceAudioMarkup(c.b)}</div><p>${c.why}</p><p class="small">${c.next}</p></article>`).join('');
+function wordMarkup(w){return `<article class="word" id="vocab-${w.id}" data-word-id="${w.id}"><div><h4 lang="en">${w.text}</h4><span class="pos">${w.kind}</span>${wordAudioMarkup(w)}</div><div class="word-body"><p class="meaning">${w.meaning}</p><p class="example" lang="en">${w.example}</p><p class="usage">${w.note}</p></div><button class="star" data-save="${w.id}" aria-pressed="${state.saved.includes(w.id)}" aria-label="${state.saved.includes(w.id)?'取消收藏':'收藏'}：${w.text}">${state.saved.includes(w.id)?'★':'☆'}</button></article>`}
+$('#essential-words').innerHTML=essentialWords.map(wordMarkup).join('');
+$('#word-count').textContent=`${referenceWords.length} 个扩展词条 · 按需打开`;
+$('#words').innerHTML=lexiconGroups.map((group,gi)=>`<section class="word-group"><h3>${group.name}<span>${referenceWords.filter(w=>w.group===gi).length} 个</span></h3><p class="small">按需查阅 · 不要求背完</p>${referenceWords.filter(w=>w.group===gi).map(wordMarkup).join('')}</section>`).join('');
+$('#everyday-exchanges').innerHTML=everydayExchanges.map((e,i)=>`<article class="exchange"><span class="eyebrow">EXCHANGE 0${i+1}</span><h3>${e.title}</h3><div class="exchange-pair"><div><span class="speaker">听到这句</span><p lang="en">${e.heard}</p>${sentenceAudioMarkup(e.heard)}<small>${e.meaning}</small></div><div><span class="speaker">可以这样接</span><p lang="en">${e.reply}</p>${sentenceAudioMarkup(e.reply)}<small>${e.zh}</small></div></div><p>${e.why}</p><p class="small">${e.use}</p></article>`).join('');
+$('#idioms').innerHTML=idioms.filter(([en])=>!['I’m torn between…','I’ll go with…','That works for me.'].includes(en)).map(([en,tag,meaning,example,note])=>`<article class="idiom"><div class="idiom-head"><h3 lang="en">${en}</h3><span class="badge">兴趣扩展 · ${tag}</span></div><p>${meaning}</p><p class="en" lang="en">${example}</p>${sentenceAudioMarkup(example)}<p class="small">${note}</p></article>`).join('');
+$('#tasks').innerHTML=tasks.map(taskMarkup).join('');
+$('#answers').innerHTML=tasks.map(answerMarkup).join('');
+$('#transfer-task').innerHTML=taskMarkup(transferTask,3);
+$('#transfer-answer').innerHTML=answerMarkup(transferTask,3);
+function renderSaved(){
+ const saved=state.saved.map(id=>words.find(w=>w.id===id)).filter(Boolean);
+ $('#saved').innerHTML=saved.length?saved.map(w=>`<div class="saved-row"><div><b lang="en">${w.text}</b><p>${w.meaning}</p><p class="usage" lang="en">${w.example}</p><small>${state.reviews['word:'+w.id]?.score===null?'待首次回忆':state.reviews['word:'+w.id]?'下次 '+dueLabel(state.reviews['word:'+w.id].due):''}</small></div><button class="star" data-save="${w.id}" aria-pressed="true" aria-label="取消收藏：${w.text}">★</button></div>`).join(''):'<p class="review-note">收藏一个词，它就会加入回忆练习。每个词分别保存，不会连带收藏同组的其他词。</p>';
+}
+function renderSummary(){
+ const counts=[0,0,0];allTasks.forEach(t=>{if([0,1,2].includes(state.ratings[t.id]))counts[state.ratings[t.id]]++});
+ const rated=counts.reduce((a,b)=>a+b,0);
+ $('#summary').innerHTML=`<div class="stats"><div class="stat"><b>${counts[2]}</b><span>能独立表达</span></div><div class="stat"><b>${counts[1]}</b><span>有提示能说</span></div><div class="stat"><b>${counts[0]}</b><span>还需要练习</span></div></div><p class="review-note">已自评 ${rated} / ${allTasks.length} 个任务（含 1 个迁移任务）。这是自评记录，不会自动判定你的答案。</p>`;
+ const weak=allTasks.filter(t=>state.ratings[t.id]!==2);
+ $('#weak').innerHTML=weak.length?weak.map(t=>`<div class="weak-row"><a href="#task-${t.id}">${t.name} ↗</a><span>${state.ratings[t.id]===undefined?'尚未自评':state.ratings[t.id]===0?'先重读讲解，再试着说':'遮住参考表达，再说一次'}</span></div>`).join(''):'<p class="review-note">这一轮都能独立表达。下次从到期复习进入另一个情境，再试一次。</p>';
+ renderPracticeHistory();
+ const due=LearningStore.due(state);
+ const active=Object.entries(state.reviews).filter(([,r])=>r.active);
+ const future=active.filter(([,r])=>r.due>Date.now()).map(([,r])=>r.due).sort((a,b)=>a-b);
+ $('#due-count').textContent=due.length;
+ $('#review-next').textContent=due.length?`${due.length} 项可以复习，每轮最多 5 项。`:future.length?`暂时没有到期内容。下一次：${dueLabel(future[0])}；也可以提前练习。`:'先完成任务自评、收藏词语，或把 6 个核心表达加入复习。';
+ $('#start-due').disabled=!due.length;
+ $('#start-early').disabled=!active.length;
+ const enrolled=coreExpressions.filter(e=>state.reviews['expr:'+e.id]?.active).length;
+ $('#enroll-core').textContent=enrolled===6?'6 个核心表达已加入复习':`把核心表达加入复习（已加入 ${enrolled}/6）`;
+ $('#enroll-core').disabled=enrolled===6;
+}
+function catalogItem(key){
+ const [kind,id]=key.split(':');
+ if(kind==='word'){
+  const w=words.find(w=>w.id===id);if(!w)return null;
+  return {type:'词语回忆',prompt:`在这个场景中，怎样说“${w.meaning}”？`,answer:w.text,note:w.example,source:essentialTerms.includes(w.text)?'#vocab-'+w.id:'#lexicon'};
+ }
+ if(kind==='expr'){
+  const e=coreExpressions.find(e=>e.id===id);if(!e)return null;
+  return {type:topic.reviewLabel,prompt:e.cue,answer:e.answer,note:e.why,source:'#patterns'};
+ }
+ const t=allTasks.find(t=>t.id===id);if(!t)return null;
+ return {type:'任务回忆',prompt:t.goal,answer:t.answer,note:'检查：'+t.checks,source:'#task-'+t.id};
+}
+function startReview(early=false){
+ const now=Date.now();
+ const keys=early?Object.entries(state.reviews).filter(([,r])=>r.active).sort((a,b)=>a[1].due-b[1].due).map(([key])=>key):LearningStore.due(state,now);
+ reviewSession=keys.filter(key=>catalogItem(key)).slice(0,5);
+ if(!reviewSession.length){renderSummary();return}
+ $('#review-session').innerHTML=`<div class="session-header"><div><h3>先回忆，再对照</h3><p class="small">${early?'提前复习':'本轮到期复习'} · ${reviewSession.length} 项。先试着说出来；下方可一次显示全部参考。</p></div><label class="slow-option"><input type="checkbox" id="reveal-review"> 显示本轮参考</label></div>${reviewSession.map((key,i)=>{const item=catalogItem(key);return `<article class="recall-card" id="recall-${i}"><span class="eyebrow">0${i+1} / ${item.type}</span><h4>${item.prompt}</h4><div class="recall-answer" hidden><p class="en" lang="en">${esc(item.answer).replace(/\n/g,'<br>')}</p><p class="small">${item.note}</p><a class="answer-link" href="${item.source}">回看原来的讲解 ↗</a></div>${ratingsMarkup(key,true)}<p class="rating-receipt" aria-live="polite"></p></article>`}).join('')}<button class="action-button" id="end-review">结束本轮，更新复习列表</button>`;
+ $('#review-session').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function scheduleTask(id,score){
+ state.ratings[id]=score;
+ LearningStore.rate(state,'task:'+id,score);
+ for(const expressionId of taskExpressionMap[id]||[]){
+  const key='expr:'+expressionId;
+  // Task self-assessment enrolls the corresponding expression; later reviews
+  // remain independent instead of being overwritten by a different task.
+  if(!state.reviews[key])LearningStore.rate(state,key,score);
+ }
+}
+function filterWords(){
+ const query=$('#word-search').value.trim().toLocaleLowerCase();let count=0;
+ for(const el of document.querySelectorAll('#words .word')){
+  const w=words.find(w=>w.id===el.dataset.wordId);
+  el.hidden=![w.text,w.meaning,w.example,w.note].join(' ').toLocaleLowerCase().includes(query);
+  if(!el.hidden)count++;
+ }
+ for(const el of document.querySelectorAll('.word-group'))el.hidden=![...el.querySelectorAll('.word')].some(w=>!w.hidden);
+ $('#no-words').hidden=count>0;
+ if(query)$('#reference-vocabulary').open=true;
+ $('#word-count').textContent=query?`找到 ${count} / ${referenceWords.length} 个扩展词条`:`${referenceWords.length} 个扩展词条 · 按需打开`;
+}
+document.addEventListener('input',event=>{
+ const el=event.target;
+ if(el.dataset.draft){state.drafts[el.dataset.draft]=el.value;persist()}
+ if(el.id==='word-search')filterWords();
+});
+document.addEventListener('change',event=>{
+ if(event.target.id==='reveal-review')for(const el of document.querySelectorAll('.recall-answer'))el.hidden=!event.target.checked;
+});
+document.addEventListener('click',event=>{
+ const button=event.target.closest('button');if(!button)return;
+ if(button.dataset.rate){
+  const id=button.dataset.rate;const n=Number(button.dataset.value);
+  scheduleTask(id,n);LearningStore.record(state,'task:'+id,n);
+  for(const b of document.querySelectorAll(`[data-rate="${id}"]`))b.setAttribute('aria-pressed',String(b===button));
+  persist();renderSummary();
+ }
+ if(button.dataset.save){
+  const id=button.dataset.save;const selected=!state.saved.includes(id);
+  if(selected){state.saved.push(id);LearningStore.enroll(state,'word:'+id)}
+  else{state.saved=state.saved.filter(value=>value!==id);if(state.reviews['word:'+id])state.reviews['word:'+id].active=false}
+  const word=words.find(w=>w.id===id);
+  for(const b of document.querySelectorAll(`[data-save="${id}"]`)){
+   b.setAttribute('aria-pressed',String(selected));b.textContent=selected?'★':'☆';b.setAttribute('aria-label',`${selected?'取消收藏':'收藏'}：${word.text}`);
+  }
+  persist();renderSaved();renderSummary();
+ }
+ if(button.id==='enroll-core'){
+  for(const e of coreExpressions)LearningStore.enroll(state,'expr:'+e.id);
+  persist();renderSummary();
+ }
+ if(button.id==='start-due')startReview();
+ if(button.id==='start-early')startReview(true);
+ if(button.dataset.reviewRate){
+  const key=button.dataset.reviewRate;if(!reviewSession.includes(key))return;
+  const score=Number(button.dataset.value);
+  LearningStore.rate(state,key,score);LearningStore.record(state,key,score);
+  if(key.startsWith('task:')){
+   const id=key.slice(5);state.ratings[id]=score;
+   for(const b of document.querySelectorAll(`[data-rate="${id}"]`))b.setAttribute('aria-pressed',String(Number(b.dataset.value)===score));
+  }
+  for(const b of document.querySelectorAll(`[data-review-rate="${key}"]`))b.setAttribute('aria-pressed',String(b===button));
+  button.closest('.recall-card').querySelector('.rating-receipt').textContent='已保存 · 下次复习 '+dueLabel(state.reviews[key].due);
+  persist();renderSummary();renderSaved();
+ }
+ if(button.id==='end-review'){
+  reviewSession=[];$('#review-session').innerHTML='<p class="review-note">本轮已结束。已自评的项目会按新时间安排；没有自评的项目仍留在原来的复习列表。</p>';renderSummary();
+ }
+});
+let ticking=false;
+window.addEventListener('scroll',()=>{
+ if(ticking)return;ticking=true;
+ requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-window.innerHeight;$('#reading-progress').style.width=(max>0?window.scrollY/max*100:0)+'%';ticking=false});
+},{passive:true});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)renderSummary()});
+setInterval(renderSummary,60000);
+renderSaved();renderSummary();persist();setupPronunciation();
+
+function localDay(time){const d=new Date(time);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+function renderPracticeHistory(){
+ let box=$('#practice-history');if(!box){box=document.createElement('div');box.id='practice-history';$('#summary').after(box)}
+ const days=new Map();
+ for(const event of state.history){const day=localDay(event.at);if(!days.has(day))days.set(day,{count:0,independent:0});const row=days.get(day);row.count++;if(event.score===2)row.independent++}
+ const list=[...days.entries()].sort((a,b)=>b[0].localeCompare(a[0])).slice(0,7);
+ box.innerHTML='<h3>最近的练习记录</h3>'+(list.length?list.map(([day,r])=>`<p class="small">${day} · 自评 ${r.count} 次，其中 ${r.independent} 次选择“能独立表达”</p>`).join(''):'<p class="small">从这次更新后开始按日期记录主动练习。原有回答、收藏与复习日期继续保留。</p>');
+}
+const sectionLabels={scene:'场景对话',casual:'实用接话',patterns:'表达与语法',essentials:'必要词块',practice:'输出练习',transfer:'迁移练习',review:'复习',lexicon:'扩展词库'};
+if(state.lastSection!=='top'){
+ const resume=document.createElement('p');resume.className='resume-note';resume.innerHTML=`上次看到“${sectionLabels[state.lastSection]}”。<a href="#${state.lastSection}">继续上次的位置 →</a>`;$('.audio-global').before(resume);
+}
+let positionTimer;
+function savePosition(){
+ let current='top';for(const id of LearningStore.sections.slice(1)){const el=$('#'+id);if(el&&el.getBoundingClientRect().top<=window.innerHeight*.4)current=id}
+ state.lastSection=current;persist();
+}
+window.addEventListener('scroll',()=>{clearTimeout(positionTimer);positionTimer=setTimeout(savePosition,500)},{passive:true});
+window.addEventListener('pagehide',()=>{clearTimeout(positionTimer);savePosition()});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)savePosition()});
+</script></body></html>

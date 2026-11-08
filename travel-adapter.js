@@ -1,0 +1,16 @@
+const topic={id:lessonDefinition.id,storageKey:'table-talk-'+lessonDefinition.id+'-v1',reviewLabel:'换个地方再用',coreAudioExamples:{}};
+const dialogue=lessonDefinition.exchanges.flatMap(e=>[['STAFF',e[1],e[2]],['YOU',e[3],e[4]]]);
+const everydayExchanges=lessonDefinition.exchanges.map(e=>({title:e[0],heard:e[1],meaning:e[2],reply:e[3],zh:e[4],why:e[5],use:'换个地方也能用：'+e[6]}));
+const coreExpressions=lessonDefinition.exchanges.map((e,i)=>{topic.coreAudioExamples['e'+i]=e[3];return {id:'e'+i,en:e[3],zh:e[0],why:e[5],cue:e[6],answer:e[7]}});
+const grammar=lessonDefinition.grammar.map((g,i)=>({n:String(i+1).padStart(2,'0'),title:g[0],formula:g[1],body:g[2],examples:[[g[3],g[4]]],error:g[5]}));
+const contextChoices=lessonDefinition.choices.map(c=>({title:c[0],a:c[1],b:c[2],why:c[3],next:c[4]||'先判断自己想确认的是哪件事，再选择问法。'}));
+const wordId=text=>'w-'+text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const lexiconGroups=[{name:'这次先会用',note:'按需要收藏'},{name:'再认出两个',note:'扩展查阅'}];
+const words=lessonDefinition.words.map((w,i)=>({id:wordId(w[0]),text:w[0],meaning:w[1],ipa:w[2],example:w[3],note:w[4]||'',legacy:lessonDefinition.id+'-'+i,kind:'词语 / 词块',group:i<10?0:1,dictionary:w[0].replace(/ /g,'-')}));
+const essentialWords=words.slice(0,10),referenceWords=words.slice(10),essentialTerms=essentialWords.map(w=>w.text);
+const idioms=[[lessonDefinition.extra[0],'日常表达',lessonDefinition.extra[1],lessonDefinition.extra[2],'结合上下文理解，不必逐词翻译。']];
+const makeTask=(t,id)=>({id,name:t[0],goal:t[1],answer:t[2],checks:t[3],why:'对照任务中的需求逐项自查。可以分成几个短句说，不必使用完全相同的措辞。',alternative:'不确定对方的回答时：Could you explain that, please? 或 Just to check, …, right?'});
+const tasks=lessonDefinition.tasks.map((t,i)=>makeTask(t,['understand','customise','resolve'][i]));
+const transferTask=makeTask(lessonDefinition.transfer,'transfer-'+topic.id);
+const allTasks=[...tasks,transferTask];
+const taskExpressionMap={understand:['e0','e1'],customise:['e2','e3'],resolve:['e4','e5']};

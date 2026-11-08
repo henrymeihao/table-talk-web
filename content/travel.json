@@ -1,0 +1,1714 @@
+[
+  {
+    "id": "bakery",
+    "title": "面包与甜品店",
+    "en": "At the bakery",
+    "intro": "认出想吃的那块，问清馅料、数量、加热与包装。",
+    "context": "展示柜里有杏仁可颂、奶油泡芙和酸面包。你想买两个可颂，其中一个加热，另一个单独装；杏仁款卖完时需要换一个选择。",
+    "exchanges": [
+      [
+        "指着展示柜问",
+        "What can I get you?",
+        "想买什么？",
+        "What is that pastry filled with?",
+        "那个酥点里面是什么馅？",
+        "that 可以配合指物；filled with 问里面的馅，不是表面装饰。",
+        "换到包子摊，问这个包子是什么馅。",
+        "What is this bun filled with?"
+      ],
+      [
+        "选择数量",
+        "How many would you like?",
+        "想要几个？",
+        "Two croissants, please.",
+        "两个可颂，谢谢。",
+        "how many 问可数数量；two 后 croissant 加 s。",
+        "换到饼干店，要三个曲奇。",
+        "Three cookies, please."
+      ],
+      [
+        "是否加热",
+        "Would you like them warmed up?",
+        "需要加热吗？",
+        "Could you warm up just one of them?",
+        "只加热其中一个可以吗？",
+        "one of them 指这一组中的一个；just 限定只做这一份。",
+        "换到三明治店，两份只烤热一份。",
+        "Could you warm up just one of them?"
+      ],
+      [
+        "分别包装",
+        "In one bag or separate bags?",
+        "装一起还是分开？",
+        "Separate bags, please.",
+        "请分开装。",
+        "separate 说明包装方式；不是要求分开付钱。",
+        "换到礼品店，把两件分别装袋。",
+        "Separate bags, please."
+      ],
+      [
+        "想要的卖完了",
+        "We’ve sold out of the almond ones.",
+        "杏仁款卖完了。",
+        "What would you recommend instead?",
+        "那你推荐换成什么？",
+        "the almond ones 省略复数 pastries；instead 接住替代选择。",
+        "换到冰淇淋店，最想吃的口味没了，请推荐。",
+        "What would you recommend instead?"
+      ],
+      [
+        "确认小计",
+        "Anything else?",
+        "还要别的吗？",
+        "That’s all, thanks. How much is it altogether?",
+        "就这些，谢谢。一共多少钱？",
+        "altogether 问总价；结账前核对数量和包装。",
+        "换到水果摊，问所有东西总共多少钱。",
+        "How much is it altogether?"
+      ]
+    ],
+    "grammar": [
+      [
+        "问馅料与含有成分",
+        "What is it filled with? / Does it contain…?",
+        "filled with 聚焦内部的馅，contain 则涵盖食物里的某种成分。比如巧克力馅也可能有坚果；问了馅料，并不等于知道所有原料。问句末尾的 with 是 fill 的搭配，不需要移到句首。",
+        "What is this pastry filled with?",
+        "这个酥点是什么馅？",
+        "不要用 What is it full with?；固定表达是 filled with。"
+      ],
+      [
+        "买两个，只处理其中一个",
+        "two + 名词复数 / one of them",
+        "two croissants 表示两个可颂。已经明确一组食物后，one of them 指其中一个，the other 指另一件。把加热和包装分别说清楚，可以避免店员把两份都加热。",
+        "Could you warm up one and pack the other separately?",
+        "加热一个，另一个单独包装。",
+        "one of them 中 them 是复数代词；不要说 one of it。"
+      ],
+      [
+        "加热与分装的短语动词",
+        "warm it up / pack it separately",
+        "warm up 表示加热。宾语是代词 it 时放在 warm 与 up 中间；separately 是副词，修饰包装动作。separate bags 则直接指定不同袋子。",
+        "Could you warm it up, please?",
+        "可以加热一下吗？",
+        "说 warm it up，不说 warm up it。"
+      ]
+    ],
+    "words": [
+      [
+        "pastry",
+        "酥点；糕点",
+        "ˈpeɪstri",
+        "What is this pastry filled with?"
+      ],
+      [
+        "croissant",
+        "可颂；羊角面包",
+        "krəˈsɑːnt",
+        "Two croissants, please."
+      ],
+      [
+        "filling",
+        "馅料",
+        "ˈfɪlɪŋ",
+        "What’s the filling?"
+      ],
+      [
+        "almond",
+        "杏仁",
+        "ˈɑːmənd",
+        "Do you have almond croissants?"
+      ],
+      [
+        "cream",
+        "奶油",
+        "kriːm",
+        "Does it contain cream?"
+      ],
+      [
+        "warm up",
+        "加热",
+        "wɔːrm ʌp",
+        "Could you warm it up?"
+      ],
+      [
+        "separate",
+        "分开的",
+        "ˈsepərət",
+        "Separate bags, please."
+      ],
+      [
+        "slice",
+        "一片",
+        "slaɪs",
+        "Could I have two slices?"
+      ],
+      [
+        "sold out",
+        "卖完了",
+        "soʊld aʊt",
+        "Is the chocolate cake sold out?"
+      ],
+      [
+        "altogether",
+        "合计；一共",
+        "ˌɔːltəˈɡeðər",
+        "How much is it altogether?"
+      ],
+      [
+        "sourdough",
+        "酸面包；酸面团",
+        "ˈsaʊərdoʊ",
+        "Could I have a sourdough loaf?"
+      ],
+      [
+        "glaze",
+        "糖衣；表面淋层",
+        "ɡleɪz",
+        "What is the glaze made with?"
+      ]
+    ],
+    "tasks": [
+      [
+        "买好两份早餐",
+        "买两个可颂，问里面是什么馅，只加热其中一个，分开装。",
+        "What are the croissants filled with? I’ll have two, please. Could you warm up just one and put them in separate bags?",
+        "问馅料；数量；只热一个；分装"
+      ],
+      [
+        "卖完以后换选择",
+        "杏仁款卖完了，请店员推荐别的。最后选择一个巧克力可颂，问总价。",
+        "What would you recommend instead? I’ll have a chocolate croissant, please. How much is it altogether?",
+        "请求推荐；选替代；问总价"
+      ],
+      [
+        "核对包装",
+        "你买两块蛋糕，店员把它们放在一个盒子里。你要送给两个人，请求分开装。",
+        "Could you put them in separate boxes, please? They’re for two different people.",
+        "说明分装；解释用途"
+      ]
+    ],
+    "transfer": [
+      "换到熟食店",
+      "柜台出售 cheese pie 和 spinach pie。你想买两份菠菜派，问是否含奶酪，一份热一份不热，分别装。",
+      "Does the spinach pie contain cheese? I’ll have two, please. Could you warm up just one and pack them separately?",
+      "问成分；两份；只热一份；分装"
+    ],
+    "extra": [
+      "Fresh out of the oven",
+      "刚出炉。fresh 在此形容刚做好的状态。",
+      "These are fresh out of the oven."
+    ],
+    "choices": [
+      [
+        "问馅料还是成分",
+        "What is it filled with?",
+        "Does it contain almonds?",
+        "第一句问内部馅料；第二句问是否含杏仁，范围包括面团、馅料和装饰。"
+      ],
+      [
+        "分装还是分开结账",
+        "Separate bags, please.",
+        "Could we pay separately?",
+        "前一句指定袋子，后一句指定付款；包装分开不等于账单分开。"
+      ]
+    ]
+  },
+  {
+    "id": "brunch",
+    "title": "早餐与 Brunch",
+    "en": "Breakfast & brunch",
+    "intro": "说清鸡蛋做法、面包和配菜，问套餐里包含什么。",
+    "context": "早餐套餐包含鸡蛋、吐司和一杯热饮。你想要水煮蛋、酸面包，换掉培根，并确认咖啡是否另收费。",
+    "exchanges": [
+      [
+        "选择鸡蛋做法",
+        "How would you like your eggs?",
+        "鸡蛋想怎么做？",
+        "Poached, please.",
+        "请做水波蛋。",
+        "问的是做法，不是喜不喜欢鸡蛋。可以直接用做法回答。",
+        "换到另一家早餐店，要炒蛋。",
+        "Scrambled, please."
+      ],
+      [
+        "选择面包",
+        "White or wholemeal toast?",
+        "白吐司还是全麦吐司？",
+        "Do you have sourdough instead?",
+        "可以换酸面包吗？",
+        "问替代供应，不默认套餐都能换。",
+        "换到三明治店，问有没有全麦面包。",
+        "Do you have wholemeal bread instead?"
+      ],
+      [
+        "换配菜",
+        "It comes with bacon.",
+        "套餐配培根。",
+        "Could I have mushrooms instead of bacon?",
+        "可以把培根换成蘑菇吗？",
+        "想要的配菜在前，被替换的在后。",
+        "换到餐厅，薯条改成沙拉。",
+        "Could I have salad instead of fries?"
+      ],
+      [
+        "确认包含什么",
+        "Tea or coffee?",
+        "要茶还是咖啡？",
+        "Is coffee included in the breakfast?",
+        "咖啡包含在早餐价格里吗？",
+        "对方提供选项不必然说明价格；included 明确问已含。",
+        "换到酒店问早餐是否含在房价里。",
+        "Is breakfast included in the room rate?"
+      ],
+      [
+        "描述熟度偏好",
+        "Would you like the yolks runny?",
+        "蛋黄想要流心吗？",
+        "I’d prefer them fully cooked, please.",
+        "我更想要全熟的。",
+        "prefer 表达偏好；fully cooked 说明目标，不必猜本店的做法名称。",
+        "换到另一家店，说明不想要流心蛋黄。",
+        "I’d prefer the yolks fully cooked, please."
+      ],
+      [
+        "处理不符",
+        "Here’s your breakfast.",
+        "这是你的早餐。",
+        "I asked for poached eggs, but these are scrambled.",
+        "我点的是水波蛋，但这是炒蛋。",
+        "asked for 说明之前的要求，these 指眼前复数鸡蛋。",
+        "换到餐厅，点沙拉却收到薯条。",
+        "I asked for salad, but these are fries."
+      ]
+    ],
+    "grammar": [
+      [
+        "How would you like…? 在问怎样做",
+        "How would you like + 食物?",
+        "这类问句询问制作或供应方式。回答可以是 Poached, please.，不用完整重复 I would like my eggs…。若不懂某个选项，可请对方解释做法，而不是随意答 yes。",
+        "What’s the difference between poached and scrambled eggs?",
+        "水波蛋和炒蛋有什么区别？",
+        "Do you like eggs? 才是问喜不喜欢鸡蛋，与做法问句不同。"
+      ],
+      [
+        "included 和 comes with 的边界",
+        "Is A included? / Does it come with B?",
+        "come with 问随餐有什么，included in the price 问价格有没有涵盖。早餐附带饮品选项时，可以进一步问某款咖啡是否另收费；不要从菜单排版猜费用。",
+        "Is the latte included, or is there an extra charge?",
+        "拿铁已包含，还是需要另付？",
+        "用 Is coffee included?，不要说 Does coffee included?。"
+      ],
+      [
+        "描述自己的偏好",
+        "I’d prefer + 名词 / it + 形容词",
+        "I’d prefer 是 I would prefer 的缩写，提出偏好比下命令更柔和。them 指代复数 eggs；it 指代一份食物或一道菜。说明想要的结果能帮助对方理解。",
+        "I’d prefer the yolks fully cooked.",
+        "我希望蛋黄全熟。",
+        "I prefer to fully cooked 不完整；fully cooked 不是可直接接 to 的动词原形。"
+      ]
+    ],
+    "words": [
+      [
+        "poached",
+        "水波煮的",
+        "poʊtʃt",
+        "Poached eggs, please."
+      ],
+      [
+        "scrambled",
+        "炒制的（鸡蛋）",
+        "ˈskræmbəld",
+        "I’d like scrambled eggs."
+      ],
+      [
+        "fried",
+        "煎的",
+        "fraɪd",
+        "Do you serve fried eggs?"
+      ],
+      [
+        "yolk",
+        "蛋黄",
+        "joʊk",
+        "Could the yolk be fully cooked?"
+      ],
+      [
+        "runny",
+        "流心的；稀的",
+        "ˈrʌni",
+        "I don’t want a runny yolk."
+      ],
+      [
+        "toast",
+        "烤面包片",
+        "toʊst",
+        "Could I have some toast?"
+      ],
+      [
+        "wholemeal",
+        "全麦的（英式）",
+        "ˈhoʊlmiːl",
+        "Wholemeal toast, please."
+      ],
+      [
+        "bacon",
+        "培根",
+        "ˈbeɪkən",
+        "Could you leave out the bacon?"
+      ],
+      [
+        "included",
+        "已包含的",
+        "ɪnˈkluːdɪd",
+        "Is coffee included?"
+      ],
+      [
+        "substitution",
+        "替换",
+        "ˌsʌbstɪˈtuːʃən",
+        "Is there a charge for the substitution?"
+      ],
+      [
+        "hash browns",
+        "薯饼",
+        "hæʃ braʊnz",
+        "Could I add hash browns?"
+      ],
+      [
+        "granola",
+        "烘烤谷物早餐",
+        "ɡrəˈnoʊlə",
+        "What comes with the granola?"
+      ]
+    ],
+    "tasks": [
+      [
+        "完成套餐选择",
+        "点一份早餐：炒蛋、全麦吐司，培根换成蘑菇。问咖啡是否包含。",
+        "I’d like the breakfast with scrambled eggs and wholemeal toast. Could I have mushrooms instead of bacon? Is coffee included?",
+        "鸡蛋；面包；换配菜；费用"
+      ],
+      [
+        "说清熟度",
+        "你想要煎蛋，但不喜欢流心蛋黄，请说明偏好。",
+        "I’d like fried eggs, please, with the yolks fully cooked.",
+        "选择做法；说明蛋黄"
+      ],
+      [
+        "发现做法不对",
+        "点了水波蛋却拿到炒蛋，请服务员核对。",
+        "I asked for poached eggs, but these are scrambled. Could you check my order, please?",
+        "原要求；实际差异；请求核对"
+      ]
+    ],
+    "transfer": [
+      "换到酒店早餐厅",
+      "早餐菜单写 Two eggs with toast；菜单另列 cappuccino。你想要全熟煎蛋、白吐司，并确认卡布奇诺是否已包含。",
+      "Could I have two fried eggs with the yolks fully cooked, and white toast? Is the cappuccino included, or is there an extra charge?",
+      "做法；熟度；吐司；价格"
+    ],
+    "extra": [
+      "On the side",
+      "另放。配料仍然提供，只是分开上。",
+      "Could I have the butter on the side?"
+    ],
+    "choices": [
+      [
+        "随餐有什么，还是价格包含什么",
+        "Does it come with coffee?",
+        "Is coffee included in the price?",
+        "随餐附带的选项与是否另付费要分别核对。"
+      ],
+      [
+        "做法还是熟度",
+        "Poached, please.",
+        "With the yolks fully cooked, please.",
+        "poached 指水波煮的做法；后一句指定蛋黄状态，不能仅靠做法名称推断熟度。"
+      ]
+    ]
+  },
+  {
+    "id": "pub",
+    "title": "英式 Pub",
+    "en": "At the pub",
+    "intro": "先弄清点单方式，选啤酒和杯量，也能询问无酒精饮品。",
+    "context": "你第一次走进一家英国 Pub。桌上没有服务员，需要确认去哪里点单、啤酒有什么选择，以及是否还能点食物。具体服务方式以店家为准。",
+    "exchanges": [
+      [
+        "先问在哪里点单",
+        "Are you ordering food as well?",
+        "也要点食物吗？",
+        "Yes. Do we order at the bar or at the table?",
+        "要的。在吧台还是桌边点？",
+        "先确认本店流程，避免把一种 Pub 的做法当成所有店的规则。",
+        "换到咖啡馆，问在哪里点单。",
+        "Do we order at the counter or at the table?"
+      ],
+      [
+        "选择杯量",
+        "A pint or a half?",
+        "一品脱还是半品脱？",
+        "Half a pint, please.",
+        "半品脱，谢谢。",
+        "half a pint 表达杯量；不同国家的 pint 量值不完全相同。",
+        "换到另一家 Pub，点半品脱拉格。",
+        "Half a pint of lager, please."
+      ],
+      [
+        "看酒头仍然不会选",
+        "What would you like?",
+        "想喝什么？",
+        "What do you have on draught?",
+        "有什么生啤？",
+        "on draught 常见于英式语境；美式常写 on draft。",
+        "换到另一家酒吧，询问生啤选择。",
+        "What do you have on draught?"
+      ],
+      [
+        "不喝酒也能点",
+        "Any drinks for you?",
+        "你要喝什么？",
+        "Do you have any alcohol-free options?",
+        "有无酒精选择吗？",
+        "直接问类别；具体产品成分可再确认。",
+        "换到餐厅，问无酒精饮品。",
+        "Do you have any alcohol-free options?"
+      ],
+      [
+        "还供应食物吗",
+        "The kitchen closes soon.",
+        "厨房快结束供应了。",
+        "Are you still serving food?",
+        "现在还能点食物吗？",
+        "still 关注此刻是否继续供应；酒吧营业与厨房供餐未必同时结束。",
+        "换到咖啡店，问现在是否仍供早餐。",
+        "Are you still serving breakfast?"
+      ],
+      [
+        "确认付款方式",
+        "Shall I put that on your tab?",
+        "记到你的账上吗？",
+        "Can I pay for these now instead?",
+        "我可以现在付这几杯吗？",
+        "tab 是累计账单。先确认是否有自己的账，不必默认开账。",
+        "换到酒店酒廊，想当场结账。",
+        "Could I pay for these now, please?"
+      ]
+    ],
+    "grammar": [
+      [
+        "一杯量与一种饮品",
+        "a pint of… / half a pint of…",
+        "of 把容量和饮品连接起来。a pint of lager 是一品脱拉格；half a pint 是半品脱。不清楚实际容量时问 What sizes do you serve?，也可以直接确认毫升数。",
+        "Could I have half a pint of lager?",
+        "请给我半品脱拉格。",
+        "half pint 在某些口语标签中会出现，完整表达优先学 half a pint。"
+      ],
+      [
+        "此刻是否还在供应",
+        "Are you still serving + 名词?",
+        "现在进行时在这里询问当前服务状态。still 表示此前在供应，想确认现在是否仍继续。不要只问 Is it open?，因为店开着不等于厨房仍供餐。",
+        "Are you still serving food?",
+        "现在还能点餐吗？",
+        "Are you still serve…? 应改为 Are you still serving…?。"
+      ],
+      [
+        "先问流程再行动",
+        "Do we order at…? / Can I pay now?",
+        "一般现在时可询问店内常规流程。we 可以指你和同行者；独自来时也可说 Do I order here?。now 把付款时间说清楚，避免误会为继续记账。",
+        "Do I order food at the bar?",
+        "食物也在吧台点吗？",
+        "不同地区与店家流程不同，这些句子用于确认，而不是背一条固定规则。"
+      ]
+    ],
+    "words": [
+      [
+        "pint",
+        "品脱；一品脱的饮品",
+        "paɪnt",
+        "A pint of lager, please."
+      ],
+      [
+        "half",
+        "一半；半份",
+        "hæf",
+        "Half a pint, please."
+      ],
+      [
+        "draught",
+        "桶装供应的（英式拼写）",
+        "dræft",
+        "What’s on draught?"
+      ],
+      [
+        "lager",
+        "拉格啤酒",
+        "ˈlɑːɡər",
+        "Which lager would you recommend?"
+      ],
+      [
+        "ale",
+        "艾尔啤酒",
+        "eɪl",
+        "Do you have a local ale?"
+      ],
+      [
+        "cider",
+        "苹果酒（此处为含酒精饮品）",
+        "ˈsaɪdər",
+        "What ciders do you serve?"
+      ],
+      [
+        "bar",
+        "吧台；酒吧",
+        "bɑːr",
+        "Do I order at the bar?"
+      ],
+      [
+        "tab",
+        "累计账单",
+        "tæb",
+        "Can I close my tab?"
+      ],
+      [
+        "alcohol-free",
+        "无酒精的",
+        "ˈælkəhɔːl friː",
+        "Do you have alcohol-free beer?"
+      ],
+      [
+        "receipt",
+        "付款小票",
+        "rɪˈsiːt",
+        "Could I have a receipt?"
+      ],
+      [
+        "round",
+        "一轮给大家点的饮品",
+        "raʊnd",
+        "It’s my round."
+      ],
+      [
+        "last orders",
+        "最后点单的招呼",
+        "læst ˈɔːrdərz",
+        "Is it last orders already?"
+      ]
+    ],
+    "tasks": [
+      [
+        "第一次进 Pub",
+        "问食物在吧台还是桌边点，再点半品脱拉格。",
+        "Do we order food at the bar or at the table? Could I have half a pint of lager, please?",
+        "点单流程；杯量；饮品"
+      ],
+      [
+        "同行者不喝酒",
+        "给朋友问无酒精选择，并确认现在还能点食物。",
+        "Do you have any alcohol-free options? Are you still serving food?",
+        "无酒精选项；供餐状态"
+      ],
+      [
+        "不想记账",
+        "店员问是否记账，你想现在付两杯，并要小票。",
+        "Could I pay for these two drinks now, please? And could I have a receipt?",
+        "当场付款；数量；小票"
+      ]
+    ],
+    "transfer": [
+      "换到海边酒吧",
+      "饮品板写 Local lager / Apple cider / Alcohol-free beer。你想要半品脱当地拉格，给朋友问无酒精啤酒，并问厨房还是否供餐。",
+      "Could I have half a pint of the local lager? Do you have alcohol-free beer? And are you still serving food?",
+      "杯量；当地啤酒；无酒精选项；食物"
+    ],
+    "extra": [
+      "It’s my round.",
+      "这轮我请。通常表示给同行者买这一轮饮品，不表示所有后续消费都由你承担。",
+      "It’s my round. What would you like?"
+    ],
+    "choices": [
+      [
+        "问流程还是发出订单",
+        "Do we order at the bar?",
+        "Could I have half a pint of lager?",
+        "先问本店点单位置，再向接单的人说具体饮品和杯量。"
+      ],
+      [
+        "立刻付还是累计后结",
+        "Could I pay now?",
+        "Could I open a tab?",
+        "前一句想当场付款；后一句询问能否开累计账，两者流程不同。"
+      ]
+    ]
+  },
+  {
+    "id": "cocktails",
+    "title": "鸡尾酒吧",
+    "en": "At the cocktail bar",
+    "intro": "不会读酒名也能按口味请人推荐，问清配方、饮用方式和账单。",
+    "context": "你想喝酸爽、不过甜的鸡尾酒，朋友想要无酒精选项。菜单里有不认识的名字，需要请调酒师按偏好推荐。",
+    "exchanges": [
+      [
+        "按口味推荐",
+        "What sort of drink do you like?",
+        "喜欢哪种口味？",
+        "Something citrusy and not too sweet.",
+        "想要柑橘风味、不太甜的。",
+        "something 后用形容词补充特点；不必先知道具体酒名。",
+        "换到果汁店，请推荐酸爽不太甜的饮品。",
+        "Something citrusy and not too sweet, please."
+      ],
+      [
+        "问清基酒",
+        "This is our house cocktail.",
+        "这是本店招牌鸡尾酒。",
+        "What’s the base spirit?",
+        "基酒是什么？",
+        "base spirit 问酒的基础类别，不是问杯子底部有什么。",
+        "换到另一家酒吧，问这杯用什么酒做。",
+        "What spirit is it made with?"
+      ],
+      [
+        "选择是否加冰",
+        "Neat or on the rocks?",
+        "纯饮还是加冰？",
+        "On the rocks, please.",
+        "请加冰。",
+        "适用于这类饮用方式的选择；不是所有鸡尾酒都能随意改成纯饮。",
+        "换到威士忌吧，选择不加冰纯饮。",
+        "Neat, please."
+      ],
+      [
+        "朋友不喝酒",
+        "And for your friend?",
+        "你的朋友要什么？",
+        "Do you make any alcohol-free cocktails?",
+        "有无酒精鸡尾酒吗？",
+        "直接说 alcohol-free cocktails 比只说 light 更明确。",
+        "换到酒店酒廊，问无酒精鸡尾酒。",
+        "Do you make any alcohol-free cocktails?"
+      ],
+      [
+        "提出口味调整",
+        "It’s usually quite sweet.",
+        "这杯通常比较甜。",
+        "Could you make it a little less sweet?",
+        "可以做得稍微没那么甜吗？",
+        "less 是比较，不等于完全不加任何甜味原料；要听对方能否调整。",
+        "换到咖啡店，请做得稍微没那么甜。",
+        "Could you make it a little less sweet?"
+      ],
+      [
+        "结束累计账单",
+        "Anything else this evening?",
+        "今晚还要其他的吗？",
+        "Could I close my tab, please?",
+        "可以结清我的账吗？",
+        "close a tab 表示把已累计的消费结清；无累计账时直接问 bill 也可以。",
+        "换到另一家酒吧，结清自己的账。",
+        "Could I close my tab, please?"
+      ]
+    ],
+    "grammar": [
+      [
+        "用特点代替酒名",
+        "something + 形容词 / not too + 形容词",
+        "something citrusy 是某种柑橘风味的东西。形容词放在 something 后；not too sweet 表示不要过甜，不是完全无甜味。先说偏好，再请推荐，比猜菜单名字更容易继续交流。",
+        "Could you recommend something refreshing?",
+        "能推荐一款清爽的吗？",
+        "不要按中文顺序写 a refreshing something；这里用 something refreshing。"
+      ],
+      [
+        "neat 与 on the rocks",
+        "I’ll have it neat / on the rocks.",
+        "在烈酒点单中，neat 通常表示不加冰或其他配料直接饮用，on the rocks 表示加冰。它们说明饮用方式，不能用来断言酒精度更低；问未知鸡尾酒时先确认是否适合这样点。",
+        "Could I have the whiskey on the rocks?",
+        "这杯威士忌请加冰。",
+        "不要把 neat 理解成“整洁地装杯”，也不要把加冰等同于低酒精饮品。"
+      ],
+      [
+        "口味调整的比较级",
+        "a little less + 形容词",
+        "less sweet 是更少甜，a little 缓和调整幅度。若要排除某配料，则用 without + 配料。整杯的酸甜平衡可能随配方变化，允许对方推荐另一款。",
+        "Could you make it less sweet, or recommend another drink?",
+        "能做得没那么甜，或推荐另一款吗？",
+        "less sweet 和 alcohol-free 是两个不同需求，要分别说。"
+      ]
+    ],
+    "words": [
+      [
+        "cocktail",
+        "鸡尾酒",
+        "ˈkɑːkteɪl",
+        "What cocktails do you recommend?"
+      ],
+      [
+        "spirit",
+        "烈酒；此处为酒类",
+        "ˈspɪrɪt",
+        "What’s the base spirit?"
+      ],
+      [
+        "citrusy",
+        "柑橘风味的",
+        "ˈsɪtrəsi",
+        "I’d like something citrusy."
+      ],
+      [
+        "bitter",
+        "苦的",
+        "ˈbɪtər",
+        "Is this drink very bitter?"
+      ],
+      [
+        "sweet",
+        "甜的",
+        "swiːt",
+        "Not too sweet, please."
+      ],
+      [
+        "refreshing",
+        "清爽的",
+        "rɪˈfreʃɪŋ",
+        "Something refreshing, please."
+      ],
+      [
+        "neat",
+        "纯饮；不加冰等",
+        "niːt",
+        "Neat, please."
+      ],
+      [
+        "on the rocks",
+        "加冰饮用",
+        "ɑːn ðə rɑːks",
+        "On the rocks, please."
+      ],
+      [
+        "alcohol-free",
+        "无酒精的",
+        "ˈælkəhɔːl friː",
+        "Do you make alcohol-free cocktails?"
+      ],
+      [
+        "tab",
+        "累计账单",
+        "tæb",
+        "Could I close my tab?"
+      ],
+      [
+        "garnish",
+        "装饰配料",
+        "ˈɡɑːrnɪʃ",
+        "What is the garnish?"
+      ],
+      [
+        "mocktail",
+        "无酒精调制饮品",
+        "ˈmɑːkteɪl",
+        "Do you have a mocktail menu?"
+      ]
+    ],
+    "tasks": [
+      [
+        "不认识酒单也能点",
+        "请推荐一款清爽、柑橘风味、不过甜的鸡尾酒，并问基酒。",
+        "Could you recommend something refreshing and citrusy, but not too sweet? What’s the base spirit?",
+        "风味；甜度；询问基酒"
+      ],
+      [
+        "两个人不同需求",
+        "你要威士忌加冰，朋友要无酒精鸡尾酒，请问有哪些选择。",
+        "Could I have the whiskey on the rocks? What alcohol-free cocktails do you have for my friend?",
+        "加冰方式；无酒精选项"
+      ],
+      [
+        "不能调整时换选择",
+        "店员说这款预调饮品不能减甜，请推荐另一款不太甜的，结束后结账。",
+        "What would you recommend instead? I’d prefer something less sweet. Could I close my tab, please?",
+        "寻找替代；明确偏好；结账"
+      ]
+    ],
+    "transfer": [
+      "换到酒店酒廊",
+      "饮品单列 Garden Fizz（含酒）、Citrus Cooler（无酒精）。你不想喝酒，要清爽不太甜的，先问 Citrus Cooler 是否适合，并确认能否调整甜度。",
+      "I’d like something alcohol-free and not too sweet. Would you recommend the Citrus Cooler? Can you make it a little less sweet?",
+      "无酒精；甜度；推荐；调整"
+    ],
+    "extra": [
+      "Make that two.",
+      "刚点一份后补充“改成两份”。对方需要知道你指哪一种饮品。",
+      "One Citrus Cooler, please. Actually, make that two."
+    ],
+    "choices": [
+      [
+        "少甜还是无酒精",
+        "Something less sweet, please.",
+        "Something alcohol-free, please.",
+        "甜度和是否含酒精是不同维度，两个需求都想要时需要一起说。"
+      ],
+      [
+        "纯饮还是加冰",
+        "Neat, please.",
+        "On the rocks, please.",
+        "在烈酒点单中，前者通常是不加冰等直接饮用，后者是加冰。"
+      ]
+    ]
+  },
+  {
+    "id": "hotel",
+    "title": "酒店入住",
+    "en": "Checking in",
+    "intro": "报清预订信息、核对房型与早餐，听懂前台的安排。",
+    "context": "你已经预订两晚双床房，前台需要查姓名并核对信息。你想确认早餐和房间位置，遇到房型不符时提出核对。",
+    "exchanges": [
+      [
+        "报预订姓名",
+        "Do you have a reservation?",
+        "有预订吗？",
+        "Yes, it’s under Alex Taylor.",
+        "有，预订姓名是 Alex Taylor。",
+        "under 在此表示登记在这个名字下，不是位置在下方。",
+        "换到餐厅，报预订姓名。",
+        "It’s under Alex Taylor."
+      ],
+      [
+        "确认入住晚数",
+        "You’re staying for two nights, right?",
+        "住两晚，对吗？",
+        "That’s right. We’re checking out on Friday.",
+        "对，周五退房。",
+        "for + 时长，on + 日期或星期，分别说明多久与哪天。",
+        "换到另一家酒店，住三晚，周一退房。",
+        "We’re staying for three nights and checking out on Monday."
+      ],
+      [
+        "核对房型",
+        "A double room for two?",
+        "两人一张双人床的房间？",
+        "We booked a twin room, with two separate beds.",
+        "我们订的是有两张床的双床房。",
+        "double 与 twin 不应混用；补充床的数量更清楚。",
+        "换到民宿，说明需要两张独立床。",
+        "We need two separate beds."
+      ],
+      [
+        "询问早餐",
+        "Here are your room keys.",
+        "这是房卡。",
+        "Is breakfast included in our booking?",
+        "我们的预订包含早餐吗？",
+        "included in our booking 问这笔预订的内容，不推断所有房价都含早。",
+        "换到活动报名处，问午餐是否包含。",
+        "Is lunch included in our booking?"
+      ],
+      [
+        "房间偏好",
+        "Do you have any room preferences?",
+        "对房间有什么偏好？",
+        "Could we have a quiet room away from the lift?",
+        "能安排离电梯远一点的安静房间吗？",
+        "请求偏好不代表保证能满足；away from 说明远离什么。",
+        "换到另一家酒店，要远离马路的房间。",
+        "Could we have a quiet room away from the road?"
+      ],
+      [
+        "说明具体问题",
+        "How can I help?",
+        "有什么能帮你？",
+        "Our key card isn’t working. Could you check it?",
+        "房卡打不开，可以检查一下吗？",
+        "先给出具体问题，再提出核对请求，不必只说 something is wrong。",
+        "换到租车处，钥匙不好用，请核对。",
+        "The key isn’t working. Could you check it?"
+      ]
+    ],
+    "grammar": [
+      [
+        "登记在某个名字下",
+        "a reservation under + 姓名",
+        "under a name 表示预订登记在这个名字下。如果平台和入住人的姓名不同，可以说明是谁预订的，并出示确认信息。不要为了套句型随意改动真实信息。",
+        "I have a reservation under Alex Taylor.",
+        "我有一笔 Alex Taylor 名下的预订。",
+        "不要说 My reservation is below Alex Taylor；这里 under 是固定的登记用法。"
+      ],
+      [
+        "时长和退房日期",
+        "for two nights / until Friday / on Friday",
+        "for 后接持续时长；until 表示到何时为止；on 指具体哪一天。把晚数和退房日期一起核对，可以发现日期理解的偏差。",
+        "We’re staying for two nights, until Friday.",
+        "我们住两晚，到周五退房。",
+        "for Friday 常表示为周五预订，不等同于一直住到周五。"
+      ],
+      [
+        "房型与数量核对",
+        "a double room / a twin room",
+        "通常 double room 配一张双人床，twin room 配两张单人床；具体床型仍应看酒店确认。与其只重复术语，可以补充 with two separate beds。",
+        "We booked a twin room, not a double.",
+        "我们预订的是双床房。",
+        "two rooms 表示两间房，不是同一间房里两张床。"
+      ]
+    ],
+    "words": [
+      [
+        "reservation",
+        "预订",
+        "ˌrezərˈveɪʃən",
+        "I have a reservation."
+      ],
+      [
+        "booking",
+        "预订；订单",
+        "ˈbʊkɪŋ",
+        "Could you check my booking?"
+      ],
+      [
+        "surname",
+        "姓",
+        "ˈsɜːrneɪm",
+        "My surname is Taylor."
+      ],
+      [
+        "night",
+        "一晚",
+        "naɪt",
+        "We’re staying for two nights."
+      ],
+      [
+        "twin",
+        "两张单人床的",
+        "twɪn",
+        "We booked a twin room."
+      ],
+      [
+        "double",
+        "一张双人床的",
+        "ˈdʌbəl",
+        "Is this a double room?"
+      ],
+      [
+        "included",
+        "包含在内的",
+        "ɪnˈkluːdɪd",
+        "Is breakfast included?"
+      ],
+      [
+        "key card",
+        "房卡",
+        "kiː kɑːrd",
+        "My key card isn’t working."
+      ],
+      [
+        "lift",
+        "电梯（英式）",
+        "lɪft",
+        "Where is the lift?"
+      ],
+      [
+        "quiet",
+        "安静的",
+        "ˈkwaɪət",
+        "Could we have a quiet room?"
+      ],
+      [
+        "reception",
+        "前台",
+        "rɪˈsepʃən",
+        "I’ll ask at reception."
+      ],
+      [
+        "confirmation",
+        "确认信息",
+        "ˌkɑːnfərˈmeɪʃən",
+        "Here’s my booking confirmation."
+      ]
+    ],
+    "tasks": [
+      [
+        "报清入住信息",
+        "Alex Taylor 名下预订了两晚，周五退房，请前台查预订。",
+        "I have a reservation under Alex Taylor for two nights. We’re checking out on Friday. Could you check the booking, please?",
+        "姓名；晚数；退房日期"
+      ],
+      [
+        "核对床型",
+        "前台说是双人床房，但你预订了两张独立床的双床房，请核对。",
+        "We booked a twin room with two separate beds. Could you check our reservation, please?",
+        "房型；床数；核对"
+      ],
+      [
+        "入住后求助",
+        "房卡打不开门；到前台说明问题，并询问早餐在哪里。",
+        "Our key card isn’t working. Could you check it, please? And where is breakfast served?",
+        "房卡问题；检查；早餐地点"
+      ]
+    ],
+    "transfer": [
+      "换到民宿接待处",
+      "确认邮件写 Three nights / Twin room / Breakfast extra。你报 Alex Taylor 名字，核对三晚双床房，问早餐多少钱，并请求离街道远一些的房间。",
+      "The booking is under Alex Taylor for three nights, in a twin room. How much is breakfast? Could we have a quiet room away from the street?",
+      "预订；晚数；床型；早餐价格；房间偏好"
+    ],
+    "extra": [
+      "Fully booked",
+      "已经订满。表示此时没有相应空房，不是你的预订已经完成。",
+      "We’re fully booked tonight."
+    ],
+    "choices": [
+      [
+        "双人床房还是双床房",
+        "A double room, please.",
+        "A twin room with two separate beds, please.",
+        "double 与 twin 通常指不同床型；对床的数量有要求时补充说明。"
+      ],
+      [
+        "多久还是哪天离开",
+        "We’re staying for two nights.",
+        "We’re checking out on Friday.",
+        "前一句说明时长，后一句说明退房日期，核对时可以一起说。"
+      ]
+    ]
+  },
+  {
+    "id": "luggage",
+    "title": "寄存行李与早到晚走",
+    "en": "Before & after your stay",
+    "intro": "房间还不能进、退房后还要逛，能问清寄存、收费和取回安排。",
+    "context": "你上午到达，房间尚未准备好。希望先寄存两个箱子，晚上六点取回；离店那天可能需要询问延迟退房。",
+    "exchanges": [
+      [
+        "房间没准备好",
+        "Your room isn’t ready yet.",
+        "房间还没准备好。",
+        "Could we leave our bags here until six?",
+        "我们可以把行李放到六点吗？",
+        "until six 说明结束时间；服务是否提供要听前台确认。",
+        "换到活动接待处，寄存外套到五点。",
+        "Could I leave my coat here until five?"
+      ],
+      [
+        "询问提前入住",
+        "Check-in starts later.",
+        "还没到入住时间。",
+        "Is early check-in possible today?",
+        "今天可以提前入住吗？",
+        "possible 问能否安排，不是直接要求立刻拿房。",
+        "换到另一家酒店，询问提前入住。",
+        "Is early check-in possible today?"
+      ],
+      [
+        "核对收费",
+        "We can store them for you.",
+        "可以帮你寄存。",
+        "Is there a charge for that?",
+        "这项服务收费吗？",
+        "that 指刚说的寄存服务，确认后再决定。",
+        "换到景点，问寄存柜是否收费。",
+        "Is there a charge for the locker?"
+      ],
+      [
+        "保管取件凭证",
+        "Please keep this luggage tag.",
+        "请保留行李牌。",
+        "Do I need this to collect the bags?",
+        "取回行李需要出示这个吗？",
+        "collect 在此表示取回；this 指手上的牌或凭证。",
+        "换到洗衣店，问取衣服是否需要凭证。",
+        "Do I need this to collect my clothes?"
+      ],
+      [
+        "询问晚退房",
+        "Check-out is at eleven.",
+        "十一点退房。",
+        "Could we check out a little later?",
+        "可以稍晚一点退房吗？",
+        "a little later 比较时间，最好再明确希望的时刻。",
+        "换到另一家酒店，问能否一点退房。",
+        "Could we check out at one?"
+      ],
+      [
+        "取回行李",
+        "How many bags did you leave?",
+        "寄存了几件？",
+        "Two suitcases. Here’s the tag.",
+        "两个箱子，这是行李牌。",
+        "数量、物品特征与凭证有助于核对。",
+        "换到车站寄存处，取回一个蓝色箱子。",
+        "One blue suitcase. Here’s the tag."
+      ]
+    ],
+    "grammar": [
+      [
+        "放到几点，还是几点前回来",
+        "until six / by six",
+        "until 表示持续到六点；by 表示不晚于六点完成某事。问能寄存多久用 until；答应六点前回来可用 by。时间关系不同，避免只记一个中文“到”。",
+        "Can I leave it until six? I’ll be back by six.",
+        "寄存到六点；我会六点前回来。",
+        "leave at six 是六点离开，不是把行李寄存到六点。"
+      ],
+      [
+        "leave 与 collect",
+        "leave our bags / collect our bags",
+        "leave 在此是暂时留下，不是遗失；collect 是回来取。遗失行李一般说 lost my bag。说明你是否仍是住客和取回时间，有助于对方判断能否提供服务。",
+        "We checked out this morning. Can we collect our bags now?",
+        "我们早上已退房，现在能取行李吗？",
+        "不要说 I lost my bags here 表示寄存；那会被理解为弄丢了。"
+      ],
+      [
+        "请求与可用情况",
+        "Is…possible? / subject to availability",
+        "possible 询问可否安排；对方说 subject to availability 表示取决于届时是否有条件。提前入住和延迟退房分别询问，收费也要分别确认。",
+        "Is late check-out available, and is there a charge?",
+        "能延迟退房吗，是否收费？",
+        "不要把一次允许寄存理解成也允许延迟占用房间。"
+      ]
+    ],
+    "words": [
+      [
+        "luggage",
+        "行李（不可数）",
+        "ˈlʌɡɪdʒ",
+        "Can we leave our luggage here?"
+      ],
+      [
+        "suitcase",
+        "行李箱",
+        "ˈsuːtkeɪs",
+        "We have two suitcases."
+      ],
+      [
+        "backpack",
+        "背包",
+        "ˈbækpæk",
+        "I have one backpack."
+      ],
+      [
+        "store",
+        "寄存；存放",
+        "stɔːr",
+        "Can you store our bags?"
+      ],
+      [
+        "collect",
+        "取回",
+        "kəˈlekt",
+        "We’ll collect them at six."
+      ],
+      [
+        "tag",
+        "标签；取件牌",
+        "tæɡ",
+        "Here is the luggage tag."
+      ],
+      [
+        "charge",
+        "费用",
+        "tʃɑːrdʒ",
+        "Is there a charge?"
+      ],
+      [
+        "available",
+        "可以提供的",
+        "əˈveɪləbəl",
+        "Is late check-out available?"
+      ],
+      [
+        "until",
+        "一直到",
+        "ənˈtɪl",
+        "Can we leave them until six?"
+      ],
+      [
+        "locker",
+        "寄存柜",
+        "ˈlɑːkər",
+        "Are there any lockers?"
+      ],
+      [
+        "claim ticket",
+        "取件凭证",
+        "kleɪm ˈtɪkɪt",
+        "Do I need a claim ticket?"
+      ],
+      [
+        "overnight",
+        "过夜",
+        "ˌoʊvərˈnaɪt",
+        "Can you store it overnight?"
+      ]
+    ],
+    "tasks": [
+      [
+        "早到先放行李",
+        "上午房间未准备好，希望寄存两个行李箱到六点，询问费用。",
+        "Could we leave two suitcases here until six? Is there a charge for that?",
+        "数量；时间；费用"
+      ],
+      [
+        "晚退房有替代",
+        "问能否一点退房；如果不行，请问退房后能否继续寄存行李。",
+        "Could we check out at one? If that isn’t possible, could we leave our bags here after check-out?",
+        "希望时间；接受限制；替代方案"
+      ],
+      [
+        "取回并核对",
+        "你回来取两个箱子，一个黑色一个蓝色，出示行李牌。",
+        "We’d like to collect our two suitcases, one black and one blue. Here’s the tag.",
+        "取回；数量；特征；凭证"
+      ]
+    ],
+    "transfer": [
+      "换到车站寄存处",
+      "标牌写 Storage available / Collection by 8 pm。你有一个背包，想寄存到七点，问收费，并确认是否需要取件凭证。",
+      "Could I store one backpack until seven? How much does it cost? Do I need a ticket to collect it?",
+      "一件背包；时间；价格；取件方式"
+    ],
+    "extra": [
+      "Just for a few hours",
+      "只寄存几个小时，用来限定时长。",
+      "We only need to leave them for a few hours."
+    ],
+    "choices": [
+      [
+        "寄存到几点还是几点前回来",
+        "Can I leave it until six?",
+        "I’ll be back by six.",
+        "until 说明服务持续到何时；by 说明你最晚什么时候完成返回。"
+      ],
+      [
+        "进房间还是只放行李",
+        "Is early check-in possible?",
+        "Can we leave our bags here?",
+        "提前入住需要房间可供使用；寄存只请求临时存放物品，条件与收费可不同。"
+      ]
+    ]
+  },
+  {
+    "id": "metro",
+    "title": "地铁与公交",
+    "en": "Getting around town",
+    "intro": "确认方向、站台和换乘，坐错以后能问出下一步。",
+    "context": "你要去 Riverside Museum，需要换乘一次。你不确定方向，也不清楚手中的票能否乘坐这趟车。线路与票务信息均为练习设定。",
+    "exchanges": [
+      [
+        "先确认方向",
+        "Where are you trying to get to?",
+        "想去哪里？",
+        "Does this train go towards Riverside?",
+        "这趟车往 Riverside 方向吗？",
+        "towards 问方向，不自动保证会在目的站停靠。",
+        "换到公交站，问这辆车去市中心吗。",
+        "Does this bus go to the city centre?"
+      ],
+      [
+        "问从哪里上车",
+        "You need the northbound service.",
+        "你需要往北的车。",
+        "Which platform does it leave from?",
+        "从哪个站台出发？",
+        "which 从现有站台中选一个；leave from 问出发位置。",
+        "换到火车站，问从哪个站台出发。",
+        "Which platform does it leave from?"
+      ],
+      [
+        "确认是否换乘",
+        "Change at Central.",
+        "在 Central 换乘。",
+        "Do I need to change trains there?",
+        "要在那里换乘吗？",
+        "change trains 不是给列车换零件，而是换乘。",
+        "换到公交线路，确认是否需要换车。",
+        "Do I need to change buses there?"
+      ],
+      [
+        "确认票能否使用",
+        "Have you got a ticket?",
+        "有票吗？",
+        "Is this ticket valid on this service?",
+        "这张票能坐这班车吗？",
+        "valid 关注具体票的适用范围，不能仅看票还在手里就推断有效。",
+        "换到轮渡，问这张票能否用。",
+        "Is this ticket valid on the ferry?"
+      ],
+      [
+        "坐过站以后",
+        "You’ve missed your stop.",
+        "你坐过站了。",
+        "Where should I get off to go back?",
+        "我该在哪下车回去？",
+        "get off 是下车；先问可行的返程路线，不直接跳下车。",
+        "换到公交，问下一站能否返回。",
+        "Can I get off at the next stop and go back?"
+      ],
+      [
+        "重复具体信息",
+        "Take the other line.",
+        "换另一条线。",
+        "Sorry, which line did you say?",
+        "不好意思，你说的是哪条线？",
+        "定位没听清的部分，通常比让对方重讲整段更有效。",
+        "换到车站，问对方刚才说哪个站台。",
+        "Sorry, which platform did you say?"
+      ]
+    ],
+    "grammar": [
+      [
+        "go to 与 towards",
+        "go to + 目的地 / towards + 方向",
+        "go to 问能否到某处；towards 描述方向。即使方向正确，也可以再问 Does it stop at…? 确认停站。把方向与停靠分开核对能避免上错快车。",
+        "Does this train stop at Riverside?",
+        "这班车在 Riverside 停吗？",
+        "往同一方向不一定每站都停，别把 towards 当作停站保证。"
+      ],
+      [
+        "上下车的短语",
+        "get on / get off / change at",
+        "get on 上车，get off 下车，change at 在某站换乘。三者后面接的地点或交通工具不同。问具体下车点时，可用 Where should I get off?。",
+        "Get off at Central and change to the Green Line.",
+        "在 Central 下车，换绿线。",
+        "下公交或列车用 get off，不用 get out the train；出租车则常说 get out of the taxi。"
+      ],
+      [
+        "描述刚刚发生的失误",
+        "I’ve missed my stop / I’m on the wrong train",
+        "I’ve missed my stop 说明刚发生且影响当前行程；on the wrong train 描述现在坐错车的状态。随后问下一步路线，重点从错误转到解决。",
+        "I think I’m on the wrong train. How can I get back?",
+        "我可能坐错车了，怎么回去？",
+        "missed my stop 是坐过站，missed my train 则是没赶上车。"
+      ]
+    ],
+    "words": [
+      [
+        "platform",
+        "站台",
+        "ˈplætfɔːrm",
+        "Which platform do I need?"
+      ],
+      [
+        "line",
+        "线路",
+        "laɪn",
+        "Which line should I take?"
+      ],
+      [
+        "stop",
+        "车站；停靠站",
+        "stɑːp",
+        "Is this my stop?"
+      ],
+      [
+        "direction",
+        "方向",
+        "dəˈrekʃən",
+        "Is this the right direction?"
+      ],
+      [
+        "change",
+        "换乘",
+        "tʃeɪndʒ",
+        "Do I need to change?"
+      ],
+      [
+        "valid",
+        "有效；适用的",
+        "ˈvælɪd",
+        "Is my ticket valid here?"
+      ],
+      [
+        "fare",
+        "车费",
+        "fer",
+        "How much is the fare?"
+      ],
+      [
+        "get off",
+        "下车",
+        "ɡet ɔːf",
+        "Where should I get off?"
+      ],
+      [
+        "entrance",
+        "入口",
+        "ˈentrəns",
+        "Where is the entrance?"
+      ],
+      [
+        "exit",
+        "出口",
+        "ˈeɡzɪt",
+        "Which exit is nearest?"
+      ],
+      [
+        "northbound",
+        "往北方向的",
+        "ˈnɔːrθbaʊnd",
+        "Is this the northbound platform?"
+      ],
+      [
+        "diversion",
+        "改道",
+        "daɪˈvɜːrʒən",
+        "Is there a diversion today?"
+      ]
+    ],
+    "tasks": [
+      [
+        "到达博物馆",
+        "你要到 Riverside Museum，问这趟车是否到达、是否需要换乘以及在哪下车。",
+        "Does this train go to Riverside? Do I need to change? Where should I get off for the museum?",
+        "目的地；换乘；下车站"
+      ],
+      [
+        "核对手中的票",
+        "你已经买票，但不确定能否坐这班车，请工作人员核对。",
+        "Could you check this ticket, please? Is it valid on this service?",
+        "请求核对；具体班次"
+      ],
+      [
+        "坐过站后返回",
+        "你坐过站了，问下一站能否下车，以及怎样返回 Central。",
+        "I’ve missed my stop. Can I get off at the next station? How can I get back to Central?",
+        "描述问题；下车；返程"
+      ]
+    ],
+    "transfer": [
+      "换到公交站",
+      "练习路线：Bus 18 goes to Harbour, change at Market for the museum。你问18路是否去港口、是否在 Market 换车，以及自己的票能否继续使用。",
+      "Does the 18 go to the harbour? Do I change at Market for the museum? Is this ticket valid for the next bus too?",
+      "目的地；换乘；票的范围"
+    ],
+    "extra": [
+      "The next stop",
+      "下一站。关注 next 与 last 的区别。",
+      "Is Central the next stop?"
+    ],
+    "choices": [
+      [
+        "方向还是具体停站",
+        "Does it go towards Riverside?",
+        "Does it stop at Riverside?",
+        "同向不一定停该站，必要时把方向与停靠都核对。"
+      ],
+      [
+        "坐过站还是没赶上车",
+        "I’ve missed my stop.",
+        "I’ve missed my train.",
+        "前者通常已在车上并坐过站，后者没赶上原计划的车，下一步处理不同。"
+      ]
+    ]
+  },
+  {
+    "id": "rail",
+    "title": "城际火车",
+    "en": "Between cities",
+    "intro": "买对票、确认班次与站台，错过或取消后知道如何询问。",
+    "context": "你要从 Central 去 Lakeside，想当天返回。需要确认票适用的班次、是否换乘与座位；如果列车取消，要先问原票能否改乘。所有时间、线路与票价仅为练习设定。",
+    "exchanges": [
+      [
+        "单程还是往返",
+        "Single or return?",
+        "单程还是往返？",
+        "A return to Lakeside, please.",
+        "去 Lakeside 的往返票，谢谢。",
+        "英式常用 single / return；美式也常听 one-way / round-trip。",
+        "换到轮渡售票处，买当天往返。",
+        "A return ticket, please. I’m coming back today."
+      ],
+      [
+        "确认适用班次",
+        "This is an Advance ticket.",
+        "这是一张预购指定票。",
+        "Is it only valid on this train?",
+        "只能乘这班车吗？",
+        "不要从英文名称猜适用范围，直接确认具体班次限制。",
+        "换到长途巴士，问是否只限这班。",
+        "Is this ticket only valid on this coach?"
+      ],
+      [
+        "确认换乘",
+        "There’s one change.",
+        "需要换乘一次。",
+        "Where do I need to change?",
+        "需要在哪里换乘？",
+        "one change 说次数，不是给出换乘地点。",
+        "换到机场快线，问换乘点。",
+        "Where do I need to change?"
+      ],
+      [
+        "找站台",
+        "The platform hasn’t been announced yet.",
+        "站台还未公布。",
+        "Where should I check for updates?",
+        "在哪里看更新信息？",
+        "not yet 说明尚未发生；问更新渠道比反复索要未知站台更有用。",
+        "换到机场，问登机口信息在哪更新。",
+        "Where should I check for gate updates?"
+      ],
+      [
+        "座位是否预订",
+        "Do you have a seat reservation?",
+        "有座位预订吗？",
+        "Does my ticket include a reserved seat?",
+        "我的票包含指定座位吗？",
+        "有车票不必然等于有指定座位，单独核对。",
+        "换到剧场，问是否有指定座位。",
+        "Does this ticket include a reserved seat?"
+      ],
+      [
+        "取消后找方案",
+        "Your train has been cancelled.",
+        "你的车取消了。",
+        "Can I use this ticket on the next service?",
+        "原票能坐下一班吗？",
+        "先向工作人员核对能否改乘，不把取消等同于自动任坐任何车。",
+        "换到轮渡，问原票能否坐下一班。",
+        "Can I use this ticket on the next ferry?"
+      ]
+    ],
+    "grammar": [
+      [
+        "单程、往返与出行日期",
+        "a single to… / a return to…",
+        "to 后接目的地；return 是往返票而不是命令对方返回。再加 I’m coming back today 说明回程日期，便于对方解释合适票种。",
+        "A return to Lakeside, please. I’m coming back tonight.",
+        "去 Lakeside 的往返票，今晚回来。",
+        "英国 single / return 与美国 one-way / round-trip 属于地区用法差异。"
+      ],
+      [
+        "票的限制要具体问",
+        "valid on + 班次 / valid for + 行程或时段",
+        "valid 不是“买过了”的同义词；它描述票在某范围能否使用。日期、班次、路线都可能有要求。Can I use this ticket on…? 是更直接的替代问法。",
+        "Can I use this ticket on a later train?",
+        "能用这张票坐晚一班吗？",
+        "不同票种和运营方规则不同，本课练确认问题，不给统一改乘承诺。"
+      ],
+      [
+        "被取消与还未公布",
+        "has been cancelled / hasn’t been announced yet",
+        "这两种被动结构强调服务发生了什么，而不强调是谁做的。cancelled 表示取消；delayed 表示晚点，不应混为一谈。yet 表示截至现在尚未公布。",
+        "Has the platform been announced yet?",
+        "站台公布了吗？",
+        "晚点不等于取消；先听清状态，再问下一步。"
+      ]
+    ],
+    "words": [
+      [
+        "single",
+        "单程票（英式）",
+        "ˈsɪŋɡəl",
+        "A single to Lakeside, please."
+      ],
+      [
+        "return",
+        "往返票（英式）",
+        "rɪˈtɜːrn",
+        "A return ticket, please."
+      ],
+      [
+        "valid",
+        "适用的；有效的",
+        "ˈvælɪd",
+        "Is it valid on this train?"
+      ],
+      [
+        "reservation",
+        "预订；座位预订",
+        "ˌrezərˈveɪʃən",
+        "Do I need a seat reservation?"
+      ],
+      [
+        "platform",
+        "站台",
+        "ˈplætfɔːrm",
+        "Which platform does it leave from?"
+      ],
+      [
+        "carriage",
+        "车厢（英式）",
+        "ˈkærɪdʒ",
+        "Which carriage is my seat in?"
+      ],
+      [
+        "departure",
+        "出发",
+        "dɪˈpɑːrtʃər",
+        "What time is the departure?"
+      ],
+      [
+        "delayed",
+        "晚点的",
+        "dɪˈleɪd",
+        "Is the train delayed?"
+      ],
+      [
+        "cancelled",
+        "取消了的",
+        "ˈkænsəld",
+        "My train has been cancelled."
+      ],
+      [
+        "connection",
+        "接续班次；换乘衔接",
+        "kəˈnekʃən",
+        "Will I miss my connection?"
+      ],
+      [
+        "off-peak",
+        "非高峰时段的",
+        "ˌɔːf ˈpiːk",
+        "When is this off-peak ticket valid?"
+      ],
+      [
+        "direct",
+        "直达的",
+        "dəˈrekt",
+        "Is there a direct train?"
+      ]
+    ],
+    "tasks": [
+      [
+        "买当日往返",
+        "买去 Lakeside 的往返票，今晚返回。问是否直达，是否包含指定座位。",
+        "A return to Lakeside, please. I’m coming back tonight. Is it direct? Does it include a reserved seat?",
+        "往返；回程日期；换乘；座位"
+      ],
+      [
+        "不确定能否乘车",
+        "你持指定班次票，却想乘晚一班，请工作人员确认原票能否使用。",
+        "Can I use this ticket on a later train, or do I need to change it?",
+        "原票；晚一班；需要的处理"
+      ],
+      [
+        "列车取消",
+        "你的车取消了，问原票能否乘下一班以及从哪个站台出发。",
+        "My train has been cancelled. Can I use this ticket on the next service? Which platform will it leave from?",
+        "状态；改乘；站台"
+      ]
+    ],
+    "transfer": [
+      "换到长途巴士站",
+      "通知：The 14:00 coach is cancelled. Ask staff about alternative departures。你持14点的票，想问能否改乘15点班次、在哪里候车，以及是否仍能坐原来的座位。",
+      "My two o’clock coach has been cancelled. Can I use this ticket on the three o’clock service? Where should I wait? Is my seat reservation still valid?",
+      "原班次；替代班次；候车；座位"
+    ],
+    "extra": [
+      "Calling at…",
+      "播报中表示沿途停靠，不是打电话。",
+      "The train is calling at Central and Riverside."
+    ],
+    "choices": [
+      [
+        "晚点还是取消",
+        "The train is delayed.",
+        "The train has been cancelled.",
+        "delayed 是时间推迟；cancelled 是该服务取消，要先听清状态。"
+      ],
+      [
+        "能上车还是有指定座位",
+        "Is this ticket valid on this train?",
+        "Does it include a reserved seat?",
+        "车票适用范围与座位预订是两个问题，不能互相代替。"
+      ]
+    ]
+  }
+]
