@@ -9,6 +9,7 @@ for(const d of travel.lessons)pages[d.id+'.html']=travel.page(d);
 for(const [page,source]of Object.entries(pages)){
  let html=source;
  html=html.replace('<link rel="stylesheet" href="style.css">','<style>'+css+'</style>');
+ html=html.replace('<link rel="stylesheet" href="cafe-play.css">',()=>'<style>'+fs.readFileSync(path.join(root,'cafe-play.css'),'utf8')+'</style>');
  const scripts=[...html.matchAll(/<script src="([^"]+)" defer><\/script>/g)].map(m=>m[1]);
  const js=scripts.map(name=>fs.readFileSync(path.join(root,name),'utf8')).join('\n;\n');
  if(/<\/script/i.test(js))throw Error('Unsafe inline closing tag');

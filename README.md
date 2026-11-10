@@ -10,6 +10,14 @@
 
 由 [henrymeihao](https://github.com/henrymeihao) 创建，借助 AI 完成开发与内容整理。
 
+## 先试咖啡店的新体验
+
+[咖啡店](https://henrymeihao.github.io/table-talk-web/cafe.html) 现在可以先选一个目标：找合口味的饮品、问菜单、打听附近去处，或练习没听懂时怎么接话。自己回答后，再选择往哪个方向聊，三轮表达即可结束。
+
+中文也可以先写下来；卡住时再看提示和参考表达。回应为预设分支，不根据自由输入生成，也不自动评分。原来的对话、词汇、语法和练习保留在折叠参考区。新演练的草稿、自评和复习时间同样本地保存，并纳入首页进度与备份。
+
+目前只有咖啡店采用这一流程，其他 32 个主题仍使用下述课程形式。
+
 ## 可以练什么
 
 | 类别 | 数量 | 场景举例 |
@@ -64,6 +72,7 @@ npm start
 
 - `content/travel.json`：31 个数据驱动的主题，适合从这里修改已有课程。
 - `restaurant.html`、`cafe.html` 及对应配置：两个初始主题。
+- `cafe-play.js`、`cafe-play-ui.js`、`cafe-play.css`：咖啡店的分支演练内容、状态及界面。
 - `app.js`、`style.css`：共用的学习交互和样式。
 - `learning-store.js`、`progress-home.js`：进度、自评、复习和首页汇总。
 - `pronunciation.js`：词语与句子朗读。

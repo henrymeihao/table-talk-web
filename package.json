@@ -5,7 +5,7 @@
   "description": "Scenario-based travel English across 33 topics, with pronunciation, practice and local progress.",
   "license": "MIT",
   "scripts": {
-    "test": "node tests/learning-store.cjs && node tests/pronunciation.cjs && node tests/topics.cjs && node tests/travel.cjs && node tests/progress.cjs",
+    "test": "node tests/learning-store.cjs && node tests/pronunciation.cjs && node tests/topics.cjs && node tests/travel.cjs && node tests/progress.cjs && node tests/cafe-play.cjs",
     "build": "node scripts/build.cjs && node scripts/publish-static.cjs",
     "start": "python -m http.server 4318 --bind 127.0.0.1 --directory dist"
   },

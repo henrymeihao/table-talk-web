@@ -174,7 +174,7 @@ if(state.lastSection!=='top'){
 }
 let positionTimer;
 function savePosition(){
- let current='top';for(const id of LearningStore.sections.slice(1)){const el=$('#'+id);if(el&&el.getBoundingClientRect().top<=window.innerHeight*.4)current=id}
+ let current='top';for(const id of LearningStore.sections.slice(1)){const el=$('#'+id);if(el&&el.getClientRects().length&&!el.closest('details:not([open])')&&el.getBoundingClientRect().top<=window.innerHeight*.4)current=id}
  state.lastSection=current;persist();
 }
 window.addEventListener('scroll',()=>{clearTimeout(positionTimer);positionTimer=setTimeout(savePosition,500)},{passive:true});

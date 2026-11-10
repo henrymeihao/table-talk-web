@@ -21,6 +21,7 @@ const LearningStore=(()=>{
  function normalise(raw,words,tasks,expressions,now=Date.now()){
   const source=raw&&typeof raw==='object'?raw:{};
   const state={schema:4,drafts:{},ratings:{},saved:[],reviews:{},history:[],lastSection:'top',updatedAt:null};
+  if(typeof CafePlay!=='undefined')state.cafePlay=CafePlay.normalise(source.cafePlay);
   const taskIds=new Set(tasks.map(t=>t.id));
   const validKeys=new Set([...words.map(w=>'word:'+w.id),...tasks.map(t=>'task:'+t.id),...expressions.map(e=>'expr:'+e.id)]);
   state.lastSection=sections.includes(source.lastSection)?source.lastSection:'top';

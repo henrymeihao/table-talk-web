@@ -12,6 +12,8 @@
 
 餐厅和咖啡店是较早的独立实现：餐厅内容主要在 `lesson.js`、`lexicon.js` 和 `restaurant-config.js`，咖啡店内容在 `cafe.js`；它们共用页面交互，但不从 `content/travel.json` 读取课程。
 
+咖啡店的新入口使用 `cafe-play.js` 中的四个目标和分支，`cafe-play-ui.js` 展示对话。原始课程保留在折叠参考区。新草稿与自评存放在原咖啡店存储记录的 `cafePlay` 字段，因此能够沿用首页的备份与恢复。修改时需检查刷新续练和旧进度保留；对应测试为 `tests/cafe-play.cjs`。
+
 ## 数据驱动课程的结构
 
 每个主题是 `content/travel.json` 数组中的一个对象。字段使用位置可对照 `travel-adapter.js` 和 `scripts/travel-pages.cjs`。

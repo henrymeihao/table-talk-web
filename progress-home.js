@@ -10,8 +10,12 @@
   try{
    const data=read(),days=new Map(),recommend=[];
    for(const id of ids){const s=data[keyFor(id)]||{};const rated=Object.values(s.ratings||{}).filter(n=>[0,1,2].includes(n)).length;const due=Object.values(s.reviews||{}).filter(r=>r&&r.active!==false&&Number.isFinite(r.due)&&r.due<=Date.now()).length;
-    const card=document.querySelector(`.topic-card[href="${id}.html"]`);let stat=card.querySelector('.topic-progress');if(!stat){stat=document.createElement('p');stat.className='topic-progress small';card.append(stat)}stat.textContent=`已自评 ${rated}/4 个任务 · ${due} 项到期`;
-    if(due)recommend.push({id,due});
+    const playRuns=id==='cafe'&&Array.isArray(s.cafePlay?.runs)?s.cafePlay.runs.filter(r=>r&&typeof r.scenario==='string'&&[0,1,2].includes(r.score)&&Number.isFinite(r.at)&&Number.isFinite(r.due)):[];
+    const latest=new Map();for(const r of playRuns){if(!latest.has(r.scenario)||latest.get(r.scenario).at<=r.at)latest.set(r.scenario,r)}
+    const playDue=[...latest.values()].filter(r=>r.due<=Date.now()).length;
+    const card=document.querySelector(`.topic-card[href="${id}.html"]`);let stat=card.querySelector('.topic-progress');if(!stat){stat=document.createElement('p');stat.className='topic-progress small';card.append(stat)}stat.textContent=(id==='cafe'?`情境演练 ${playRuns.length} 次 · `:'')+`已自评 ${rated}/4 个${id==='cafe'?'原有':''}任务 · ${due+playDue} 项到期`;
+    if(due+playDue)recommend.push({id,due:due+playDue,section:playDue?'top':'review'});
+    for(const r of playRuns){const date=day(r.at);days.set(date,(days.get(date)||0)+1)}
     for(const e of Array.isArray(s.history)?s.history:[]){if(!e||!Number.isFinite(e.at)||![0,1,2].includes(e.score))continue;const date=day(e.at);days.set(date,(days.get(date)||0)+1)}
    }
    const last=safeParse(localStorage.getItem('table-talk-last-visit'));
@@ -24,7 +28,7 @@
    for(const [date,count]of [...days].sort((a,b)=>b[0].localeCompare(a[0])).slice(0,7)){const row=document.createElement('p');row.className='small';row.textContent=date+' · 主动练习自评 '+count+' 次';history.append(row)}
    if(!history.childElementCount)history.textContent='练习记录会按日期累积，第二天进入不会自动清零。';
    const next=$('#next-practice');next.replaceChildren();
-   for(const r of recommend.sort((a,b)=>b.due-a.due).slice(0,3)){const a=document.createElement('a');a.href=r.id+'.html#review';a.textContent=labels[r.id]+'：'+r.due+' 项到期 →';next.append(a)}
+   for(const r of recommend.sort((a,b)=>b.due-a.due).slice(0,3)){const a=document.createElement('a');a.href=r.id+'.html#'+r.section;a.textContent=labels[r.id]+'：'+r.due+' 项到期 →';next.append(a)}
    if(!next.childElementCount)next.textContent='暂时没有到期内容，可以继续一个场景，或进入课程提前回忆。';
   }catch{$('#progress-message').textContent='当前浏览器无法读取本地记录，请检查浏览器存储设置。'}
  }
