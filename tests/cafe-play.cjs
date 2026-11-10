@@ -20,6 +20,13 @@ for(const scenario of Play.scenarios){
  }
 }
 const corrupted=Play.normalise({current:{scenario:'missing'},runs:[null,{scenario:'taste',score:7,at:0,due:0}],question:42});
+const oral=Play.normalise(null);oral.current=Play.start('taste');
+assert(Play.submit(oral.current,'','oral'),'An oral turn needs no typed answer');
+assert.equal(oral.current.answers[0].text,'','Do not invent a transcript');
+assert(Play.choose(oral.current,'local'));assert(Play.submit(oral.current,'','oral'));
+const oralRestored=Play.normalise(JSON.parse(JSON.stringify(oral)));
+assert.equal(oralRestored.current.answers.length,2);assert.equal(oralRestored.current.answers[0].mode,'oral');
+assert(Play.submit(oralRestored.current,'','oral'));assert(Play.rate(oralRestored,1));
 assert.equal(corrupted.current,null);assert.equal(corrupted.runs.length,0);assert.equal(corrupted.question,'');
 const ctx=vm.createContext({});for(const file of ['cafe-play.js','cafe.js','learning-store.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
 const preserved=vm.runInContext(`LearningStore.normalise({drafts:{understand:'old answer'},saved:[],ratings:{understand:2},cafePlay:{current:{scenario:'taste',route:null,answers:[],draft:'unfinished',custom:'my question'}}},words,allTasks,coreExpressions)`,ctx);

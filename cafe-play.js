@@ -25,7 +25,7 @@ const CafePlay = (() => {
   if(!raw||!get(raw.scenario))return null;
   const s=get(raw.scenario),route=s.routes.find(r=>r.id===raw.route);
   const answers=[];
-  for(const a of Array.isArray(raw.answers)?raw.answers.slice(0,3):[]){if(!a||!clean(a.text).trim()||(answers.length&&!route))break;answers.push({text:clean(a.text),hinted:a.hinted===true})}
+  for(const a of Array.isArray(raw.answers)?raw.answers.slice(0,3):[]){if(!a||(!clean(a.text).trim()&&a.mode!=='oral')||(answers.length&&!route))break;answers.push({text:a.mode==='oral'?'':clean(a.text),mode:a.mode==='oral'?'oral':'written',hinted:a.hinted===true})}
   return {id:clean(raw.id)||'restored',scenario:s.id,route:route?.id||null,answers,draft:clean(raw.draft),custom:clean(raw.custom),helped:raw.helped===true,variant:raw.variant===1?1:0,score:[0,1,2].includes(raw.score)&&answers.length===3?raw.score:null};
  }
  function normalise(raw){
@@ -38,7 +38,7 @@ const CafePlay = (() => {
  }
  const alternateOpenings={taste:['What sort of coffee are you in the mood for?','你现在想喝什么样的咖啡？'],menu:['Anything on the menu you’d like to know more about?','菜单上有什么你想多了解的吗？'],nearby:['Enjoy your coffee! Is this your first time in the area?','慢慢享用！你是第一次来这附近吗？'],stuck:['Shall I leave a little room for milk?','要不要留一点空间加奶？']};
  function currentTurn(s){const d=get(s.scenario);if(s.answers.length===0){const alt=alternateOpenings[s.scenario];return s.variant?{...d.opening,en:alt[0],zh:alt[1]}:d.opening}return s.route?d.routes.find(r=>r.id===s.route)?.turns[s.answers.length-1]:null}
- function submit(s,text){if(!currentTurn(s)||s.answers.length>=3||!clean(text).trim())return false;s.answers.push({text:clean(text).trim(),hinted:s.helped});s.draft='';s.helped=false;return true}
+ function submit(s,text,mode='written'){if(!currentTurn(s)||s.answers.length>=3||(!clean(text).trim()&&mode!=='oral'))return false;s.answers.push({text:mode==='oral'?'':clean(text).trim(),mode:mode==='oral'?'oral':'written',hinted:s.helped});s.draft='';s.helped=false;return true}
  function choose(s,id){if(s.answers.length!==1||s.route||!get(s.scenario).routes.some(r=>r.id===id))return false;s.route=id;return true}
  function rate(progress,score,now=Date.now()){
   const s=progress.current;if(!s||s.answers.length!==3||![0,1,2].includes(score))return false;
